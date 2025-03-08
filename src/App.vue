@@ -13,7 +13,7 @@ import DefaultHeader from './components/DefaultHeader.vue';
     sticky
     >
     <v-banner-text>
-      Agende sua consultoria gratuita!
+      <b>Agende sua consultoria gratuita!</b>
     </v-banner-text>
   </v-banner>
 

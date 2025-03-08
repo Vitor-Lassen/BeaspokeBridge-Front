@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-flex justify-space-between mb-6 ">
+    <div class="d-flex flex-wrap flex-lg-row  flex-sm-column">
       <div class="ma-2 pa-2">
       <v-img
 
@@ -12,8 +12,8 @@
     </div >
       <v-menu>
         <template v-slot:activator="{ props }">
-          <v-btn class="pa-12"
-            color="primary"
+          <v-btn class="flex-grow-1 pa-12"
+          flat
             v-bind="props"
           >
             SOBRE A BB
@@ -31,11 +31,11 @@
       </v-menu>
       <v-menu>
         <template v-slot:activator="{ props }">
-          <v-btn class=" pa-12"
-            color="primary"
+          <v-btn class="flex-grow-1 pa-12"
+          flat
             v-bind="props"
           >
-          INGLÊS
+            INGLÊS
           </v-btn>
         </template>
         <v-card>
@@ -48,11 +48,11 @@
           </v-card>
 
       </v-menu>
-      <P class="ma-8 pa-2">INTERCÂMBIO</P>
-      <P class="ma-8 pa-2">PARCERIAS</P>
-      <V-BTN>FALBCONOSCO</V-BTN>
+      <P class="flex-grow-1 ma-8 pa-2">INTERCÂMBIO</P>
+      <P class="flex-grow-1 ma-8 pa-2">PARCERIAS</P>
+      <v-btn class="ma-8 pa-2" flat border rounded>Fale Conosco</v-btn>
     </div>
-    <div  class="d-flex justify-space-between mb-6 " style="background-color:#00274D">
+    <div  class="d-flex justify-space-between"  style="background-color:#00274D">
       <p class="ma-2 pa-2" style="color: white;">SOBRE A BB</p>
       <p class="ma-2 pa-2" style="color: white;">SOBRE A BB</p>
       <p class="ma-2 pa-2" style="color: white;">SOBRE A BB</p>

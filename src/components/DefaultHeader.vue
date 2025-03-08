@@ -3,11 +3,10 @@
     <div class="d-flex flex-wrap flex-lg-row  flex-sm-column">
       <div class="ma-2 pa-2">
       <v-img
-
-      :width="170"
-      aspect-ratio="16/9"
-      cover
-      src="../src/assets/logo.png"
+        :width="170"
+        aspect-ratio="16/9"
+        cover
+        src="../src/assets/logo.png"
       ></v-img>
     </div >
       <v-menu>
@@ -53,10 +52,16 @@
       <v-btn class="ma-8 pa-2" flat border rounded>Fale Conosco</v-btn>
     </div>
     <div  class="d-flex justify-space-between"  style="background-color:#00274D">
-      <p class="ma-2 pa-2" style="color: white;">SOBRE A BB</p>
-      <p class="ma-2 pa-2" style="color: white;">SOBRE A BB</p>
-      <p class="ma-2 pa-2" style="color: white;">SOBRE A BB</p>
-      <p class="ma-2 pa-2" style="color: white;">SOBRE A BB</p>
+      <div class="d-flex flex-row">
+        <p class="ma-2 pa-2" style="color: white;">BB Blog</p>
+        <p class="ma-2 pa-2" style="color: white;">Teste seu nivel</p>
+      </div>
+      <div>
+        <v-icon icon="mdi-linkedin" class=" ma-2" style="color: white;"/>
+        <v-icon icon="mdi-instagram" class="ma-2" style="color: white;"/>
+        <v-icon icon="mdi-facebook" class="ma-2" style="color: white;"/>
+     </div>
+
     </div>
   </div>
 </template>

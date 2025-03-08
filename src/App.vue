@@ -22,9 +22,11 @@ import DefaultHeader from './components/DefaultHeader.vue';
 
 
 </header>
-<v-icon icon = "mdi-home"></v-icon>
-
+<v-content>
   <RouterView />
+
+</v-content>
+
 </template>
 
 <style scoped>

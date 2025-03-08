@@ -1,7 +1,7 @@
 <template>
   <v-menu>
         <template v-slot:activator="{ props }">
-          <v-btn class="flex-grow-1 pa-12"
+          <v-btn class="flex-grow-1"
           flat
             v-bind="props"
           >

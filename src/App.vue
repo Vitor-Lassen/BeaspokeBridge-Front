@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import DefaultHeader from './components/DefaultHeader.vue';
+import DefaultHeader from './components/header/DefaultHeader.vue';
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import DefaultHeader from './components/DefaultHeader.vue';
     <v-banner
     class="my-1 flex-1-0"
     color="deep-purple-accent-4"
-    icon="mdi-lock"
+    icon="mdi-calendar-badge"
     lines="one"
     sticky
     >

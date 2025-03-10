@@ -6,10 +6,12 @@ import * as directives from 'vuetify/directives'
 import {aliases, mdi} from 'vuetify/iconsets/mdi'
 import '@mdi/font/css/materialdesignicons.css';
 import collors from 'vuetify/util/colors'
+import {locale} from './i18nConfig'
 
 const vuetify = createVuetify({
   components,
   directives,
+  locale: locale,
   icons: {
     defaultSet: 'mdi',
     aliases,

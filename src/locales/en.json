@@ -1,0 +1,10 @@
+{
+    "hello": "Hello",
+    "header":{
+        "about": "About bb",
+        "exchange": "Exchange",
+        "english": "English",
+        "partnerships": "Partnerships",
+        "contact": "Fale conosco"
+    }
+}

@@ -8,11 +8,9 @@
             {{ custom.title }}
           </v-btn>
         </template>
-        <v-card>
-            <v-card-item>
+        <v-sheet class="pa-2">
               <slot></slot>
-            </v-card-item>
-          </v-card>
+        </v-sheet>
       </v-menu>
 </template>
 

@@ -9,13 +9,13 @@
         src="../src/assets/logo.png"
       ></v-img>
     </div>
-      <MenuDropBox title="SOBRE A BB">
+      <MenuDropBox :title="$t('header.about')">
               <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eligendi beatae non aspernatur. Voluptatem dolores deserunt error consectetur in inventore veritatis id dolor ipsa, ullam maiores reiciendis laborum quod accusamus.</P>
       </MenuDropBox>
-      <MenuDropBox title="INGLÊS">
+      <MenuDropBox :title="$t('header.english')">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laboriosam, ratione, eum explicabo suscipit saepe inventore nisi modi odit, neque hic! Minima exercitationem magnam dolorum neque unde pariatur assumenda commodi.</p>
       </MenuDropBox>
-      <MenuDropBox title="INTERCÂMBIO">
+      <MenuDropBox :title="$t('header.exchange')">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laboriosam, ratione, eum explicabo suscipit saepe inventore nisi modi odit, neque hic! Minima exercitationem magnam dolorum neque unde pariatur assumenda commodi.</p>
       </MenuDropBox>
       <MenuDropBox title="PARCERIAS">

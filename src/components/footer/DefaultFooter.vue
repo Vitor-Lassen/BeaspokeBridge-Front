@@ -7,32 +7,33 @@
           <h3>Ingles e intercambio</h3>
         </div>
         <div>
-          <h4>Acesso Rapido</h4>
+          <h4>{{$t('footer.fast-access.title')}}</h4>
 
           <ul>
-            <li><a href="">Fale Conosco</a></li>
-            <li><a href="">intercambio</a></li>
-            <li><a href="">intercambio</a></li>
-            <li><a href="">intercambio</a></li>
-            <li><a href="">intercambio</a></li>
+            <li><a href="">{{$t('footer.fast-access.contact')}}</a></li>
+            <li><a href="">{{$t('footer.fast-access.curses')}}</a></li>
+            <li><a href="">{{$t('footer.fast-access.exchange')}}</a></li>
+            <li><a href="">{{$t('footer.fast-access.partnerships')}}</a></li>
+            <li><a href="">{{$t('footer.fast-access.blog')}}</a></li>
           </ul>
         </div>
 
         <div>
-          <h4>Transparencia</h4>
+          <h4>{{$t('footer.transparency.title')}}</h4>
 
           <ul>
-            <li><a href="">Fale Conosco</a></li>
-            <li><a href="">intercambio</a></li>
-            <li><a href="">intercambio</a></li>
+            <li><a href="">{{$t('footer.transparency.terms')}}</a></li>
+            <li><a href="">{{$t('footer.transparency.privacy')}}</a></li>
+            <li><a href="">{{$t('footer.transparency.cookies')}}</a></li>
+            <li><a href="">{{$t('footer.transparency.about')}}</a></li>
           </ul>
         </div>
         <div>
-          <h4>SIGA-NOS NAS REDES</h4>
+          <h4>{{$t('footer.follow-socials')}}</h4>
           <MidiasSociais :size="50" />
         </div>
       </div>
-      <div>  <p class="copyright"> © Bespoke Bridge {{ new Date().getFullYear() }}. Todos os direitos reservados</p> </div>
+      <div>  <p class="copyright"> © Bespoke Bridge {{ new Date().getFullYear() }}. {{$t('footer.rights')}}</p> </div>
     </div>
   </v-footer>
 </template>

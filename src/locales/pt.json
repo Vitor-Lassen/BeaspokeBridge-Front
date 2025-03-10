@@ -21,5 +21,25 @@
     "english": "Inglês",
     "partnerships": "Parcerias",
     "contact": "Fale conosco"
+  },
+  "footer":{
+    "fast-access":{
+        "title": "ACESSO RÁPIDO",
+        "contact": "Fale conosco",
+        "curses": "Cursos",
+        "exchange": "Intercâmbio",
+        "partnerships": "Parcerias",
+        "blog": "BB Blog"
+    }, 
+    "transparency":{
+        "title": "TRANSPARÊNCIA",
+        "about": "Sobre a bb",
+        "privacy": "Política de privacidade",
+        "terms": "Termos e consições de uso",
+        "cookies": "Política de cookies"
+    },
+    "socials": "SIGA-NOS NAS REDES", 
+    "rights": "Todos os direitos reservados",
+    "follow-socials": "SIGA-NOS NAS REDES"
   }
 }

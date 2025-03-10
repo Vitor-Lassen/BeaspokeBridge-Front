@@ -8,7 +8,7 @@ import DefaultFooter from './components/footer/DefaultFooter.vue';
   <header class="d-flex flex-wrap ">
     <v-banner
     class="my-1 flex-1-0"
-    color="deep-purple-accent-4"
+    color="secondary"
     icon="mdi-calendar-badge"
     lines="one"
     sticky

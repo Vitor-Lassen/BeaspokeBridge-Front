@@ -1,7 +1,7 @@
 <template>
   <v-footer color="primary">
     <div class="d-flex flex-column flex-1-1 mt-6">
-      <div class="d-flex flex-row justify-space-between" style="flex: none">
+      <div class="d-flex flex-row flex-column  flex-md-row justify-space-between" style="flex: none">
         <div class="align-self-center ma-4">
           <v-img :width="170" aspect-ratio="16/9" cover src="../src/assets/logo.png"></v-img>
           <h3>Ingles e intercambio</h3>

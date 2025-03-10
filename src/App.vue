@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import DefaultHeader from './components/header/DefaultHeader.vue';
+import DefaultFooter from './components/footer/DefaultFooter.vue';
 </script>
 
 <template>
@@ -13,7 +14,7 @@ import DefaultHeader from './components/header/DefaultHeader.vue';
     sticky
     >
     <v-banner-text>
-      <b>Agende sua consultoria gratuita!</b>
+      <b>{{ $t('schedule') }}</b>
     </v-banner-text>
   </v-banner>
 
@@ -21,12 +22,12 @@ import DefaultHeader from './components/header/DefaultHeader.vue';
 
 
 
-</header>
-<v-content>
-  <RouterView />
+  </header>
+  <v-content>
+    <RouterView class= "ml-6 mr-6"/>
 
-</v-content>
-
+  </v-content>
+  <DefaultFooter/>
 </template>
 
 <style scoped>

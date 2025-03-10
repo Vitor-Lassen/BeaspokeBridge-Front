@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="d-flex align-center flex-md-row flex-column " style="height: fit-content;">
-      <div  class="pl-2">
+      <div  class="pl-6">
       <v-img
         :width="170"
         aspect-ratio="16/9"
@@ -38,17 +38,16 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laboriosam, ratione, eum explicabo suscipit saepe inventore nisi modi odit, neque hic! Minima exercitationem magnam dolorum neque unde pariatur assumenda commodi.</p>
       </MenuDropBox>
 
-      <v-btn class="mr-4"  flat border rounded>Fale Conosco</v-btn>
+      <v-btn class="mr-6"  flat border rounded>Fale Conosco</v-btn>
     </div>
     <div  class="d-flex justify-space-between"  style="background-color:#00274D">
       <div class="d-flex flex-row">
-        <p class="ma-2 pa-2" style="color: white;">BB Blog</p>
+        <p class="ma-2 pa-2 ml-6" style="color: white;">BB Blog</p>
         <p class="ma-2 pa-2" style="color: white;">Teste seu nivel</p>
       </div>
       <div>
-        <v-icon icon="mdi-linkedin" size="40" class="ma-2" style="color: white;"/>
-        <v-icon icon="mdi-instagram" size="40" class="ma-2" style="color: white;"/>
-        <v-icon icon="mdi-facebook" size="40" class="ma-2 mr-8" style="color: white;"/>
+        <MidiasSociais :size="40"/>
+
      </div>
     </div>
   </div>
@@ -58,6 +57,7 @@
 <script  setup lang="ts">
 import MenuDropBox from './MenuDropBox.vue';
 import ExchangeMenu from './ExchangeMenu.vue';
+import MidiasSociais from '../MidiasSociais.vue';
 </script>
 
 <style scoped>

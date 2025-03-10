@@ -15,8 +15,24 @@
       <MenuDropBox :title="$t('header.english')">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laboriosam, ratione, eum explicabo suscipit saepe inventore nisi modi odit, neque hic! Minima exercitationem magnam dolorum neque unde pariatur assumenda commodi.</p>
       </MenuDropBox>
-      <MenuDropBox :title="$t('header.exchange')">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laboriosam, ratione, eum explicabo suscipit saepe inventore nisi modi odit, neque hic! Minima exercitationem magnam dolorum neque unde pariatur assumenda commodi.</p>
+      <MenuDropBox :title="$t('header.exchange.title')">
+        <ExchangeMenu
+          :contry="$t('header.exchange.Slovakia.contry')"
+          :description="$t('header.exchange.Slovakia.description')"
+          :button-text="$t('header.exchange.button')"
+          src="../src/assets/Flag_of_Slovakia.svg"/>
+        <ExchangeMenu
+          :contry="$t('header.exchange.Ireland.contry')"
+          :description="$t('header.exchange.Ireland.description')"
+          :button-text="$t('header.exchange.button')"
+          reverse
+          src="../src/assets/Flag_of_Ireland.svg"/>
+        <ExchangeMenu
+          :contry="$t('header.exchange.MaltaGozo.contry')"
+          :description="$t('header.exchange.MaltaGozo.description')"
+          :button-text="$t('header.exchange.button')"
+          src="../src/assets/Flag_of_Slovakia.svg"/>
+
       </MenuDropBox>
       <MenuDropBox title="PARCERIAS">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laboriosam, ratione, eum explicabo suscipit saepe inventore nisi modi odit, neque hic! Minima exercitationem magnam dolorum neque unde pariatur assumenda commodi.</p>
@@ -41,6 +57,7 @@
 
 <script  setup lang="ts">
 import MenuDropBox from './MenuDropBox.vue';
+import ExchangeMenu from './ExchangeMenu.vue';
 </script>
 
 <style scoped>

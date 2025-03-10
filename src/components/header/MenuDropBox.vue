@@ -1,5 +1,5 @@
 <template>
-  <v-menu>
+  <v-menu width="100%">
         <template v-slot:activator="{ props }">
           <v-btn class="flex-grow-1"
           flat

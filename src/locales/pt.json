@@ -1,10 +1,25 @@
 {
-    "hello": "Olá",
-    "header":{
-        "about": "Sobre a bb",
-        "exchange": "Intercambio",
-        "english": "Inglês",
-        "partnerships": "Parcerias",
-        "contact": "Fale conosco"
-    }
+  "hello": "Olá",
+  "header": {
+    "about": "Sobre a bb",
+    "exchange": {
+      "title": "Intercâmbio",
+      "Slovakia": {
+        "contry": "Eslováquia",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eligendi beatae non aspernatur. Voluptatem dolores"
+      },
+      "Ireland": {
+        "contry": "Irlanda",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias laudantium eius nemo s"
+      },
+      "MaltaGozo": {
+        "contry": "Malta e Gozo",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eligendi beatae non aspernatur. Voluptatem dolores"
+      },
+      "button": "Saiba mais"
+    },
+    "english": "Inglês",
+    "partnerships": "Parcerias",
+    "contact": "Fale conosco"
+  }
 }

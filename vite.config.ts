@@ -13,7 +13,7 @@ export default defineConfig({
   css:{
     preprocessorOptions:{
       scss:{
-        additionalData: `@use "vuetify/styles" as *;@import "@/styles/main.scss";`
+        additionalData: `@use "vuetify/styles" as *;@use '@/styles/main.scss' as *;`
       }
     }
   },

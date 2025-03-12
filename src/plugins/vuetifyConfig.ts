@@ -30,7 +30,8 @@ const vuetify = createVuetify({
           error: collors.red.accent3,
           info: collors.teal.lighten1,
           success: collors.green.lighten1,
-          warning: collors.amber.base
+          warning: collors.amber.base,
+          'on-surface': '#00274D'
         }
       }
     }

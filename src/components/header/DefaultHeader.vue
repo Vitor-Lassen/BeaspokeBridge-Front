@@ -63,6 +63,6 @@ import MidiasSociais from '../MidiasSociais.vue';
 <style scoped lang="scss">
 
 .set-background-primary {
-  background-color: rgb(var(--v-theme-primary));
+  background-color: $primary;
 }
 </style>

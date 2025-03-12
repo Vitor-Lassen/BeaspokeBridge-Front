@@ -24,12 +24,19 @@ import DefaultFooter from './components/footer/DefaultFooter.vue';
 
   </header>
   <v-content>
-    <RouterView class= "ml-6 mr-6"/>
+    <RouterView/>
 
   </v-content>
+  <v-btn  class="whatsapp-button" icon="mdi-whatsapp" color="green" ></v-btn>
   <DefaultFooter/>
 </template>
 
 <style scoped>
 
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
 </style>

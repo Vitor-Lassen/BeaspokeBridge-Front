@@ -40,7 +40,7 @@
 
       <v-btn class="mr-6"  flat border rounded>Fale Conosco</v-btn>
     </div>
-    <div  class="d-flex justify-space-between"  style="background-color:#00274D">
+    <div  class="d-flex justify-space-between set-background-primary" >
       <div class="d-flex flex-row">
         <p class="ma-2 pa-2 ml-6" style="color: white;">BB Blog</p>
         <p class="ma-2 pa-2" style="color: white;">Teste seu nivel</p>
@@ -60,6 +60,9 @@ import ExchangeMenu from './ExchangeMenu.vue';
 import MidiasSociais from '../MidiasSociais.vue';
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
+.set-background-primary {
+  background-color: rgb(var(--v-theme-primary));
+}
 </style>

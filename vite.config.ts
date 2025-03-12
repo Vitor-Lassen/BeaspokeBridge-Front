@@ -10,6 +10,13 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  css:{
+    preprocessorOptions:{
+      scss:{
+        additionalData: `@use "vuetify/styles" as *;@import "@/styles/main.scss";`
+      }
+    }
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

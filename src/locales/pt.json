@@ -41,5 +41,13 @@
     "socials": "SIGA-NOS NAS REDES", 
     "rights": "Todos os direitos reservados",
     "follow-socials": "SIGA-NOS NAS REDES"
+  }, 
+  "home":{
+    "start":{
+      "title":"Descubra um novo jeito de aprender inglês",
+      "subtitle":"Aprenda inglês de forma <b class='text-color-secondary'>personalizada</b>.",
+      "description": "Nossas aulas são <b>online</b>, e 100% feitas <b>sob medida</b> (<b class='text-color-secondary'>bespoke</b>). <br><br>  Com flexibilidade e foco total em você, <b>aprender inglês nunca foi tão eficaz!</b>",
+      "btn-see-more":"Saiba +"
+    }
   }
 }

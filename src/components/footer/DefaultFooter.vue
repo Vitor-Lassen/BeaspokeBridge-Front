@@ -6,7 +6,7 @@
           <v-img :width="170" aspect-ratio="16/9" cover src="../src/assets/logo.png"></v-img>
           <h3>Ingles e intercambio</h3>
         </div>
-        <div>
+        <div class="ma-6">
           <h4>{{$t('footer.fast-access.title')}}</h4>
 
           <ul>
@@ -18,7 +18,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="ma-6">
           <h4>{{$t('footer.transparency.title')}}</h4>
 
           <ul>
@@ -28,7 +28,7 @@
             <li><a href="">{{$t('footer.transparency.about')}}</a></li>
           </ul>
         </div>
-        <div>
+        <div class="ma-6">
           <h4>{{$t('footer.follow-socials')}}</h4>
           <MidiasSociais :size="50" />
         </div>

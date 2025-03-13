@@ -64,7 +64,7 @@
         </p>
       </MenuDropBox>
 
-      <v-btn class="mr-6 contact-us-btn"  width="200px" height="50px" color="primary" border @click="router.push('/contact-us')">Fale Conosco</v-btn>
+      <v-btn class="mr-6 contact-us-btn" width="200px" height="50px" color="primary" border @click="router.push('/contact-us')">Fale Conosco</v-btn>
     </div>
     <div class="d-flex bg-dark justify-space-between set-background-primary">
       <div class="d-flex flex-row">

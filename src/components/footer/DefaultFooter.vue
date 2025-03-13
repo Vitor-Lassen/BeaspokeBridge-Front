@@ -1,6 +1,6 @@
 <template>
-  <v-footer color="primary">
-    <div class="d-flex flex-column flex-1-1 mt-6">
+  <v-footer class="bg-dark" >
+    <div class="bg-dark d-flex flex-column flex-1-1 mt-6">
       <div class="d-flex flex-row flex-column  flex-md-row justify-space-between" style="flex: none">
         <div class="align-self-center ma-4">
           <v-img :width="170" aspect-ratio="16/9" cover src="../src/assets/logo.png"></v-img>
@@ -10,7 +10,7 @@
           <h4>{{$t('footer.fast-access.title')}}</h4>
 
           <ul>
-            <li><a href="">{{$t('footer.fast-access.contact')}}</a></li>
+            <li @click="router.push('contact-us')"><a >{{$t('footer.fast-access.contact')}}</a></li>
             <li><a href="">{{$t('footer.fast-access.curses')}}</a></li>
             <li><a href="">{{$t('footer.fast-access.exchange')}}</a></li>
             <li><a href="">{{$t('footer.fast-access.partnerships')}}</a></li>
@@ -33,18 +33,17 @@
           <MidiasSociais :size="50" />
         </div>
       </div>
-      <div>  <p class="copyright"> © Bespoke Bridge {{ new Date().getFullYear() }}. {{$t('footer.rights')}}</p> </div>
+      <div>  <p class="copyright">© Bespoke Bridge {{ new Date().getFullYear() }}. {{$t('footer.rights')}}</p> </div>
     </div>
   </v-footer>
 </template>
 
 <style scoped>
-a {
-  color: white;
-  text-decoration: none;
-}
+
+
 li {
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 .copyright {
   font-size: 12px;
@@ -60,4 +59,8 @@ h4 {
 
 <script setup lang="ts">
 import MidiasSociais from '../MidiasSociais.vue'
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
 </script>

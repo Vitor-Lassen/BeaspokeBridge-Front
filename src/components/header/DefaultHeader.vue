@@ -64,12 +64,12 @@
         </p>
       </MenuDropBox>
 
-      <v-btn class="mr-6" flat border rounded>Fale Conosco</v-btn>
+      <v-btn class="mr-6 contact-us-btn"  width="200px" height="50px" color="primary" border @click="router.push('/contact-us')">Fale Conosco</v-btn>
     </div>
-    <div class="d-flex justify-space-between set-background-primary">
+    <div class="d-flex bg-dark justify-space-between set-background-primary">
       <div class="d-flex flex-row">
-        <p class="ma-2 pa-2 ml-6" style="color: white">BB Blog</p>
-        <p class="ma-2 pa-2" style="color: white">Teste seu nivel</p>
+        <p class="ma-2 pa-2 ml-6" >BB Blog</p>
+        <p class="ma-2 pa-2" >Teste seu nivel</p>
       </div>
       <div>
         <MidiasSociais :size="40" />
@@ -92,5 +92,8 @@ const router = useRouter()
 <style scoped lang="scss">
 .set-background-primary {
   background-color: $primary;
+}
+.contact-us-btn:hover{
+  color: $secondary;
 }
 </style>

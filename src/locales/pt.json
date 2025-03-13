@@ -75,7 +75,7 @@
     }
   }, 
   "contact-us":{
-    "title":"Vamos construir a sua <b class='text-color-blue-logo'>ponte</b> para o <b class='text-color-secondary'>sucesso</b>?",
+    "coach":"Vamos construir a sua <b class='text-color-blue-logo'>ponte</b> para o <b class='text-color-secondary'>sucesso</b>?",
     "privacy-notice":"*Respeitamos e protegemos sua privacidade e dados pessoais.<br> Consulte nossa Política de Privacidade.",
     "form":{
       "name":"Seu nome",

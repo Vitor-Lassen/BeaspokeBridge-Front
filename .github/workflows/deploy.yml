@@ -32,7 +32,7 @@ jobs:
         # ftp server
         server: ${{ vars.FTP_SERVER }}
         # ftp username
-        username: ${{ var.FTP_USER }}
+        username: ${{ vars.FTP_USER }}
         # ftp password
         password: ${{ secrets.FTP_PASSWORD }}
         # Server port to connect to (read your web hosts docs)

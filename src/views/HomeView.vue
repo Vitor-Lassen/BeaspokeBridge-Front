@@ -1,82 +1,69 @@
 <script setup lang="ts">
-import CoursesCard from '@/components/CoursesCard.vue';
-import ContactUs from '@/components/ContactUs.vue';
+import CoursesCard from '@/components/CoursesCard.vue'
+import ContactUs from '@/components/ContactUs.vue'
 </script>
 
 <template>
   <main>
     <div class="map pa-8 d-flex justify-center flex-wrap">
-
-      <div class="ma-6" style="background-color: white; border-radius: 16px;">
-
-
-       <ContactUs />
+      <div class="ma-6" style="background-color: white; border-radius: 16px">
+        <ContactUs />
       </div>
 
       <div class="ma-6">
-       <h1 class="mt-8 pb-6" v-html="$t('home.welcome.title')" />
-       <p class="ma-4"v-html="$t('home.welcome.description')"></p>
-       <p><i class="ma-4" v-html="$t('home.welcome.mission')"> </i></p>
+        <h1 class="mt-8 pb-6" v-html="$t('home.welcome.title')" />
+        <p class="ma-4" v-html="$t('home.welcome.description')"></p>
+        <p><i class="ma-4" v-html="$t('home.welcome.mission')"> </i></p>
       </div>
-
-
     </div>
 
-
-
     <div class="backgroud-blue pa-6 d-flex flex-column align-center align-content-center">
-      <h1 class="mt-8 pb-6" v-html="$t('home.custom-learning.title')"/>
+      <h1 class="mt-8 pb-6" v-html="$t('home.custom-learning.title')" />
       <div class="d-flex flex-wrap-reverse justify-center">
         <div class="pa-6" style="width: 400px; text-align: center">
           <h2 class="pb-6" v-html="$t('home.custom-learning.subtitle')"></h2>
           <p v-html="$t('home.custom-learning.description')" />
-          <v-btn class="ma-2 mt-12" color="secondary">{{$t('home.custom-learning.btn-learn-more')}} </v-btn>
+          <v-btn class="ma-2 mt-12" color="secondary"
+            >{{ $t('home.custom-learning.btn-learn-more') }}
+          </v-btn>
         </div>
 
-        <v-img
-          src="../src/assets/Woman-with-border.png"
-          width="400"
-          aspect-ratio="16/9"
-          class="ma-10"
-        />
+        <v-img src="Woman-with-border.png" width="400" aspect-ratio="16/9" class="ma-10" />
       </div>
     </div>
 
-<div>
-  <h1 class=" mt-10 mb-6 " v-html="$t('home.courses.title')"></h1>
-    <p v-html="$t('home.courses.description')"> </p>
-    <div class="d-flex flex-wrap justify-center align-center ">
-      <CoursesCard
-        src="../src/assets/kid.png"
-        :title="$t('home.courses.for-kids.title')"
-        :description="$t('home.courses.for-kids.description')"
-        :btn-name="$t('home.courses.for-kids.btn-learn-more')"
-        path-to="/for-kids"
-      />
-      <CoursesCard
-        src="../src/assets/woman.png"
-        :title="$t('home.courses.for-adults.title')"
-        :description="$t('home.courses.for-adults.description')"
-        :btn-name="$t('home.courses.for-adults.btn-learn-more')"
-        path-to="/for-adults"
-      />
-      <CoursesCard
-        src="../src/assets/teacher.png"
-        :title="$t('home.courses.for-teachers.title')"
-        :description="$t('home.courses.for-teachers.description')"
-        :btn-name="$t('home.courses.for-teachers.btn-learn-more')"
-        path-to="/for-teachers"
-      />
-
+    <div>
+      <h1 class="mt-10 mb-6" v-html="$t('home.courses.title')"></h1>
+      <p v-html="$t('home.courses.description')"></p>
+      <div class="d-flex flex-wrap justify-center align-center">
+        <CoursesCard
+          src="kid.png"
+          :title="$t('home.courses.for-kids.title')"
+          :description="$t('home.courses.for-kids.description')"
+          :btn-name="$t('home.courses.for-kids.btn-learn-more')"
+          path-to="/for-kids"
+        />
+        <CoursesCard
+          src="woman.png"
+          :title="$t('home.courses.for-adults.title')"
+          :description="$t('home.courses.for-adults.description')"
+          :btn-name="$t('home.courses.for-adults.btn-learn-more')"
+          path-to="/for-adults"
+        />
+        <CoursesCard
+          src="teacher.png"
+          :title="$t('home.courses.for-teachers.title')"
+          :description="$t('home.courses.for-teachers.description')"
+          :btn-name="$t('home.courses.for-teachers.btn-learn-more')"
+          path-to="/for-teachers"
+        />
+      </div>
     </div>
-  </div>
-
   </main>
 </template>
 
 <style scoped>
-
-.map{
+.map {
   width: 100%;
   height: 100%;
   background-image: url('../assets/map.png');
@@ -85,6 +72,4 @@ import ContactUs from '@/components/ContactUs.vue';
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-
-
 </style>

@@ -6,7 +6,7 @@ import CoursesCard from '@/components/CoursesCard.vue';
   <main>
     <div class="backgroud-blue pa-6 d-flex flex-column align-center align-content-center">
       <h1 class="mt-8 pb-6">{{ $t('home.start.title') }}</h1>
-      <div class="d-flex flex-wrap justify-center">
+      <div class="d-flex flex-wrap-reverse justify-center">
         <div class="pa-6" style="width: 400px; text-align: center">
           <h2 class="pb-6" v-html="$t('home.start.subtitle')"></h2>
           <p v-html="$t('home.start.description')" />
@@ -17,7 +17,7 @@ import CoursesCard from '@/components/CoursesCard.vue';
           src="../src/assets/Woman-with-border.png"
           width="400"
           aspect-ratio="16/9"
-          cover
+          class="ma-10"
         />
       </div>
     </div>
@@ -31,18 +31,21 @@ import CoursesCard from '@/components/CoursesCard.vue';
         :title="$t('home.courses.for-kids.title')"
         :description="$t('home.courses.for-kids.description')"
         :btn-name="$t('home.courses.for-kids.btn-learn-more')"
+        path-to="/for-kids"
       />
       <CoursesCard
         src="../src/assets/woman.png"
         :title="$t('home.courses.for-adults.title')"
         :description="$t('home.courses.for-adults.description')"
         :btn-name="$t('home.courses.for-adults.btn-learn-more')"
+        path-to="/for-adults"
       />
       <CoursesCard
         src="../src/assets/teacher.png"
         :title="$t('home.courses.for-teachers.title')"
         :description="$t('home.courses.for-teachers.description')"
         :btn-name="$t('home.courses.for-teachers.btn-learn-more')"
+        path-to="/for-teachers"
       />
 
     </div>

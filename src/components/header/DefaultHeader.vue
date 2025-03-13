@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="d-flex align-center flex-md-row flex-column" style="height: fit-content">
-      <div class="pl-6">
+      <div class="pl-6 cursor-pointer" v-on:click="router.push('/')">
         <v-img :width="170" aspect-ratio="16/9" cover src="../src/assets/logo.png"></v-img>
       </div>
       <MenuDropBox :title="$t('header.about')">
@@ -17,12 +17,14 @@
           :description="$t('home.courses.for-kids.description')"
           :button-text="$t('home.courses.for-kids.btn-learn-more')"
           src="../src/assets/kid.png"
+          pathto="/for-kids"
         />
         <ExchangeMenu
           :title="$t('home.courses.for-adults.title')"
           :description="$t('home.courses.for-adults.description')"
           :button-text="$t('home.courses.for-adults.btn-learn-more')"
           src="../src/assets/woman.png"
+          pathto="/for-adults"
           reverse
         />
         <ExchangeMenu
@@ -30,6 +32,7 @@
           :description="$t('home.courses.for-teachers.description')"
           :button-text="$t('home.courses.for-teachers.btn-learn-more')"
           src="../src/assets/teacher.png"
+          pathto="/for-teachers"
         />
       </MenuDropBox>
       <MenuDropBox :title="$t('header.exchange.title')">
@@ -79,6 +82,11 @@
 import MenuDropBox from './MenuDropBox.vue'
 import ExchangeMenu from './ItemMenu.vue'
 import MidiasSociais from '../MidiasSociais.vue'
+
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
 </script>
 
 <style scoped lang="scss">

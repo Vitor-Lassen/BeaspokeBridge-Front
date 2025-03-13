@@ -13,18 +13,22 @@
 
     <v-card-text> {{ props.description }} </v-card-text>
     <div class="pa-2">
-      <v-btn class="w-100" color="secondary" :text="props.btnName"></v-btn>
+      <v-btn class="w-100" color="secondary" :text="props.btnName" @click="router.push(pathTo)"></v-btn>
     </div>
   </v-card>
 </template>
 
 <script setup lang="ts">
 import { defineProps } from 'vue'
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 const props = defineProps<{
   src: string
   title: string
   description: string
   btnName: string
+  pathTo: string
 }>()
 </script>

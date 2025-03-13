@@ -43,7 +43,12 @@
     "follow-socials": "SIGA-NOS NAS REDES"
   }, 
   "home":{
-    "start":{
+    "welcome":{
+      "title":"Sua ponte para o aprendizado <br> e experiências internacionais.",
+      "description":"Descubra um caminho personalizado para o<br> <b class='text-color-secondary'>aprendizado</b>  <b class='text-color-blue-logo'>de inglês</b> <br>e<br>  <b class='text-color-blue-logo'>experiências</b> <b class='text-color-secondary'>internacionais.</b>",
+      "mission":"Nossa missão é conectar pessoas e culturas,<br>oferecendo soluções educacionais."
+    },
+    "custom-learning":{
       "title":"Descubra um novo jeito de aprender inglês",
       "subtitle":"Aprenda inglês de forma <b class='text-color-secondary'>personalizada</b>.",
       "description": "Nossas aulas são <b>online</b>, e 100% feitas <b>sob medida</b> (<b class='text-color-secondary'>bespoke</b>). <br><br>  Com flexibilidade e foco total em você, <b>aprender inglês nunca foi tão eficaz!</b>",
@@ -68,5 +73,17 @@
         "btn-learn-more":"Saiba +"
       }
     }
+  }, 
+  "contact-us":{
+    "title":"Vamos construir a sua <b class='text-color-blue-logo'>ponte</b> para o <b class='text-color-secondary'>sucesso</b>?",
+    "privacy-notice":"*Respeitamos e protegemos sua privacidade e dados pessoais.<br> Consulte nossa Política de Privacidade.",
+    "form":{
+      "name":"Seu nome",
+      "email":"seu e-mail",
+      "phone":"Whatsapp",
+      "service":"Em qual serviço você está interessado?",
+      "btn-send":"Envie sua mensagem"
+    }
   }
+  
 }

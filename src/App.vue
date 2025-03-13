@@ -6,18 +6,18 @@ import DefaultFooter from './components/footer/DefaultFooter.vue'
 
 <template>
   <v-content>
+    <v-banner
+      class="my-1 flex-1-0"
+      color="secondary"
+      icon="mdi-calendar-badge"
+      lines="one"
+      sticky
+    >
+      <v-banner-text>
+        <b>{{ $t('schedule') }}</b>
+      </v-banner-text>
+    </v-banner>
     <header class="d-flex flex-wrap">
-      <v-banner
-        class="my-1 flex-1-0"
-        color="secondary"
-        icon="mdi-calendar-badge"
-        lines="one"
-        sticky
-      >
-        <v-banner-text>
-          <b>{{ $t('schedule') }}</b>
-        </v-banner-text>
-      </v-banner>
 
       <DefaultHeader class="flex-1-1-100" />
     </header>

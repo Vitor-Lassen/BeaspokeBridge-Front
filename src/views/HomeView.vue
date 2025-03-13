@@ -1,16 +1,36 @@
 <script setup lang="ts">
 import CoursesCard from '@/components/CoursesCard.vue';
+import ContactUs from '@/components/ContactUs.vue';
 </script>
 
 <template>
   <main>
+    <div class="map pa-8 d-flex justify-center flex-wrap">
+
+      <div class="ma-6" style="background-color: white; border-radius: 16px;">
+
+
+       <ContactUs />
+      </div>
+
+      <div class="ma-6">
+       <h1 class="mt-8 pb-6" v-html="$t('home.welcome.title')" />
+       <p class="ma-4"v-html="$t('home.welcome.description')"></p>
+       <p><i class="ma-4" v-html="$t('home.welcome.mission')"> </i></p>
+      </div>
+
+
+    </div>
+
+
+
     <div class="backgroud-blue pa-6 d-flex flex-column align-center align-content-center">
-      <h1 class="mt-8 pb-6">{{ $t('home.start.title') }}</h1>
+      <h1 class="mt-8 pb-6" v-html="$t('home.custom-learning.title')"/>
       <div class="d-flex flex-wrap-reverse justify-center">
         <div class="pa-6" style="width: 400px; text-align: center">
-          <h2 class="pb-6" v-html="$t('home.start.subtitle')"></h2>
-          <p v-html="$t('home.start.description')" />
-          <v-btn class="ma-2 mt-12" color="secondary">{{$t('home.start.btn-learn-more')}} </v-btn>
+          <h2 class="pb-6" v-html="$t('home.custom-learning.subtitle')"></h2>
+          <p v-html="$t('home.custom-learning.description')" />
+          <v-btn class="ma-2 mt-12" color="secondary">{{$t('home.custom-learning.btn-learn-more')}} </v-btn>
         </div>
 
         <v-img
@@ -55,5 +75,16 @@ import CoursesCard from '@/components/CoursesCard.vue';
 </template>
 
 <style scoped>
+
+.map{
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/map.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 
 </style>

@@ -19,6 +19,10 @@ p, h1, h2, h3, h4, h5, h6 {
 .backgroud-blue {
     background-image: linear-gradient(102deg, rgb(255, 255, 255), $soft-blue);
 }
+.backgroud-ultrasoftblue {
+    background-image: linear-gradient(0deg, rgb(255, 255, 255), $ultrasoft-blue);
+}
+
 
 a {
     text-decoration: none;

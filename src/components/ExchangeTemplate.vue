@@ -94,7 +94,7 @@ onMounted(() => {
 .head-img {
   width: 100%;
   height: 400px;
-  background-image: url('/map.png');
+  background-image: url('/Irlanda-landing-page.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

@@ -25,6 +25,11 @@ const router = createRouter({
       component: () => import('../views/courses/TeachersView.vue'),
     },
     {
+      path: '/exchange-irland',
+      name: 'Irland',
+      component: () => import('../views/exchanges/IrlandView.vue'),
+    },
+    {
       path: '/contact-us',
       name: 'ContactUs',
       component: () => import('../views/ContactUsView.vue'),

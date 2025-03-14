@@ -23,14 +23,20 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     #- run: npm test
-    - name: 📂 Sync files with FTP server
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+    - name: FTP Mirror
+      # You may pin to the exact commit or the version.
+      # uses: modern-dev/ftp-mirror@700ec6b399f45cbd58572085856c6fe2114c8342
+      uses: modern-dev/ftp-mirror@v2
       with:
+        # FTP Server.
         server: ${{ vars.FTP_SERVER }}
-        username: ${{ vars.FTP_USER }}
+        # FTP User.
+        user: ${{ vars.FTP_USER }}
+        # FTP Password.
         password: ${{ secrets.FTP_PASSWORD }}
-        port: 21 # Change if necessary
-        local-dir: ./dist/ # Change if necessary
+        # Local directory.
+        local_dir: .dist/
+
     # - name: FTP Deploy
     #   # You may pin to the exact commit or the version.
     #   # uses: SamKirkland/FTP-Deploy-Action@8e83cea8672e3fbcbb9fdafff34debf6ae4c5f65

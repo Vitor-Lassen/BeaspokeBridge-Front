@@ -1,11 +1,11 @@
 <template>
-  <div class="head-img d-flex align-center justify-right">
+  <v-parallax  src="./Irlanda-landing-page.png" height="400" class="head-img d-flex align-center justify-right">
     <div class="head-title d-flex flex-column justify-center align-start align-items-left">
       <h1 class="ml-12">Exchange Template</h1>
       <p class="ml-12 subtitle">subtitle</p>
       <v-btn class="align-self-end mr-12" color="secondary">Saiba + </v-btn>
     </div>
-  </div>
+  </v-parallax>
 
   <div class="pa-6 pt-12">
     <div class="img">
@@ -91,18 +91,8 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.head-img {
-  width: 100%;
-  height: 400px;
-  background-image: url('/Irlanda-landing-page.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
 
-
- .horizontal, .vertical{
+.horizontal, .vertical{
   border-radius: 16px;
 }
 .vertical{
@@ -136,13 +126,18 @@ object-fit: cover;
   display: none;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 960px) {
   .img {
     float: right;
     align-self: center;
   }
+  .head-title {
+    width: 45%;
+    border-radius: 0 32px 32px 0;
+  }
+
 }
-@media (max-width: 800px) {
+@media (max-width: 960px) {
   .img {
     display: flex;
     justify-content: center;
@@ -153,7 +148,11 @@ object-fit: cover;
   }
   .show-photo-card{
   display:grid;
-}
+
+  }
+ .head-title {
+    width: 100%;
+  }
 }
 
 p {
@@ -162,9 +161,7 @@ p {
 .head-title {
   background-color: white;
   height: 200px;
-  width: 45%;
   opacity: 75%;
-  border-radius: 0 32px 32px 0;
 }
 
 .subtitle {

@@ -66,7 +66,7 @@ import ContactUs from '@/components/ContactUs.vue'
 .map {
   width: 100%;
   height: 100%;
-  background-image: url('../assets/map.png');
+  background-image: url('map.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

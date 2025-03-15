@@ -1,5 +1,9 @@
 <template>
-  <v-parallax  src="./Irlanda-landing-page.png" height="400" class="head-img d-flex align-center justify-right">
+  <v-parallax
+    src="./Irlanda-landing-page.png"
+    height="400"
+    class="head-img d-flex align-center justify-right"
+  >
     <div class="head-title d-flex flex-column justify-center align-start align-items-left">
       <h1 class="ml-12">Exchange Template</h1>
       <p class="ml-12 subtitle">subtitle</p>
@@ -35,98 +39,104 @@
 
   <div class="backgroud-ultrasoftblue pa-6">
     <h1 class="pt-8">Lorem ipsum dolor sit amet.</h1>
-    <div class="d-flex align-center justify-center pa-6 pr-8" >
+    <div class="d-flex align-center justify-center pa-6 pr-8">
       <div class="d-flex flex-column align-center justify-space-between">
         <exchange-card
           title="Lorem ipsum dolor sit amet."
           description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nostrum vero saepe
             explicabo rem ipsa quas aperiam perspiciatis natus sapiente?"
-          image="Irland-1.png"/>
+          image="Irland-1.png"
+        />
         <exchange-card
           title="Lorem ipsum dolor sit amet."
           description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nostrum vero saepe
             explicabo rem ipsa quas aperiam perspiciatis natus sapiente?"
-          image="Irland-2.png"/>
+          image="Irland-2.png"
+        />
         <exchange-card
           title="Lorem ipsum dolor sit amet."
           description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nostrum vero saepe
             explicabo rem ipsa quas aperiam perspiciatis natus sapiente?"
-          image="Irland-3.png"/>
-
+          image="Irland-3.png"
+        />
       </div>
-      <div class=" fotos-composicao">
-        <img src="/public/Irland-3.png" class=" vertical " />
-        <div class="fotos-horizontais" >
-          <img src="/public/Irland-1.png" class=" horizontal" />
-          <img src="/public/Irland-2.png" class=" horizontal" />
+      <div class="fotos-composicao">
+        <img src="/public/Irland-3.png" class="vertical" />
+        <div class="fotos-horizontais">
+          <img src="/public/Irland-1.png" class="horizontal" />
+          <img src="/public/Irland-2.png" class="horizontal" />
         </div>
       </div>
     </div>
     <h1><v-btn color="secondary"> QUero estudar na irland</v-btn></h1>
   </div>
-  <v-parallax  src="./Irlanda-landing-page.png"  class=" d-flex align-center">
-    <div class=" d-flex  flex-column align-center">
-      <div class="info-uteis" style="max-width: 900px;">
-        <div class="d-flex align-center justify-center pa-4" >
-            <hr class="line flex-1-1">
+  <div class="bg-dark d-flex flex-column align-center">
+    <div class=" ma-6" style="max-width: 900px">
+        <div class=" d-flex align-center justify-space-around pa-4">
 
-        <h1 class="pa-4">Informações úteis</h1>
-        <hr class="line-pont flex-1-1">
+          <h1 class="pa-4">Informações úteis</h1>
+          <v-img src="/tempo.png " max-height="120"/>
         </div>
-        <div class=" d-flex flex-wrap justify-space-around">
-    <item-utils
-      title="Moeda"
-      description="Euro"
-      image="./currency.png"/>
+        <div class="base-card restore d-flex flex-wrap justify-space-around">
+          <item-utils title="Moeda" description="Euro" image="./level.png" />
 
-    <item-utils
-      title="Temperatura"
-      description="40 graus <br> minima de 6 graus"
-      image="./temperature.png"
-      />
-    <item-utils
-      title="Moeda"
-      description="Euro"
-      image="./currency.png"
-      />
-    <item-utils
-      title="Moeda"
-      description="Euro"
-      image="./currency.png"
-      />
-    <item-utils
-      title="Moeda"
-      description="Euro"
-      image="./currency.png"
-      />
-    <item-utils
-      title="Moeda"
-      description="Euro"
-      image="./currency.png"
-      />
-    </div>
+          <item-utils
+            title="tempo"
+            description="40 graus <br> minima de 6 graus"
+            image="./tempo.png"
+          />
+          <item-utils title="Moeda" description="Euro" image="./tempo.png" />
+          <item-utils title="Moeda" description="Euro" image="./idade.png" />
+          <item-utils title="Moeda" description="Euro" image="./acomodacao.png" />
+
+        </div>
+      </div>
   </div>
+
+  <v-parallax src="./Irlanda-landing-page.png" class="d-flex align-center">
+    <div class="d-flex flex-column align-center">
+      <div class="info-uteis-card  base-card" style="max-width: 900px">
+        <div class="d-flex align-center justify-center pa-4">
+          <hr class="line flex-1-1" />
+
+          <h1 class="pa-4">Informações úteis</h1>
+          <hr class="line-pont flex-1-1" />
+        </div>
+        <div class="d-flex flex-wrap justify-space-around">
+          <item-utils title="Moeda" description="Euro" image="./currency.png" />
+
+          <item-utils
+            title="Temperatura"
+            description="40 graus <br> minima de 6 graus"
+            image="./temperature.png"
+          />
+          <item-utils title="Moeda" description="Euro" image="./currency.png" />
+          <item-utils title="Moeda" description="Euro" image="./currency.png" />
+          <item-utils title="Moeda" description="Euro" image="./currency.png" />
+          <item-utils title="Moeda" description="Euro" image="./currency.png" />
+        </div>
+      </div>
     </div>
   </v-parallax>
 </template>
 
 <script setup lang="ts">
-import ExchangeCard from './ExchangeCard.vue';
-import ItemUtils from './ItemUtils.vue';
+import ExchangeCard from './ExchangeCard.vue'
+import ItemUtils from './ItemUtils.vue'
 </script>
 
 <style scoped>
-
-.horizontal, .vertical{
+.horizontal,
+.vertical {
   border-radius: 16px;
 }
-.vertical{
-width: 39%;
-height: 100%;
-object-fit: cover;
+.vertical {
+  width: 39%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.fotos-horizontais{
+.fotos-horizontais {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -135,7 +145,7 @@ object-fit: cover;
   width: 60%;
 }
 
-.horizontal{
+.horizontal {
   width: 100%;
   height: 49%;
   object-fit: cover;
@@ -157,7 +167,6 @@ object-fit: cover;
     width: 45%;
     border-radius: 0 32px 32px 0;
   }
-
 }
 @media (max-width: 960px) {
   .img {
@@ -165,10 +174,10 @@ object-fit: cover;
     justify-content: center;
   }
 
-  .fotos-composicao{
+  .fotos-composicao {
     display: none;
   }
- .head-title {
+  .head-title {
     width: 100%;
   }
 }
@@ -182,9 +191,8 @@ p {
   opacity: 75%;
 }
 
-.info-uteis {
-  background-color: white;
-  border-radius: 16px;
+.info-uteis-card
+ {
   opacity: 75%;
 }
 

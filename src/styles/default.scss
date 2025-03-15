@@ -51,8 +51,18 @@ a {
 .bg-dark p, .bg-dark a, .bg-dark h1, .bg-dark h2, .bg-dark h3, .bg-dark h4, .bg-dark h5, .bg-dark h6 {
     color:white;
 }
+.bg-dark .restore p, .bg-dark .restore a, .bg-dark .restore h1, .bg-dark .restore h2, .bg-dark .restore h3, .bg-dark .restore h4, .bg-dark .restore h5, .bg-dark .restore h6 {
+    color:$primary;
+}
 
 
 .notice{
     font-size: 12px;
+}
+
+.base-card
+ {
+  background-color: white;
+  border-radius: 16px;
+
 }

@@ -3,6 +3,6 @@
 </template>
 
 <script setup lang="ts">
-import ExchangeTemplate from '@/components/ExchangeTemplate.vue';
+import ExchangeTemplate from '@/components/Exchange/ExchangeTemplate.vue';
 
 </script>

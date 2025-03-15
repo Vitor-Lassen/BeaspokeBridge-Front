@@ -24,6 +24,23 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 
+.line {
+    border: none;
+    width: 50px;
+    height: 4px;              /* Espessura da linha */
+    background-color: $secondary;  /* Cor da linha */
+    margin: 20px 0;           /* Espaçamento acima e abaixo */
+  }
+  
+  .line-pont{
+    border: none;
+    border-top: 4px dashed $secondary; /* Linha pontilhada vermelha */
+    margin: 20px 0;
+  
+  }
+  
+
+
 a {
     text-decoration: none;
   }

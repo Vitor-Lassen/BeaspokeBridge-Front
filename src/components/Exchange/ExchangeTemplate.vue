@@ -36,23 +36,13 @@
     <div class=" ma-6" style="max-width: 900px">
         <div class=" d-flex align-center justify-space-around pa-4">
 
-          <h1 class="pa-4">Informações úteis</h1>
-          <v-img src="/tempo.png " max-height="120"/>
+          <h1 class="pa-4">{{ex.aboutTitle}}</h1>
+          <v-img :src="ex.aboutImg" max-height="120"/>
         </div>
         <div class="base-card restore d-flex flex-wrap justify-space-around">
-          <item-utils title="Moeda" description="Euro" image="./level.png" />
-
-          <item-utils
-            title="tempo"
-            description="40 graus <br> minima de 6 graus"
-            image="./tempo.png"
-          />
-          <item-utils title="Moeda" description="Euro" image="./tempo.png" />
-          <item-utils title="Moeda" description="Euro" image="./idade.png" />
-          <item-utils title="Moeda" description="Euro" image="./acomodacao.png" />
-
+          <item-utils v-for="item in ex.aboutItems" :key="item.title" :title="item.title" :description="item.subtitle" :image="item.img" />
         </div>
-        <h1><v-btn class="mt-10 mb-10" color="secondary"> {{props.ex.pqBtn}}</v-btn></h1>
+        <h1><v-btn class="mt-10 mb-10" color="secondary"> {{props.ex.aboutBtn}}</v-btn></h1>
       </div>
   </div>
 
@@ -66,7 +56,7 @@
           <hr class="line-pont flex-1-1" />
         </div>
         <div class="d-flex flex-wrap justify-space-around">
-          <item-utils title="Moeda" description="Euro" image="./currency.png" />
+          <item-utils v-for="item in ex.utilsItems" :key="item.title" :title="item.title" :description="item.subtitle" :image="item.img" />
 
           <item-utils
             title="Temperatura"

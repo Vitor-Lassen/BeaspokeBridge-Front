@@ -107,7 +107,33 @@
           "title":"Cultura única e vibrante",
           "subtitle":"Com música, literatura, festivais e danças tradicionais, o país garante uma experiência cultural inesquecível."
         }
+      },
+      "about-title":"Sobre o programa",
+      "about-btn":"Quero estudar na Irlanda",
+      "about-items":{
+        "0":{
+          "title":"Nível mínimo do inglês",
+          "subtitle":"Iniciante (A1)"
+        },
+        "1":{
+          "title":"Tempo mínimo",
+          "subtitle":"1 semana"
+        },
+        "2":{
+          "title":"Tempo máximo",
+          "subtitle":"25 semanas"
+        },
+        "3":{
+          "title":"Idade mínima",
+          "subtitle":"18 anos"
+        },
+        "4":{
+          "title":"Acomodação",
+          "subtitle":"Hotel, hostel, residência estudantil, ou host family"
+        }
+
       }
+      
 
     }, 
     "default":{

@@ -14,12 +14,12 @@ type ExchangeTemplateModel ={
   pqs: BaseModel[],
   pqBtn: string
 
-  aboutTille: string
+  aboutTitle: string
   aboutImg: string
   aboutItems: BaseModel[]
   aboutBtn: string
 
-  utilsTille: string
+  utilsTitle: string
   utilsImg: string
   utilsItems: BaseModel[]
 

@@ -30,6 +30,34 @@ const baseModel: BaseModel[] =[
   }
 ]
 
+const aboutItems: BaseModel[] =[
+  {
+    title: computed( () => t('exchange.ireland.about-items.0.title')).value,
+    subtitle: computed( () => t('exchange.ireland.about-items.0.subtitle')).value,
+    img: "./level.png"
+  },
+  {
+    title: computed( () => t('exchange.ireland.about-items.1.title')).value,
+    subtitle: computed( () => t('exchange.ireland.about-items.1.subtitle')).value,
+    img: "./tempo.png"
+  },
+  {
+    title: computed( () => t('exchange.ireland.about-items.2.title')).value,
+    subtitle: computed( () => t('exchange.ireland.about-items.2.subtitle')).value,
+    img: "./tempo.png"
+  },
+  {
+    title: computed( () => t('exchange.ireland.about-items.3.title')).value,
+    subtitle: computed( () => t('exchange.ireland.about-items.3.subtitle')).value,
+    img: "./idade.png"
+  },
+  {
+    title: computed( () => t('exchange.ireland.about-items.4.title')).value,
+    subtitle: computed( () => t('exchange.ireland.about-items.4.subtitle')).value,
+    img: "./acomodacao.png"
+  }
+]
+
 
 const model :ExchangeTemplateModel = {
   title: computed( () => t('exchange.ireland.title')).value ,
@@ -42,6 +70,9 @@ const model :ExchangeTemplateModel = {
   pqTitile:computed( () => t('exchange.ireland.pq-title')).value,
   pqs: baseModel,
   pqBtn:computed( () => t('exchange.ireland.pq-btn')).value,
+  aboutTitle: computed( () => t('exchange.ireland.about-title')).value,
+  aboutBtn:computed( () => t('exchange.ireland.about-btn')).value,
+  aboutItems: aboutItems
 
 }
 

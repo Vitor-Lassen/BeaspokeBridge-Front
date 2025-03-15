@@ -3,7 +3,7 @@
     <v-img :src="props.image" width="100" max-width="100" aspect-ratio="4/3" />
     <div class="item-description">
       <h3>{{ props.title }}</h3>
-      <p v-html="props.description"></p>
+      <p v-html="props.description" style="max-width: 250px;"></p>
     </div>
   </div>
 </template>

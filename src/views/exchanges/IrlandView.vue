@@ -58,6 +58,38 @@ const aboutItems: BaseModel[] =[
   }
 ]
 
+const utilsItems: BaseModel [] =[
+  {
+    title: computed( () => t('exchange.ireland.utils-items.0.title')).value,
+    subtitle: computed( () => t('exchange.ireland.utils-items.0.subtitle')).value,
+    img: "./currency.png"
+  },
+  {
+    title: computed( () => t('exchange.ireland.utils-items.1.title')).value,
+    subtitle: computed( () => t('exchange.ireland.utils-items.1.subtitle')).value,
+    img: "./temperature.png"
+  },
+  {
+    title: computed( () => t('exchange.ireland.utils-items.2.title')).value,
+    subtitle: computed( () => t('exchange.ireland.utils-items.2.subtitle')).value,
+    img: "./time.png"
+  },
+  {
+    title: computed( () => t('exchange.ireland.utils-items.3.title')).value,
+    subtitle: computed( () => t('exchange.ireland.utils-items.3.subtitle')).value,
+    img: "./visa.png"
+  },
+  {
+    title: computed( () => t('exchange.ireland.utils-items.4.title')).value,
+    subtitle: computed( () => t('exchange.ireland.utils-items.4.subtitle')).value,
+    img: "./population.png"
+  },
+  {
+    title: computed( () => t('exchange.ireland.utils-items.5.title')).value,
+    subtitle: computed( () => t('exchange.ireland.utils-items.5.subtitle')).value,
+    img: "./language.png"
+  },
+]
 
 const model :ExchangeTemplateModel = {
   title: computed( () => t('exchange.ireland.title')).value ,
@@ -72,7 +104,9 @@ const model :ExchangeTemplateModel = {
   pqBtn:computed( () => t('exchange.ireland.pq-btn')).value,
   aboutTitle: computed( () => t('exchange.ireland.about-title')).value,
   aboutBtn:computed( () => t('exchange.ireland.about-btn')).value,
-  aboutItems: aboutItems
+  aboutItems: aboutItems,
+  utilsTitle: computed( () => t('exchange.ireland.utils-title')).value,
+  utilsItems:utilsItems
 
 }
 

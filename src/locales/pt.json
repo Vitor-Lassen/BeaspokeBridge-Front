@@ -131,9 +131,34 @@
           "title":"Acomodação",
           "subtitle":"Hotel, hostel, residência estudantil, ou host family"
         }
-
+      },
+      "utils-title":"",
+      "utils-items":{
+        "0":{
+          "title":"Moeda",
+          "subtitle":"Euro"
+        },
+        "1":{
+          "title":"Temperatura",
+          "subtitle":"4°C no inverno <br>20°C no verão"
+        },
+        "2":{
+          "title":"Fuso horário",
+          "subtitle":"entre +3 ou +4 hrs."
+        },
+        "3":{
+          "title":"Visto",
+          "subtitle":"Não por até 90 dias"
+        },
+        "4":{
+          "title":"População",
+          "subtitle":"5.2 milhões"
+        },
+        "5":{
+          "title":"Idioma oficial",
+          "subtitle":"Inglês e Irlandês"
+        }
       }
-      
 
     }, 
     "default":{

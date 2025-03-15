@@ -49,24 +49,14 @@
   <v-parallax src="./Irlanda-landing-page.png" class="d-flex align-center">
     <div class="d-flex flex-column align-center">
       <div class="info-uteis-card  base-card" style="max-width: 900px">
-        <div class="d-flex align-center justify-center pa-4">
+        <div class="d-flex align-center justify-center pt-4 pl-6 pr-6">
           <hr class="line flex-1-1" />
 
-          <h1 class="pa-4">Informações úteis</h1>
+          <h1 class="pt-4 pl-4 pr-4">Informações úteis</h1>
           <hr class="line-pont flex-1-1" />
         </div>
         <div class="d-flex flex-wrap justify-space-around">
           <item-utils v-for="item in ex.utilsItems" :key="item.title" :title="item.title" :description="item.subtitle" :image="item.img" />
-
-          <item-utils
-            title="Temperatura"
-            description="40 graus <br> minima de 6 graus"
-            image="./temperature.png"
-          />
-          <item-utils title="Moeda" description="Euro" image="./currency.png" />
-          <item-utils title="Moeda" description="Euro" image="./currency.png" />
-          <item-utils title="Moeda" description="Euro" image="./currency.png" />
-          <item-utils title="Moeda" description="Euro" image="./currency.png" />
         </div>
       </div>
     </div>

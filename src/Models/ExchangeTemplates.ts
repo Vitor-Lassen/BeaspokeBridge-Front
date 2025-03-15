@@ -20,7 +20,6 @@ type ExchangeTemplateModel ={
   aboutBtn: string
 
   utilsTitle: string
-  utilsImg: string
   utilsItems: BaseModel[]
 
 

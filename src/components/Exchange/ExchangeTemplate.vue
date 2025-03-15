@@ -1,16 +1,9 @@
 <template>
-  <v-parallax
-    src="./Irlanda-landing-page.png"
-    height="400"
-    class="head-img d-flex align-center justify-right"
-  >
-    <div class="head-title d-flex flex-column justify-center align-start align-items-left">
-      <h1 class="ml-12">Exchange Template</h1>
-      <p class="ml-12 subtitle">subtitle</p>
-      <v-btn class="align-self-end mr-12" color="secondary">Saiba + </v-btn>
-    </div>
-  </v-parallax>
-
+  <page-header
+    title="exchange"
+    subtitle="subtitle"
+    imagem="./Irlanda-landing-page.png"
+    btn="Saiba +"/>
   <div class="pa-6 pt-12">
     <div class="img">
       <v-img src="kid.png" min-width="200" max-width="300" aspect-ratio="16/9" class="ma-4" />
@@ -123,6 +116,7 @@
 <script setup lang="ts">
 import ExchangeCard from './ExchangeCard.vue'
 import ItemUtils from './ItemUtils.vue'
+import PageHeader from '../Generic/PageHeader.vue';
 </script>
 
 <style scoped>
@@ -135,7 +129,6 @@ import ItemUtils from './ItemUtils.vue'
   height: 100%;
   object-fit: cover;
 }
-
 .fotos-horizontais {
   display: flex;
   flex-direction: column;
@@ -163,10 +156,6 @@ import ItemUtils from './ItemUtils.vue'
     float: right;
     align-self: center;
   }
-  .head-title {
-    width: 45%;
-    border-radius: 0 32px 32px 0;
-  }
 }
 @media (max-width: 960px) {
   .img {
@@ -185,18 +174,10 @@ import ItemUtils from './ItemUtils.vue'
 p {
   text-align: justify;
 }
-.head-title {
-  background-color: white;
-  height: 200px;
-  opacity: 75%;
-}
 
 .info-uteis-card
  {
   opacity: 75%;
 }
 
-.subtitle {
-  font-size: 28px;
-}
 </style>

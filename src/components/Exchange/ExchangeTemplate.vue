@@ -1,67 +1,36 @@
 <template>
   <page-header
-    title="exchange"
-    subtitle="subtitle"
-    imagem="./Irlanda-landing-page.png"
-    btn="Saiba +"/>
+    :title="props.ex.title"
+    :subtitle="props.ex.subtitle"
+    :imagem="props.ex.img"
+    :btn="props.ex.btn"/>
   <div class="pa-6 pt-12">
     <div class="img">
-      <v-img src="kid.png" min-width="200" max-width="300" aspect-ratio="16/9" class="ma-4" />
+      <v-img :src="props.ex.resumeImg" min-width="200" max-width="300" aspect-ratio="16/9" class="ma-4" />
     </div>
-    <h1>Lorem ipsum dolor sit amet.</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, maiores. Nulla officiis eum
-      possimus eligendi rerum qui sequi itaque dignissimos quam. Ab, animi neque nemo tempora est
-      quo a eius aspernatur quibusdam provident, aliquid eos recusandae corrupti magni vitae, qui
-      ullam perferendis. Natus modi nisi distinctio provident id dicta cupiditate nostrum fugit?
-      Sequi atque saepe, laboriosam accusantium dolorem sunt? Modi quis sunt molestias delectus
-      perferendis blanditiis iste natus libero omnis et! Praesentium aliquam ratione delectus
-      deserunt cum voluptatem blanditiis voluptas?Lorem ipsum dolor sit amet, consectetur
-      adipisicing elit. Sit officiis, sequi iste, odit hic alias est odio ut aspernatur nemo nostrum
-      maiores. Excepturi, labore. Deleniti sed iusto veniam ratione atque, consectetur totam
-      perspiciatis soluta nihil quis unde iure tempore quisquam necessitatibus autem similique
-      reiciendis. Voluptates voluptatem blanditiis inventore voluptas tenetur architecto quisquam
-      quis, vitae doloribus. Rerum aperiam sunt sed vitae minus voluptatum ex ipsam earum excepturi!
-      Illum non dolorum magni fugiat eveniet voluptates, atque maxime voluptatum porro, quisquam,
-      nobis nesciunt odit numquam corrupti aspernatur earum perferendis. Expedita voluptate impedit
-      sit sapiente ex optio. At, sequi quod ipsum soluta sunt nam asperiores, delectus voluptates
-      impedit modi accusantium! Temporibus veniam, aperiam similique nisi, quam perspiciatis minus
-      incidunt error commodi odit voluptas ducimus!
-    </p>
+    <h1>{{ props.ex.resumeTitle }}</h1>
+    <p>{{props.ex.resumeDescription}}</p>
   </div>
 
   <div class="backgroud-ultrasoftblue pa-6">
-    <h1 class="pt-8">Lorem ipsum dolor sit amet.</h1>
+    <h1 class="pt-8">{{ props.ex.pqTitile }}</h1>
     <div class="d-flex align-center justify-center pa-6 pr-8">
       <div class="d-flex flex-column align-center justify-space-between">
-        <exchange-card
-          title="Lorem ipsum dolor sit amet."
-          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nostrum vero saepe
-            explicabo rem ipsa quas aperiam perspiciatis natus sapiente?"
-          image="Irland-1.png"
-        />
-        <exchange-card
-          title="Lorem ipsum dolor sit amet."
-          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nostrum vero saepe
-            explicabo rem ipsa quas aperiam perspiciatis natus sapiente?"
-          image="Irland-2.png"
-        />
-        <exchange-card
-          title="Lorem ipsum dolor sit amet."
-          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nostrum vero saepe
-            explicabo rem ipsa quas aperiam perspiciatis natus sapiente?"
-          image="Irland-3.png"
+        <exchange-card v-for="item in props.ex.pqs" v-bind:key="item.title"
+          :title="item.title"
+          :description="item.subtitle"
+          :image="item.img"
         />
       </div>
       <div class="fotos-composicao">
-        <img src="/public/Irland-3.png" class="vertical" />
+        <img :src="props.ex.pqs[0].img" class="vertical" />
         <div class="fotos-horizontais">
-          <img src="/public/Irland-1.png" class="horizontal" />
-          <img src="/public/Irland-2.png" class="horizontal" />
+          <img :src="props.ex.pqs[1].img" class="horizontal" />
+          <img :src="props.ex.pqs[2].img" class="horizontal" />
         </div>
       </div>
     </div>
-    <h1><v-btn color="secondary"> QUero estudar na irland</v-btn></h1>
+    <h1><v-btn color="secondary"> {{props.ex.pqBtn}}</v-btn></h1>
   </div>
   <div class="bg-dark d-flex flex-column align-center">
     <div class=" ma-6" style="max-width: 900px">
@@ -83,6 +52,7 @@
           <item-utils title="Moeda" description="Euro" image="./acomodacao.png" />
 
         </div>
+        <h1><v-btn class="mt-10 mb-10" color="secondary"> {{props.ex.pqBtn}}</v-btn></h1>
       </div>
   </div>
 
@@ -117,6 +87,14 @@
 import ExchangeCard from './ExchangeCard.vue'
 import ItemUtils from './ItemUtils.vue'
 import PageHeader from '../Generic/PageHeader.vue';
+
+import type { ExchangeTemplateModel } from '@/Models/ExchangeTemplates';
+import { defineProps } from 'vue';
+
+const props = defineProps<{
+  ex:ExchangeTemplateModel
+}>();
+
 </script>
 
 <style scoped>

@@ -132,7 +132,7 @@
           "subtitle":"Hotel, hostel, residência estudantil, ou host family"
         }
       },
-      "utils-title":"",
+      "utils-title":"Informações úteis",
       "utils-items":{
         "0":{
           "title":"Moeda",
@@ -159,7 +159,79 @@
           "subtitle":"Inglês e Irlandês"
         }
       }
-
+    },
+    "eslovaquia":{
+      "title":"Eslováquia",
+      "subtitle":"Seu destino para intercâmbios de curta duração.", 
+      "resume-title":"Aprenda inglês no <b class='text-color-secondary'>coração</b> da Europa",
+      "resume-description":"A Eslováquia é um <b>país repleto de charme, cultura rica e paisagens de tirar o fôlego</b>. Localizada no coração da Europa, oferece uma experiência única para quem busca aprendizado e imersão cultural em um ambiente acolhedor e seguro.<br>Embora a Eslováquia não seja um país de língua inglesa, o inglês é <b>amplamente falado</b> na capital, Bratislava, onde você estudará – assim como em outras capitais europeias. Essa característica, combinada com a <b>baixa presença de brasileiros</b> no país, cria um ambiente que incentiva o uso do inglês tanto no dia a dia quanto dentro da sala de aula.<br>Escolher a Eslováquia como destino para seu intercâmbio de curta duração é investir em uma experiência transformadora. Seja para aprimorar habilidades linguísticas ou vivenciar uma cultura completamente diferente, você encontrará oportunidades únicas neste pequeno, mas encantador país europeu.",
+      "pq-title":"Por que escolher a Eslováquia para seu intercâmbio?",
+      "pq-btn":"Quero estudar na Eslováquia",
+      "pq":{
+        "0":{
+          "title":"Custo-benefício excepcional",
+          "subtitle":"A Eslováquia oferece uma excelente relação custo-benefício para estudantes internacionais, com preços acessíveis em hospedagem, transporte e alimentação."
+        },
+        "1":{
+          "title":"Localização estratégica",
+          "subtitle":"Sua posição central na Europa permite explorar facilmente países vizinhos como Áustria, Hungria e República Tcheca. Nessas cidades, você praticará inglês enquanto aprende sobre a cultura local."
+        },
+        "2":{
+          "title":"Experiência autêntica e única",
+          "subtitle":"Diferente de destinos mais convencionais, a Eslováquia oferece uma experiência menos turística e mais genuína, permitindo uma conexão mais profunda com a cultura local."
+        }
+      },
+      "about-title":"Sobre o programa",
+      "about-btn":"Quero estudar na Eslováquia",
+      "about-items":{
+        "0":{
+          "title":"Nível mínimo do inglês",
+          "subtitle":"Iniciante (A2)"
+        },
+        "1":{
+          "title":"Tempo mínimo",
+          "subtitle":"1 semana"
+        },
+        "2":{
+          "title":"Tempo máximo",
+          "subtitle":"2 semanas*"
+        },
+        "3":{
+          "title":"Idade mínima",
+          "subtitle":"18 anos"
+        },
+        "4":{
+          "title":"Acomodação",
+          "subtitle":"Hotel ou Airbnb"
+        }
+      },
+      "utils-title":"Informações úteis",
+      "utils-items":{
+        "0":{
+          "title":"Moeda",
+          "subtitle":"Euro"
+        },
+        "1":{
+          "title":"Temperatura",
+          "subtitle":"-2°C no inverno <br>30°C no verão"
+        },
+        "2":{
+          "title":"Fuso horário",
+          "subtitle":"entre +4 ou +5 hrs."
+        },
+        "3":{
+          "title":"Visto",
+          "subtitle":"ETIAS - autorização eletrônica a partir de maio/2025"
+        },
+        "4":{
+          "title":"População",
+          "subtitle":"5.4 milhões"
+        },
+        "5":{
+          "title":"Idioma oficial",
+          "subtitle":"Eslovaco"
+        }
+      }
     }, 
     "default":{
 

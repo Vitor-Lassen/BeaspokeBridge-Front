@@ -52,7 +52,7 @@
         <div class="d-flex align-center justify-center pt-4 pl-6 pr-6">
           <hr class="line flex-1-1" />
 
-          <h1 class="pt-4 pl-4 pr-4">Informações úteis</h1>
+          <h1 class="pt-4 pl-4 pr-4">{{ props.ex.utilsTitle }}</h1>
           <hr class="line-pont flex-1-1" />
         </div>
         <div class="d-flex flex-wrap justify-space-around">

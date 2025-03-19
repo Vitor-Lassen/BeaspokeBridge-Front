@@ -16,17 +16,17 @@ const baseModel: BaseModel[] =[
   {
     title: computed( () => t('exchange.ireland.pq.0.title')).value,
     subtitle: computed( () => t('exchange.ireland.pq.0.subtitle')).value,
-    img: "/public/Ireland-1.png"
+    img: "/public/Ireland/Ireland-1.png"
   },
   {
     title: computed( () => t('exchange.ireland.pq.1.title')).value,
     subtitle: computed( () => t('exchange.ireland.pq.1.subtitle')).value,
-    img: "/public/Ireland-2.png"
+    img: "/public/Ireland/Ireland-2.png"
   },
   {
     title: computed( () => t('exchange.ireland.pq.2.title')).value,
     subtitle: computed( () => t('exchange.ireland.pq.2.subtitle')).value,
-    img: "/public/Ireland-3.png"
+    img: "/public/Ireland/Ireland-3.png"
   }
 ]
 
@@ -95,7 +95,7 @@ const model :ExchangeTemplateModel = {
   title: computed( () => t('exchange.ireland.title')).value ,
   subtitle:computed( () => t('exchange.ireland.subtitle')).value,
   btn:computed( () => t('default.btn-see-more')).value,
-  img:"./Irlanda-landing-page.png",
+  img:"./Ireland/Irlanda-landing-page.png",
   resumeTitle:computed( () => t('exchange.ireland.resume-title')).value,
   resumeDescription: computed( () => t('exchange.ireland.resume-description')).value,
   resumeImg:"harpa.png",
@@ -105,6 +105,7 @@ const model :ExchangeTemplateModel = {
   aboutTitle: computed( () => t('exchange.ireland.about-title')).value,
   aboutBtn:computed( () => t('exchange.ireland.about-btn')).value,
   aboutItems: aboutItems,
+  aboutImg:"./Ireland/dublin outline.png",
   utilsTitle: computed( () => t('exchange.ireland.utils-title')).value,
   utilsItems:utilsItems
 

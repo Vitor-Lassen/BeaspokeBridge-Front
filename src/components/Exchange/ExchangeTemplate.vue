@@ -34,10 +34,10 @@
   </div>
   <div class="bg-dark d-flex flex-column align-center">
     <div class=" ma-6" style="max-width: 900px">
-        <div class=" d-flex align-center justify-space-around pa-4">
+        <div class=" d-flex align-center justify-space-between">
 
           <h1 class="pa-4">{{ex.aboutTitle}}</h1>
-          <v-img :src="ex.aboutImg" max-height="120"/>
+          <v-img :src="ex.aboutImg" max-width="350" class="ma-2" />
         </div>
         <div class="base-card restore d-flex flex-wrap justify-space-around">
           <item-utils v-for="item in ex.aboutItems" :key="item.title" :title="item.title" :description="item.subtitle" :image="item.img" />
@@ -46,7 +46,7 @@
       </div>
   </div>
 
-  <v-parallax src="./Irlanda-landing-page.png" class="d-flex align-center">
+  <v-parallax :src="props.ex.img" class="d-flex align-center">
     <div class="d-flex flex-column align-center">
       <div class="info-uteis-card  base-card" style="max-width: 900px">
         <div class="d-flex align-center justify-center pt-4 pl-6 pr-6">

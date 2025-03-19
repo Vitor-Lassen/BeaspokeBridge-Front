@@ -29,7 +29,7 @@ const props = defineProps<{
 
 .head-title {
   background-color: white;
-  height: 200px;
+  height: 300px;
   opacity: 90%;
 }
 
@@ -40,7 +40,7 @@ const props = defineProps<{
 
   .head-title {
     width: 45%;
-    height: 300px;
+    height: 200px;
     border-radius: 0 32px 32px 0;
   }
 }

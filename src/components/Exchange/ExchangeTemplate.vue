@@ -39,7 +39,7 @@
           <h1 class="pa-4">{{ex.aboutTitle}}</h1>
           <v-img :src="ex.aboutImg" max-width="350" class="ma-2" />
         </div>
-        <div class="base-card restore d-flex flex-wrap justify-space-around">
+        <div class="base-card restore d-flex flex-wrap justify-space-around  flex-cont">
           <item-utils v-for="item in ex.aboutItems" :key="item.title" :title="item.title" :description="item.subtitle" :image="item.img" />
         </div>
         <h1><v-btn class="mt-10 mb-10" color="secondary"> {{props.ex.aboutBtn}}</v-btn></h1>
@@ -55,7 +55,7 @@
           <h1 class="pt-4 pl-4 pr-4">{{ props.ex.utilsTitle }}</h1>
           <hr class="line-pont flex-1-1" />
         </div>
-        <div class="d-flex flex-wrap justify-space-around">
+        <div class="d-flex flex-wrap justify-space-around flex-cont">
           <item-utils v-for="item in ex.utilsItems" :key="item.title" :title="item.title" :description="item.subtitle" :image="item.img" />
         </div>
       </div>
@@ -109,6 +109,8 @@ const props = defineProps<{
   justify-content: space-between;
 }
 
+
+
 @media (min-width: 960px) {
   .img {
     float: right;
@@ -120,12 +122,17 @@ const props = defineProps<{
     display: flex;
     justify-content: center;
   }
-
   .fotos-composicao {
     display: none;
   }
   .head-title {
     width: 100%;
+  }
+  .flex-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
   }
 }
 

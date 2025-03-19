@@ -1,6 +1,6 @@
 <template>
   <div class="item">
-    <v-img :src="props.image" width="100" max-width="100" aspect-ratio="4/3" />
+    <v-img :src="props.image" class="ma-2 mr-2" width="100" max-width="100" aspect-ratio="4/3" />
     <div class="item-description">
       <h3>{{ props.title }}</h3>
       <p v-html="props.description" style="max-width: 250px;"></p>

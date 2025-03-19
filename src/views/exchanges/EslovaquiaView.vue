@@ -34,27 +34,27 @@ const aboutItems: BaseModel[] =[
   {
     title: computed( () => t('exchange.eslovaquia.about-items.0.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.about-items.0.subtitle')).value,
-    img: "./level.png"
+    img: "level.png"
   },
   {
     title: computed( () => t('exchange.eslovaquia.about-items.1.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.about-items.1.subtitle')).value,
-    img: "./tempo.png"
+    img: "tempo.png"
   },
   {
     title: computed( () => t('exchange.eslovaquia.about-items.2.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.about-items.2.subtitle')).value,
-    img: "./tempo.png"
+    img: "tempo.png"
   },
   {
     title: computed( () => t('exchange.eslovaquia.about-items.3.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.about-items.3.subtitle')).value,
-    img: "./idade.png"
+    img: "idade.png"
   },
   {
     title: computed( () => t('exchange.eslovaquia.about-items.4.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.about-items.4.subtitle')).value,
-    img: "./acomodacao.png"
+    img: "acomodacao.png"
   }
 ]
 
@@ -62,32 +62,32 @@ const utilsItems: BaseModel [] =[
   {
     title: computed( () => t('exchange.eslovaquia.utils-items.0.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.utils-items.0.subtitle')).value,
-    img: "./currency.png"
+    img: "currency.png"
   },
   {
     title: computed( () => t('exchange.eslovaquia.utils-items.1.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.utils-items.1.subtitle')).value,
-    img: "./temperature.png"
+    img: "temperature.png"
   },
   {
     title: computed( () => t('exchange.eslovaquia.utils-items.2.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.utils-items.2.subtitle')).value,
-    img: "./time.png"
+    img: "time.png"
   },
   {
     title: computed( () => t('exchange.eslovaquia.utils-items.3.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.utils-items.3.subtitle')).value,
-    img: "./visa.png"
+    img: "visa.png"
   },
   {
     title: computed( () => t('exchange.eslovaquia.utils-items.4.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.utils-items.4.subtitle')).value,
-    img: "./population.png"
+    img: "population.png"
   },
   {
     title: computed( () => t('exchange.eslovaquia.utils-items.5.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.utils-items.5.subtitle')).value,
-    img: "./language.png"
+    img: "language.png"
   },
 ]
 

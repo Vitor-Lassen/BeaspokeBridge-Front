@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import DefaultHeader from './components/header/DefaultHeader.vue'
 import DefaultFooter from './components/footer/DefaultFooter.vue'
 </script>

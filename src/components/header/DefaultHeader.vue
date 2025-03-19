@@ -36,25 +36,28 @@
         />
       </MenuDropBox>
       <MenuDropBox :title="$t('header.exchange.title')">
-        <!-- <ExchangeMenu
+       <ExchangeMenu
           :title="$t('header.exchange.Slovakia.contry')"
           :description="$t('header.exchange.Slovakia.description')"
           :button-text="$t('header.exchange.button')"
-          src="Flag_of_Slovakia.svg"
+          src="Ireland/Ireland-3.png"
+          pathto="/exchange/Eslovaquia"
         />
         <ExchangeMenu
           :title="$t('header.exchange.Ireland.contry')"
           :description="$t('header.exchange.Ireland.description')"
           :button-text="$t('header.exchange.button')"
           reverse
-          src="Flag_of_Ireland.svg"
+          src="Eslovaquia/Eslovaquia1.png"
+          pathto="/exchange/Ireland"
         />
         <ExchangeMenu
           :title="$t('header.exchange.MaltaGozo.contry')"
           :description="$t('header.exchange.MaltaGozo.description')"
           :button-text="$t('header.exchange.button')"
-          src="Flag_of_Slovakia.svg"
-        /> -->
+          src="Malta/malta 1.png"
+          pathto="/exchange/Malta"
+        />
       </MenuDropBox>
       <MenuDropBox title="PARCERIAS">
         <p>

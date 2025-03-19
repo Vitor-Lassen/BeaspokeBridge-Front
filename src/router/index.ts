@@ -31,7 +31,7 @@ const router = createRouter({
       component: () => import('../views/exchanges/IrlandView.vue'),
     },
     {
-      path: '/exchange/Esloquia',
+      path: '/exchange/Eslovaquia',
       name: 'Esloquia',
       component: () => import('../views/exchanges/EslovaquiaView.vue'),
     },

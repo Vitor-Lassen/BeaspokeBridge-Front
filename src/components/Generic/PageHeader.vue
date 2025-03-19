@@ -30,7 +30,7 @@ const props = defineProps<{
 .head-title {
   background-color: white;
   height: 200px;
-  opacity: 75%;
+  opacity: 90%;
 }
 
 .subtitle {

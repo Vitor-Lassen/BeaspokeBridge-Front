@@ -5,7 +5,7 @@
     @click="router.push(props.pathto)"
   >
     <v-img :src="props.src" aspect-ratio="16/9" max-width="150px" rounded></v-img>
-    <div class="ma-4 d-flex flex-column align-center justify-center" style="max-width: 600px">
+    <div class="ma-4 d-flex flex-column align-center justify-center" style="width: 500px;">
       <h3>{{ props.title }}</h3>
       <p>{{ props.description }}</p>
     </div>

@@ -135,7 +135,7 @@ p {
 
 .info-uteis-card
  {
-  opacity: 75%;
+  opacity: 90%;
 }
 
 </style>

@@ -36,6 +36,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         # Local directory.
         local_dir: ./dist
+        delete: true
 
     # - name: FTP Deploy
     #   # You may pin to the exact commit or the version.

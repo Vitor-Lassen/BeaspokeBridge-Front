@@ -8,12 +8,12 @@
     <div class="img">
       <v-img :src="props.ex.resumeImg" min-width="200" max-width="300" aspect-ratio="16/9" class="ma-4" />
     </div>
-    <h1>{{ props.ex.resumeTitle }}</h1>
-    <p>{{props.ex.resumeDescription}}</p>
+    <h1 v-html=" props.ex.resumeTitle " />
+    <p class="sm" v-html="props.ex.resumeDescription"/>
   </div>
 
   <div class="backgroud-ultrasoftblue pa-6">
-    <h1 class="pt-8">{{ props.ex.pqTitile }}</h1>
+    <h1 class="pt-8" v-html=" props.ex.pqTitile" />
     <div class="d-flex align-center justify-center pa-6 pr-8">
       <div class="d-flex flex-column align-center justify-space-between">
         <exchange-card v-for="item in props.ex.pqs" v-bind:key="item.title"

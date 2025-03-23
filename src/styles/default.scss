@@ -1,13 +1,30 @@
 @use './variables' as * ;
 
 p{
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px;
+}
+
+p .sm{
+    font-size: 18px;
+
+}
+h1{
+    font-size: 41px;
+}
+h2{
+    font-size: 32px;
+}
+h3{
+    font-size: 18px;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
     color: $text-color;
     text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .text-color-secondary{

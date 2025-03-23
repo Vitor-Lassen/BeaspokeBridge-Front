@@ -1,6 +1,6 @@
 <template>
   <v-card class="ma-4" max-width="700px" rounded>
-    <v-card-title> {{props.title}} </v-card-title>
+    <v-card-title> <b>{{props.title}}</b> </v-card-title>
     <v-card-text>{{ props.description }}</v-card-text>
     <v-img
       :src="props.image"

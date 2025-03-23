@@ -90,9 +90,9 @@
     "ireland":{
       "title":"Irlanda",
       "subtitle":"Descubra a magia da ilha esmeralda.", 
-      "resume-title":"Irlanda: inglês, cultura, e hospitalidade",
-      "resume-description":"A Irlanda, carinhosamente chamada de \"Ilha Esmeralda\", é um destino que combina tradição e modernidade de forma única. Famosa por suas paisagens verdes de tirar o fôlego, castelos medievais e a calorosa hospitalidade de seu povo, o país oferece um ambiente acolhedor e seguro para estudantes de todo o mundo.<br>Além de ser um destino ideal para aprender inglês, a Irlanda encanta por sua rica herança celta, suas lendas históricas e sua vibrante vida cultural, com música, literatura e festivais que se destacam globalmente. Localizada estrategicamente na Europa Ocidental, é o lugar perfeito para quem busca aprendizado, aventura e conexões inesquecíveis.",
-      "pq-title":"Por que escolher a Irlanda para seu intercâmbio?",
+      "resume-title":"Irlanda: inglês, cultura, e <span class='text-color-secondary'>hospitalidade</span>",
+      "resume-description":"A Irlanda, carinhosamente chamada de <b>\"Ilha Esmeralda\"</b>, é um destino que combina tradição e modernidade de forma única. Famosa por suas <b>paisagens verdes de tirar o fôlego</b>, castelos medievais e a <b>calorosa hospitalidade</b> de seu povo, o país oferece um ambiente acolhedor e seguro para estudantes de todo o mundo.<br>Além de ser um destino ideal para aprender inglês, a Irlanda encanta por sua <b>rica herança celta</b>, suas lendas históricas e sua vibrante vida cultural, com música, literatura e festivais que se destacam globalmente. Localizada estrategicamente na Europa Ocidental, é o lugar perfeito para quem busca aprendizado, aventura e conexões inesquecíveis.",
+      "pq-title":"Por que escolher a <span class='text-color-secondary'>Irlanda</span> para seu intercâmbio?",
       "pq-btn":"Quero estudar na Irlanda",
       "pq":{
         "0":{

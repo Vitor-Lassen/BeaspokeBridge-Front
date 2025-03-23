@@ -16,17 +16,17 @@ const baseModel: BaseModel[] =[
   {
     title: computed( () => t('exchange.ireland.pq.0.title')).value,
     subtitle: computed( () => t('exchange.ireland.pq.0.subtitle')).value,
-    img: "/public/Ireland/Ireland-1.png"
+    img: "/Ireland/Ireland-1.png"
   },
   {
     title: computed( () => t('exchange.ireland.pq.1.title')).value,
     subtitle: computed( () => t('exchange.ireland.pq.1.subtitle')).value,
-    img: "/public/Ireland/Ireland-2.png"
+    img: "/Ireland/Ireland-2.png"
   },
   {
     title: computed( () => t('exchange.ireland.pq.2.title')).value,
     subtitle: computed( () => t('exchange.ireland.pq.2.subtitle')).value,
-    img: "/public/Ireland/Ireland-3.png"
+    img: "/Ireland/Ireland-3.png"
   }
 ]
 

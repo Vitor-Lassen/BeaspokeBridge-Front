@@ -16,17 +16,17 @@ const baseModel: BaseModel[] =[
   {
     title: computed( () => t('exchange.eslovaquia.pq.0.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.pq.0.subtitle')).value,
-    img: "./eslovaquia/bratislava 3.png"
+    img: "./Eslovaquia/bratislava 3.png"
   },
   {
     title: computed( () => t('exchange.eslovaquia.pq.1.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.pq.1.subtitle')).value,
-    img: "./eslovaquia/Bojnice.png"
+    img: "./Eslovaquia/Bojnice.png"
   },
   {
     title: computed( () => t('exchange.eslovaquia.pq.2.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.pq.2.subtitle')).value,
-    img: "./eslovaquia/Strbske Pleso.png"
+    img: "./Eslovaquia/Strbske Pleso.png"
   }
 ]
 

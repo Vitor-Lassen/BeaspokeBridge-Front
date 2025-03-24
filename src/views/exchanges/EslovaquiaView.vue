@@ -16,7 +16,7 @@ const baseModel: BaseModel[] =[
   {
     title: computed( () => t('exchange.eslovaquia.pq.0.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.pq.0.subtitle')).value,
-    img: "./Eslovaquia/bratislava 3.png"
+    img: "./Eslovaquia/Bratislava 3.png"
   },
   {
     title: computed( () => t('exchange.eslovaquia.pq.1.title')).value,
@@ -77,12 +77,12 @@ const utilsItems: BaseModel [] =[
   {
     title: computed( () => t('exchange.eslovaquia.utils-items.3.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.utils-items.3.subtitle')).value,
-    img: "visa.png"
+    img: "visaIco.png"
   },
   {
     title: computed( () => t('exchange.eslovaquia.utils-items.4.title')).value,
     subtitle: computed( () => t('exchange.eslovaquia.utils-items.4.subtitle')).value,
-    img: "population.png"
+    img: "populationIco.png"
   },
   {
     title: computed( () => t('exchange.eslovaquia.utils-items.5.title')).value,

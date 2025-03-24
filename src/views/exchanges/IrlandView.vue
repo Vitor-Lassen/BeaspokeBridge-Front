@@ -77,12 +77,12 @@ const utilsItems: BaseModel [] =[
   {
     title: computed( () => t('exchange.ireland.utils-items.3.title')).value,
     subtitle: computed( () => t('exchange.ireland.utils-items.3.subtitle')).value,
-    img: "visa.png"
+    img: "visaIco.png"
   },
   {
     title: computed( () => t('exchange.ireland.utils-items.4.title')).value,
     subtitle: computed( () => t('exchange.ireland.utils-items.4.subtitle')).value,
-    img: "population.png"
+    img: "populationIco.png"
   },
   {
     title: computed( () => t('exchange.ireland.utils-items.5.title')).value,

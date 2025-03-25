@@ -34,7 +34,7 @@ import ContactUs from '@/components/ContactUs.vue'
 
     <div>
       <h1 class="mt-10 mb-6" v-html="$t('home.courses.title')"></h1>
-      <p v-html="$t('home.courses.description')"></p>
+      <p  class="pl-12 pr-12" v-html="$t('home.courses.description')"></p>
       <div class="d-flex flex-wrap justify-center align-center">
         <CoursesCard
           src="kid.png"

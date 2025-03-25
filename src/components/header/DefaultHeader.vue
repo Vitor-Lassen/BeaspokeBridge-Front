@@ -5,11 +5,13 @@
         <v-img :width="170" aspect-ratio="16/9" cover src="logo.png"></v-img>
       </div>
       <MenuDropBox :title="$t('header.about')">
-        <P
-          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eligendi beatae non
-          aspernatur. Voluptatem dolores deserunt error consectetur in inventore veritatis id dolor
-          ipsa, ullam maiores reiciendis laborum quod accusamus.</P
-        >
+        <ExchangeMenu
+          title="Quem Somos"
+          description=""
+          button-text=""
+          src=""
+          pathto="/about"
+        />
       </MenuDropBox>
       <MenuDropBox :title="$t('header.english')">
         <ExchangeMenu

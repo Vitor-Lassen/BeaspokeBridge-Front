@@ -4,13 +4,20 @@
       <div class="pl-6 cursor-pointer" v-on:click="router.push('/')">
         <v-img :width="170" aspect-ratio="16/9" cover src="logo.png"></v-img>
       </div>
-      <MenuDropBox :title="$t('header.about')">
+      <MenuDropBox :title="$t('header.about.title')">
         <ExchangeMenu
-          title="Quem Somos"
+          :title="$t('header.about.us.title')"
           description=""
           button-text=""
           src=""
           pathto="/about"
+        />
+        <ExchangeMenu
+          :title="$t('header.about.team.title')"
+          description=""
+          button-text=""
+          src=""
+          pathto="/team"
         />
       </MenuDropBox>
       <MenuDropBox :title="$t('header.english')">

@@ -5,10 +5,18 @@ p{
     padding: 10px;
 }
 
-p .sm{
+p.sm{
     font-size: 18px;
 
 }
+p.md{
+    font-size: 32px;
+
+}
+p.lg{
+    font-size: 41px;
+}
+
 h1{
     font-size: 41px;
 }
@@ -18,6 +26,7 @@ h2{
 h3{
     font-size: 18px;
 }
+
 .center{
     margin-left: auto;
     margin-right: auto;

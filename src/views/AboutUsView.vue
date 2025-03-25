@@ -93,7 +93,7 @@
 import TopicCard from '@/components/Generic/TopicCard.vue'
 import PImg from '@/components/Generic/PImg.vue';
 </script>
-<style scoped lang="scss">
+<style >
 a{
   text-decoration:underline;
   font-style: italic;
@@ -122,4 +122,5 @@ p {
     height: 250px;
   }
 }
+
 </style>

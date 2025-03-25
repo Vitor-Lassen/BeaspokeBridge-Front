@@ -41,6 +41,11 @@ const router = createRouter({
       component: () => import('../views/ContactUsView.vue'),
     },
     {
+      path: '/team',
+      name: 'team',
+      component: () => import('../views/TeamView.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting

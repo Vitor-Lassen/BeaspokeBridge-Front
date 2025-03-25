@@ -1,7 +1,15 @@
 {
   "schedule": "Agende sua consultoria gratuita!",
   "header": {
-    "about": "Sobre a bb",
+    "about": {
+      "title": "Sobre a bb", 
+      "us":{
+        "title": "Quem Somos"
+      },
+      "team":{
+        "title": "Nosso Time"
+      }
+    },
     "exchange": {
       "title": "Intercâmbio",
       "Slovakia": {

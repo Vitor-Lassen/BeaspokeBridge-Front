@@ -4,7 +4,9 @@
     :subtitle="props.ex.subtitle"
     :imagem="props.ex.img"
     :btn="props.ex.btn"/>
-  <div class="pa-6 pt-12">
+
+
+  <div class="pa-6 pt-12 center" style="max-width: 1000px;">
     <div class="img">
       <v-img :src="props.ex.resumeImg" min-width="200" max-width="300" aspect-ratio="16/9" class="ma-4" />
     </div>
@@ -12,8 +14,9 @@
     <p class="sm" v-html="props.ex.resumeDescription"/>
   </div>
 
-  <div class="backgroud-ultrasoftblue pa-6">
-    <h1 class="pt-8" v-html=" props.ex.pqTitile" />
+  <div class="backgroud-ultrasoftblue pa-6" >
+    <div class="center" style="max-width:  1100px;">
+    <h2 class="pt-8" v-html=" props.ex.pqTitile" />
     <div class="d-flex align-center justify-center pa-6 pr-8">
       <div class="d-flex flex-column align-center justify-space-between">
         <exchange-card v-for="item in props.ex.pqs" v-bind:key="item.title"
@@ -32,8 +35,9 @@
     </div>
     <h1><v-btn color="secondary"> {{props.ex.pqBtn}}</v-btn></h1>
   </div>
+  </div>
   <div class="bg-dark d-flex flex-column align-center">
-    <div class=" ma-6" style="max-width: 900px">
+    <div class=" ma-6" style="max-width: 1000px">
         <div class=" d-flex align-center justify-space-between">
 
           <h1 class="pa-4">{{ex.aboutTitle}}</h1>
@@ -48,7 +52,7 @@
 
   <v-parallax :src="props.ex.img" class="d-flex align-center">
     <div class="d-flex flex-column align-center">
-      <div class="info-uteis-card  base-card" style="max-width: 900px">
+      <div class="info-uteis-card  base-card" style="max-width: 1000px">
         <div class="d-flex align-center justify-center pt-4 pl-6 pr-6">
           <hr class="line flex-1-1" />
 

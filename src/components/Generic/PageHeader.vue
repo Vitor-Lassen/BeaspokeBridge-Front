@@ -40,7 +40,7 @@ const props = defineProps<{
 
   .head-title {
     width: 45%;
-    height: 200px;
+    height: 250px;
     border-radius: 0 32px 32px 0;
   }
 }

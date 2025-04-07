@@ -1,7 +1,7 @@
 <template>
-  <div class="pa-12 ml-12 mr-12 d-flex flex-column align-center">
+  <div class="pa-8 d-flex flex-column align-center" >
     <h1 class="mb-16 mt-10">Construímos Conexões</h1>
-    <p>
+    <p class="max-content-width">
       Na Bespoke Bridge, acreditamos que o aprendizado vai além das palavras. <b class='text-color-blue-logo'>Nossa missão</b> é
       construir <i><b class='text-color-blue-logo'>pontes </b>(<b class='text-color-secondary'>bridges</b>)</i> entre culturas, idiomas e oportunidades, capacitando pessoas
       a alcançarem seus sonhos com <b class='text-color-blue-logo'>confiança</b> e fluência <b class='text-color-blue-logo'>no inglês</b>.
@@ -11,7 +11,7 @@
     <hr class="line-pont center ma-6" style="width: 200px;" />
 
     <h2 class="mt-16">Acreditamos no poder da personalização</h2>
-    <div class="d-flex flex-row-reverse align-center img-flex">
+    <div class="d-flex flex-row-reverse align-center img-flex max-content-width">
       <img class="ma-6 flex-0-1 img" :src="'./online lessons.png'" />
 
       <p class="">

@@ -5,8 +5,8 @@ import ContactUs from '@/components/ContactUs.vue'
 
 <template>
   <main>
-    <div class="map pa-8 d-flex justify-center flex-wrap">
-      <div class="ma-6" style="background-color: white; border-radius: 16px">
+    <div class="map pa-6 d-flex justify-center flex-wrap">
+      <div class="" style="background-color: white; border-radius: 16px">
         <ContactUs />
       </div>
 

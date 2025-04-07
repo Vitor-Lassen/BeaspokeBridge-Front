@@ -10,7 +10,7 @@ p.sm{
 
 }
 p.md{
-    font-size: 32px;
+    font-size: 24px;
 
 }
 p.lg{
@@ -58,6 +58,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 
+.max-content-width{
+    max-width: 1200px;
+}
+
 .line {
     border: none;
     height: 4px;              /* Espessura da linha */
@@ -101,3 +105,8 @@ a {
 
 }
 
+.moldura{
+    border-radius: 16px;
+    border: 5px a $primary ;
+
+}

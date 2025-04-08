@@ -52,7 +52,11 @@ const router = createRouter({
       name: 'PrivacyPolicy',
       component: () => import('../views/PrivacyTermsView.vue')
     },
-
+    {
+      path: '/terms-and-conditions',
+      name: 'TermsAndConditions',
+      component: () => import('../views/TermsAndConditionsView.vue')
+    },
     {
       path: '/about',
       name: 'about',

@@ -22,10 +22,10 @@
           <h4>{{$t('footer.transparency.title')}}</h4>
 
           <ul>
-            <li><a href="">{{$t('footer.transparency.terms')}}</a></li>
+            <li><a @click="router.push('terms-and-conditions')">{{$t('footer.transparency.terms')}}</a></li>
             <li><a @click="router.push('privacy-policy')">{{$t('footer.transparency.privacy')}}</a></li>
-            <li><a href="">{{$t('footer.transparency.cookies')}}</a></li>
-            <li><a href="">{{$t('footer.transparency.about')}}</a></li>
+            <li><a @click="router.push('privacy-policy')">{{$t('footer.transparency.cookies')}}</a></li>
+
           </ul>
         </div>
         <div class="ma-6">

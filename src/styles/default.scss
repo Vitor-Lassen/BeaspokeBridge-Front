@@ -61,6 +61,10 @@ p, h1, h2, h3, h4, h5, h6, li, a {
 .max-content-width{
     max-width: 1200px;
 }
+.min-content-width{
+    min-width: 400px;
+}
+
 
 .line {
     border: none;
@@ -105,8 +109,9 @@ a {
 
 }
 
+
 .moldura{
     border-radius: 16px;
-    border: 5px a $primary ;
+    border: 1px solid $primary ;
 
 }

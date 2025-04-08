@@ -46,6 +46,12 @@ const router = createRouter({
       component: () => import('../views/TeamView.vue')
     },
     {
+      path: '/privacy-policy',
+      name: 'PrivacyPolicy',
+      component: () => import('../views/PrivacyTermsView.vue')
+    },
+
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting

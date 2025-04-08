@@ -23,7 +23,7 @@
 
           <ul>
             <li><a href="">{{$t('footer.transparency.terms')}}</a></li>
-            <li><a href="">{{$t('footer.transparency.privacy')}}</a></li>
+            <li><a @click="router.push('privacy-policy')">{{$t('footer.transparency.privacy')}}</a></li>
             <li><a href="">{{$t('footer.transparency.cookies')}}</a></li>
             <li><a href="">{{$t('footer.transparency.about')}}</a></li>
           </ul>
@@ -47,6 +47,7 @@ li {
 }
 .copyright {
   font-size: 12px;
+  text-align: end;
 }
 ul {
   list-style-type: none;

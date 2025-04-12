@@ -61,6 +61,11 @@ p, h1, h2, h3, h4, h5, h6, li, a {
 .max-content-width{
     max-width: 1200px;
 }
+
+.max-text-content-width{
+    max-width: 800px;
+}
+
 .min-content-width{
     min-width: 400px;
 }
@@ -115,3 +120,14 @@ a {
     border: 1px solid $primary ;
 
 }
+
+
+
+.hover{
+    transition: 0.5s ;
+  }
+  .hover:hover{
+    cursor: pointer;
+    color: black;
+    filter: grayscale(100%);
+  }

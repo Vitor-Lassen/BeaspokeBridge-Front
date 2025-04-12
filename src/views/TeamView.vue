@@ -9,12 +9,13 @@
 
 <div class="pt-6 d-flex align-center justify-space-around flex-wrap" style="width: 100%;">
   <TopicCard
-      img="learners.png"
+  class="mt-8"
+      img="Cambridge-Trinity.png"
       title=""
       :max-width="500"
-          :img-min-width="200"
+          :img-min-width="400"
       >
-      <p style="text-align: justify;">Além disso, nossos professores estão em constante aperfeiçoamento. Participam de treinamentos mensais conduzidos por especialistas renomados no ensino de idiomas, mantendo-se atualizados com as mais recentes metodologias e ferramentas educacionais. Isso não apenas eleva o nível das nossas aulas, mas também torna nossos profissionais únicos no mercado.</p>
+      <p  class="mt-8" style="text-align: justify;">Todos os nossos professores possuem qualificações reconhecidas internacionalmente, como o prestigiado CELTA da Universidade de Cambridge e Trinity TESOL da Trinity College London. Essas certificações refletem a dedicação e o alto padrão de nossos profissionais, garantindo uma base sólida para o ensino de inglês como língua estrangeira.</p>
     </TopicCard>
     <TopicCard
       img="learners.png"
@@ -52,7 +53,7 @@
       <p>Nos momentos livres, Luís gosta de passar o tempo com a família, assistir filmes e explorar novos lugares. Sua dedicação em construir conexões pacíficas e impactar positivamente a vida de seus alunos é o que inspira a missão da Bespoke Bridge.</p>
     </memberDescription>
 
-
+    <hr class="line-pont mb-8 mt-8" style="width: 70%;;"/>
 
     <memberDescription
     img="./Fabi.png"
@@ -68,6 +69,14 @@
 
 
   </div>
+
+  <div class="bg-ublue">
+    <div class="max-text-content-width center">
+    <p class="md">Para os cursos oferecidos por nossa escola parceira, a The Bridge, o time de professores é internacional.</p>
+      <a href="https://thebridge.sk/en/our-teachers/"><v-img class="ma-6 hover"  src="all_team.png"></v-img></a>
+    <p class="sm">Para conhecer os professores da The Bridge, clique na imagem acima.</p>
+  </div>
+</div>
 </template>
 
 <script setup lang="ts">
@@ -75,4 +84,5 @@
 import TopicCard from '@/components/Generic/TopicCard.vue';
 import memberDescription from '@/components/team/memberDescription.vue';
 </script>
+
 

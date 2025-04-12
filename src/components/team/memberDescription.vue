@@ -1,6 +1,6 @@
 <template>
-   <div class=" d-flex  description">
-      <div class="pa-6" style="max-width: 800px; ">
+   <div class="ma-2 mr-6 description">
+      <div class="pa-6 max-text-content-width ">
         <slot></slot>
       </div>
 
@@ -37,10 +37,24 @@ const props = defineProps({
 
 </script>
 
-<style>
+<style lang="scss" >
 
+@use '@/styles/variables' as * ;
 .description p{
   text-align: justify;
+
+}
+
+.description{
+  display: flex ;
+}
+
+@media(max-width: $max-mobile-width){
+  .description{
+    flex-direction: column-reverse;
+    align-items: center;
+    ;
+  }
 
 }
 </style>

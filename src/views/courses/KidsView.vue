@@ -42,14 +42,14 @@
         title="Inglês para Crianças (9-10 anos)"
         subtitle="Para quem é o curso?"
         description="Este curso é voltado para crianças de 9 a 10 anos que já têm uma noção básica de inglês adquirida na escola, mas gostariam de dedicar mais tempo ao aprendizado do idioma e explorar novas abordagens além das que conhecem da sala de aula. O curso foca no desenvolvimento equilibrado de todas as habilidades linguísticas."
-        style="margin-top: 150px;" />
+        style="margin-top: 180px;" />
     </div>
     <div class="max-content-width center d-flex justify-space-around">
       <kidsCard
         title="Inglês para Crianças (11-12 anos)"
         subtitle="Para quem é o curso?"
         description="Este curso é destinado a alunos de 11 e 12 anos que não estão satisfeitos com o inglês aprendido na escola e gostariam de aprimorar suas habilidades de uma maneira diferente. A proposta é desenvolver todas as competências linguísticas e adquirir habilidades adicionais que os ajudarão ao longo dos anos de escolaridade."
-        style="margin-top: -150px;"/>
+        style="margin-top: -180px;"/>
       <kidsCard
         title="Inglês para Crianças (13-14 anos)"
         subtitle="Para quem é o curso?"

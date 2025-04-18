@@ -7,11 +7,15 @@
 
 
   <div class="pa-6 pt-12 center" style="max-width: 1000px;">
-    <div class="img">
-      <v-img :src="props.ex.resumeImg" min-width="200" max-width="300" aspect-ratio="16/9" class="ma-4" />
-    </div>
+
     <h1 v-html=" props.ex.resumeTitle " />
-    <p class="sm" v-html="props.ex.resumeDescription"/>
+    <div class="exchange-float-img ">
+      <v-img  :src="props.ex.resumeImg" min-width="200" max-width="300" aspect-ratio="16/9" class="ma-4" />
+    </div>
+    <p class="sm">
+    {{ props.ex.resumeDescription }}
+
+   </p>
   </div>
 
   <div class="backgroud-ultrasoftblue pa-6" >
@@ -116,14 +120,15 @@ const props = defineProps<{
 
 
 @media (min-width: 960px) {
-  .img {
+  .exchange-float-img {
     float: right;
     align-self: center;
   }
 }
 @media (max-width: 960px) {
-  .img {
+  .exchange-float-img {
     display: flex;
+    align-self: center;
     justify-content: center;
   }
   .fotos-composicao {

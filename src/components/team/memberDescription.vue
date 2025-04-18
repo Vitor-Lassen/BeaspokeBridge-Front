@@ -53,7 +53,6 @@ const props = defineProps({
   .description{
     flex-direction: column-reverse;
     align-items: center;
-    ;
   }
 
 }

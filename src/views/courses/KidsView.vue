@@ -32,13 +32,39 @@
   </div>
 
 </div>
-  <div class="bg-blue-v">
-jkeqjeiqe
+  <div class="bg-bblue-v">
+    <div class="max-content-width center d-flex  justify-space-around">
+      <kidsCard
+        title="Inglês para Crianças (7-8 anos)"
+        subtitle="Para quem é o curso?"
+        description="Este curso é destinado a crianças de 7 e 8 anos que estão nos estágios iniciais do aprendizado de inglês e procuram uma abordagem mais divertida e prática para complementar o ensino escolar. O foco está no desenvolvimento completo das habilidades de leitura, escrita, fala e compreensão auditiva."/>
+      <kidsCard
+        title="Inglês para Crianças (9-10 anos)"
+        subtitle="Para quem é o curso?"
+        description="Este curso é voltado para crianças de 9 a 10 anos que já têm uma noção básica de inglês adquirida na escola, mas gostariam de dedicar mais tempo ao aprendizado do idioma e explorar novas abordagens além das que conhecem da sala de aula. O curso foca no desenvolvimento equilibrado de todas as habilidades linguísticas."
+        style="margin-top: 150px;" />
+    </div>
+    <div class="max-content-width center d-flex justify-space-around">
+      <kidsCard
+        title="Inglês para Crianças (11-12 anos)"
+        subtitle="Para quem é o curso?"
+        description="Este curso é destinado a alunos de 11 e 12 anos que não estão satisfeitos com o inglês aprendido na escola e gostariam de aprimorar suas habilidades de uma maneira diferente. A proposta é desenvolver todas as competências linguísticas e adquirir habilidades adicionais que os ajudarão ao longo dos anos de escolaridade."
+        style="margin-top: -150px;"/>
+      <kidsCard
+        title="Inglês para Crianças (13-14 anos)"
+        subtitle="Para quem é o curso?"
+        description="Este curso é voltado para jovens que, ao final do ensino fundamental, não estão satisfeitos com o inglês aprendido na escola e desejam dedicar mais tempo ao idioma. O foco é desenvolver todas as habilidades linguísticas de forma equilibrada, além de proporcionar o aprendizado de novos conhecimentos sobre si mesmos e o mundo ao seu redor."/>
+    </div>
+
+
+
   </div>
 
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import kidsCard from '@/components/Kids/kidsCard.vue';
+</script>
 
 <style scoped>
 .float-img {

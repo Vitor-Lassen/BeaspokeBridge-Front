@@ -68,13 +68,9 @@
           pathto="/exchange/Malta"
         />
       </MenuDropBox>
-      <MenuDropBox title="PARCERIAS">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laboriosam, ratione, eum
-          explicabo suscipit saepe inventore nisi modi odit, neque hic! Minima exercitationem magnam
-          dolorum neque unde pariatur assumenda commodi.
-        </p>
-      </MenuDropBox>
+      <v-btn class="flex-grow-1" flat @click="router.push('parcerias')">
+       <p> PARCERIAS</p>
+      </v-btn>
 
       <v-btn
         class="mr-6 contact-us-btn"

@@ -57,6 +57,12 @@ const router = createRouter({
       name: 'TermsAndConditions',
       component: () => import('../views/TermsAndConditionsView.vue')
     },
+        {
+      path: '/parcerias',
+      name: 'Parcerias',
+      component: () => import('../views/ParceriasView.vue')
+    },
+
     {
       path: '/about',
       name: 'about',

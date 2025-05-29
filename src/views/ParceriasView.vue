@@ -43,19 +43,30 @@
 
   <div class="bg-dark d-flex align-center justify-center">
     <hr class="line flex-1-1" style="max-width: 200px" />
-    <h2 class="pl-8 pr-8">
-      Escolas<br />
-      Parceiras
-    </h2>
+    <h2 class="pl-8 pr-8 mt-6 mb-6">Escolas Parceiras</h2>
     <hr class="line flex-1-1" style="max-width: 200px" />
   </div>
-  <div>
-    <p>schools</p>
+  <school-list isi bridge belst />
+
+  <div class="bg-dark d-flex align-center justify-center">
+    <hr class="line-pont flex-1-1" style="max-width: 200px" />
+    <h2 class="pl-8 pr-8 mt-6 mb-6">Empresas Parceiras</h2>
+    <hr class="line-pont flex-1-1" style="max-width: 200px" />
+  </div>
+  <div class="bg-bblue d-flex flex-column align-center justify-center">
+    <image-with-card
+      img="/Tracktest transparente.png"
+      description="Na <b>Bespoke Bridge</b>, acreditamos que o primeiro passo para um aprendizado eficaz é compreender o ponto de partida de cada aluno. Por isso, firmamos parceria com o <B>Tracktest</b>, uma plataforma internacionalmente reconhecida pela precisão na avaliação de proficiência em inglês. Fundado em 2012, o Tracktest é um Centro de Avaliação de Inglês Online que mede as habilidades de inglês de falantes não nativos. Utilizando a escala do Quadro Europeu Comum de Referência para Línguas (CEFR), oferece uma alternativa moderna aos testes tradicionais, proporcionando avaliações acessíveis e precisas."
+      link="/tracktest"
+      revert
+    />
   </div>
 </template>
 
-<script setup lang="ts"></script>
-
+<script setup lang="ts">
+import schoolList from '@/components/school/schoolList.vue'
+import ImageWithCard from '@/components/Generic/ImageWithCard.vue'
+</script>
 <style scoped>
 .parcerias {
   max-width: 800px;

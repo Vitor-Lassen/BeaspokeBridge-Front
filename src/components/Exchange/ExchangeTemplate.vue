@@ -54,7 +54,7 @@
       </div>
   </div>
 
-  <v-parallax :src="props.ex.img" class="d-flex align-center">
+  <v-parallax :src="props.ex.img" class="d-flex align-center pt-6 pb-6 ">
     <div class="d-flex flex-column align-center">
       <div class="info-uteis-card  base-card" style="max-width: 1000px">
         <div class="d-flex align-center justify-center pt-4 pl-6 pr-6">
@@ -69,6 +69,7 @@
       </div>
     </div>
   </v-parallax>
+
   <school-list :bridge="props.bridge" :isi="props.isi" :belst="props.belst" :atc="props.atc" />
 </template>
 
@@ -92,6 +93,8 @@ const props = defineProps<{
 </script>
 
 <style scoped>
+
+
 .horizontal,
 .vertical {
   border-radius: 16px;

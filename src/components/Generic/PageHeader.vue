@@ -2,7 +2,8 @@
     <v-parallax
     :src="props.imagem"
     height="400"
-    class="head-img d-flex align-center justify-right"
+
+    class="head-img align-center justify-right ph-header"
   >
     <div class="head-title d-flex flex-column justify-center align-start align-items-left">
       <h1 class="ml-12">{{ props.title }}</h1>
@@ -10,6 +11,7 @@
       <v-btn v-if="props.btn !== undefined" class="align-self-end mr-12" color="secondary">{{props.btn}} </v-btn>
     </div>
   </v-parallax>
+  <div style="height: 400px;"></div>
 </template>
 
 <script setup lang="ts">
@@ -27,6 +29,11 @@ const props = defineProps<{
 
 <style scoped>
 
+.ph-header {
+  width: 100vw;
+    position:absolute;
+    left: calc(-50vw + 50%);
+}
 .head-title {
   background-color: white;
   height: 300px;
@@ -44,4 +51,6 @@ const props = defineProps<{
     border-radius: 0 32px 32px 0;
   }
 }
+
+
 </style>

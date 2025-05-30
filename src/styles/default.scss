@@ -1,159 +1,171 @@
-@use './variables' as * ;
+@use './variables' as *;
 
-p{
-    font-size: 16px;
-    padding: 10px;
-}
-
-p.sm{
-    font-size: 18px;
-
-}
-p.md{
-    font-size: 24px;
-
-}
-p.lg{
-    font-size: 41px;
+p {
+  font-size: 16px;
+  padding: 10px;
 }
 
-h1{
-    font-size: 41px;
+p.sm {
+  font-size: 18px;
 }
-h2{
-    font-size: 32px;
+p.md {
+  font-size: 24px;
 }
-h3{
-    font-size: 18px;
-}
-
-.center{
-    margin-left: auto;
-    margin-right: auto;
-
+p.lg {
+  font-size: 41px;
 }
 
-p, h1, h2, h3, h4, h5, h6, li, a {
-    color: $text-color;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+h1 {
+  font-size: 41px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 18px;
 }
 
-.text-color-secondary{
-    color: $secondary;
-}
-.text-color-blue-logo{
-    color: $blue-logo;
-}
-.backgroud-blue, .bg-blue-h{
-    background-image: linear-gradient(102deg, rgb(255, 255, 255), $soft-blue);
-        width: 100vw;
-    position: relative;
-    left: calc(-50vw + 50%);
-}
-.bg-bblue-v{
-    background-image: linear-gradient(0deg, rgb(255, 255, 255), #d5dfff);
-        width: 100vw;
-    position: relative;
-    left: calc(-50vw + 50%);
-}
-.bg-blue-v{
-    background-image: linear-gradient(0deg, rgb(255, 255, 255), $soft-blue);
-        width: 100vw;
-    position: relative;
-    left: calc(-50vw + 50%);
-}
-.backgroud-ultrasoftblue, .bg-ublue {
-    background-image: linear-gradient(0deg, rgb(255, 255, 255), $ultrasoft-blue);
-        width: 100vw;
-    position: relative;
-    left: calc(-50vw + 50%);
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.bg-bblue{
-    background-color:  rgba(70, 124, 158, 0.115) ;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a {
+  color: $text-color;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-.max-content-width{
-    max-width: 1200px;
+.text-color-secondary {
+  color: $secondary;
+}
+.text-color-blue-logo {
+  color: $blue-logo;
+}
+.backgroud-blue,
+.bg-blue-h {
+  background-image: linear-gradient(102deg, rgb(255, 255, 255), $soft-blue);
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+}
+.bg-bblue-v {
+  background-image: linear-gradient(0deg, rgb(255, 255, 255), #d5dfff);
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+}
+.bg-blue-v {
+  background-image: linear-gradient(0deg, rgb(255, 255, 255), $soft-blue);
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+}
+.backgroud-ultrasoftblue,
+.bg-ublue {
+  background-image: linear-gradient(0deg, rgb(255, 255, 255), $ultrasoft-blue);
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
 }
 
-.max-text-content-width{
-    max-width: 800px;
+.bg-bblue {
+  background-color: rgba(70, 124, 158, 0.115);
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
 }
 
-.min-content-width{
-    min-width: 400px;
+.max-content-width {
+  max-width: 1200px;
 }
 
+.max-text-content-width {
+  max-width: 800px;
+}
+
+.min-content-width {
+  min-width: 400px;
+}
 
 .line {
-    border: none;
-    height: 4px;              /* Espessura da linha */
-    background-color: $secondary;  /* Cor da linha */
-    margin: 20px 0;           /* Espaçamento acima e abaixo */
-  }
-  
-  .line-pont{
-    border: none;
-    border-top: 4px dashed $secondary; /* Linha pontilhada vermelha */
-    margin: 20px 0;
-  
-  }
-  
+  border: none;
+  height: 4px; /* Espessura da linha */
+  background-color: $secondary; /* Cor da linha */
+  margin: 20px 0; /* Espaçamento acima e abaixo */
+}
 
+.line-pont {
+  border: none;
+  border-top: 4px dashed $secondary; /* Linha pontilhada vermelha */
+  margin: 20px 0;
+}
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 
-    color: $text-color;
-  }
-
-.bg-dark{
-    background-color: $primary;
-    width: 100vw;
-    position: relative;
-    left: calc(-50vw + 50%);
-}
-.bg-dark p, .bg-dark a, .bg-dark h1, .bg-dark h2, .bg-dark h3, .bg-dark h4, .bg-dark h5, .bg-dark h6 {
-    color:white;
-}
-.bg-dark .restore p, .bg-dark .restore a, .bg-dark .restore h1, .bg-dark .restore h2, .bg-dark .restore h3, .bg-dark .restore h4, .bg-dark .restore h5, .bg-dark .restore h6 {
-    color:$primary;
+  color: $text-color;
 }
 
-
-.notice{
-    font-size: 12px;
+.bg-dark {
+  background-color: $primary;
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+}
+.bg-dark p,
+.bg-dark a,
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark h4,
+.bg-dark h5,
+.bg-dark h6 {
+  color: white;
+}
+.bg-dark .restore p,
+.bg-dark .restore a,
+.bg-dark .restore h1,
+.bg-dark .restore h2,
+.bg-dark .restore h3,
+.bg-dark .restore h4,
+.bg-dark .restore h5,
+.bg-dark .restore h6 {
+  color: $primary;
 }
 
-.base-card
- {
+.notice {
+  font-size: 12px;
+}
+
+.base-card {
   background-color: white;
   border-radius: 16px;
-
 }
 
-
-.moldura{
-    border-radius: 16px;
-    border: 1px solid $primary ;
-
+.moldura {
+  border-radius: 16px;
+  border: 1px solid $primary;
 }
 
-
-
-.hover{
-    transition: 0.5s ;
-  }
-  .hover:hover{
-    cursor: pointer;
-    color: black;
-    filter: grayscale(100%);
-  }
-
+.hover {
+  transition: 0.5s;
+}
+.hover:hover {
+  cursor: pointer;
+  color: black;
+  filter: grayscale(100%);
+}
 
 //lists
 .base-list {

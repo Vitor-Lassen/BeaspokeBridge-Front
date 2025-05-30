@@ -19,11 +19,16 @@ import DefaultFooter from './components/footer/DefaultFooter.vue'
     </v-banner>
     <header class="d-flex flex-wrap">
 
-      <DefaultHeader class="flex-1-1-100" />
+      <DefaultHeader class="flex-1-1-100"  />
     </header>
 
     <v-lazy :options="{ threshold: 0.5 }" transition="scroll-y-reverse-transition">
-      <RouterView />
+        <div class="d-flex flex-column align-center justify-center">
+          <div class="max-content-width">
+            <RouterView/>
+
+          </div>
+      </div>
     </v-lazy>
     <a href="https://wa.me/5511973385008?text=Olá!%20Bem-vindo%20(Welcome)!%0A%0AComo%20posso%20ajudá-lo?"><v-btn class="whatsapp-button" icon="mdi-whatsapp" size="x-large" color="green"></v-btn></a>
     <DefaultFooter />

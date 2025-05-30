@@ -12,10 +12,9 @@
       com a educação personalizada.
     </p>
   </div>
-  <div class="bg-blue-v pa-8">
-    <p>
-      <b
-        >Os parceiros da Bespoke Bridge são escolhidos com base em critérios rigorosos que asseguram
+  <div class="bg-blue-v ">
+    <p class="max-content-width center pa-8">
+      <b>Os parceiros da Bespoke Bridge são escolhidos com base em critérios rigorosos que asseguram
         que cada colaboração agregue valor à experiência dos nossos alunos.</b
       >
     </p>

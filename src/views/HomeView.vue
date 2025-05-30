@@ -17,7 +17,7 @@ import ContactUs from '@/components/ContactUs.vue'
       </div>
     </div>
 
-    <div class="backgroud-blue pa-6 d-flex flex-column align-center align-content-center">
+    <div class="bg-blue-h pa-6 d-flex flex-column align-center align-content-center">
       <h1 class="mt-8 pb-6" v-html="$t('home.custom-learning.title')" />
       <div class="d-flex flex-wrap-reverse justify-center">
         <div class="pa-6" style="width: 400px; text-align: center">

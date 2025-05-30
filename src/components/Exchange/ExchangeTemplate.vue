@@ -18,7 +18,7 @@
    </p>
   </div>
 
-  <div class="backgroud-ultrasoftblue pa-6" >
+  <div class="bg-ublue pa-6" >
     <div class="center" style="max-width:  1100px;">
     <h2 class="pt-8" v-html=" props.ex.pqTitile" />
     <div class="d-flex align-center justify-center pa-6 pr-8">

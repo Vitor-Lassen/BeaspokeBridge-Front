@@ -81,9 +81,12 @@
       </li>
     </ul>
   </div>
+  <classTypes />
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import classTypes from '@/components/classTypes.vue';
+</script>
 
 
 <style scoped>

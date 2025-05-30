@@ -1,5 +1,5 @@
 <template>
-  <ExchangeTemplate :ex="model"/>
+  <ExchangeTemplate :ex="model" atc isi/>
 </template>
 
 <script setup lang="ts">

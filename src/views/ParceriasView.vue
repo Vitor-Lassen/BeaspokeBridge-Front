@@ -46,7 +46,7 @@
     <h2 class="pl-8 pr-8 mt-6 mb-6">Escolas Parceiras</h2>
     <hr class="line flex-1-1" style="max-width: 200px" />
   </div>
-  <school-list isi bridge belst />
+  <school-list isi bridge belst atc />
 
   <div class="bg-dark d-flex align-center justify-center">
     <hr class="line-pont flex-1-1" style="max-width: 200px" />

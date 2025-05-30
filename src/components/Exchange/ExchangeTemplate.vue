@@ -69,18 +69,24 @@
       </div>
     </div>
   </v-parallax>
+  <school-list :bridge="props.bridge" :isi="props.isi" :belst="props.belst" :atc="props.atc" />
 </template>
 
 <script setup lang="ts">
 import ExchangeCard from './ExchangeCard.vue'
 import ItemUtils from './ItemUtils.vue'
 import PageHeader from '../Generic/PageHeader.vue';
-
+import schoolList from '../school/schoolList.vue';
 import type { ExchangeTemplateModel } from '@/Models/ExchangeTemplates';
 import { defineProps } from 'vue';
 
 const props = defineProps<{
   ex:ExchangeTemplateModel
+  bridge?: boolean,
+  isi?: boolean,
+  belst?: boolean,
+  atc?:boolean
+
 }>();
 
 </script>

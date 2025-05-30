@@ -137,3 +137,18 @@ a {
     color: black;
     filter: grayscale(100%);
   }
+
+
+//lists
+.base-list {
+  list-style: circle !important;
+  list-style-type: circle !important;
+  list-style-position: outside !important;
+}
+.base-list li,
+.base-list li p {
+  list-style-type: circle !important;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  text-align: justify;
+}

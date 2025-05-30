@@ -66,18 +66,23 @@
       "title":"Cursos de <b class='text-color-secondary'>inglês</b> para todos", 
       "description":"Na Bespoke Bridge, nossos serviços vão além do convencional, oferecendo experiências personalizadas que atendem às suas necessidades e objetivos únicos. Seja qual for a sua idade ou objetivo, temos um curso perfeito para você! <br><br>Estes são nossos cursos <b>mais</b> <b class='text-color-secondary'>populares</b>:", 
       "for-kids":{
-        "title":"Para crianças",
+        "title":"Para Crianças",
         "description":"BB Kids: Inglês com CLIL para crianças de 7 a 14 anos, unindo idioma e conteúdos de Ciências e Sociais de forma divertida e dinâmica.",
         "btn-learn-more":"Saiba +"
       },
       "for-adults":{
-        "title":"Para adultos",
+        "title":"Para Adultos",
         "description":"Nossos cursos oferecem ensino de inglês personalizado, com foco em comunicação prática, fluência, viagens e objetivos profissionais, atendendo às suas necessidades específicas.",
         "btn-learn-more":"Saiba +"
       },
       "for-teachers":{
-        "title":"For teachers",
+        "title":"For Teachers",
         "description":"Courses focused on developing pedagogical skills, with an emphasis on innovative methodologies and effective practices to improve English teaching and learning.",
+        "btn-learn-more":"Saiba +"
+      },
+       "for-company":{
+        "title":"Para Empresas",
+        "description":"O inglês é, hoje, a língua universal dos negócios. Em um mundo corporativo cada vez mais globalizado, a proficiência no idioma não é apenas um diferencial, mas uma necessidade estratégica para empresas que desejam crescer e se destacar no mercado.",
         "btn-learn-more":"Saiba +"
       }
     }

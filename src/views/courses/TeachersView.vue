@@ -39,7 +39,7 @@
   <div class="max-text-content-width center pa-6 mt-3 ">
     <h2 class="ma-6 pb-6">Why choose our courses?</h2>
 
-    <ul class="teacher-list">
+    <ul class="base-list">
       <li>
         <b>Master Essential 21st-Century Topics</b><br />
 
@@ -69,7 +69,7 @@
         </p>
       </li>
     </ul>
-  </div>
+
 <div class="d-flex flex-column align-center max-content-width pa-6">
     <p>
       Take the next step in your teaching journey with The Bridge's transformative teacher education
@@ -87,23 +87,14 @@
 
 <p>They are active in promoting the ideas of a modern educational ecosystem not only at our school. But also in the public, companies and in cooperation with several institutions.</p>
   </div>
+  </div>
 </template>
+
 
 <script setup lang="ts"></script>
 
 <style scoped>
-.teacher-list {
-  list-style: circle !important;
-  list-style-type: circle !important;
-  list-style-position: outside !important;
-}
-.teacher-list li,
-.teacher-list li p {
-  list-style-type: circle !important;
-  margin-bottom: 10px;
-  padding-left: 20px;
-  text-align: justify;
-}
+
 p {
   text-align: justify;
 }

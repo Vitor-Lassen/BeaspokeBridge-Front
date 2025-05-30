@@ -27,6 +27,11 @@ const router = createRouter({
       name: 'ForTeachers',
       component: () => import('../views/courses/TeachersView.vue'),
     },
+        {
+      path: '/for-company',
+      name: 'ForCompany',
+      component: () => import('../views/courses/CompanyView.vue'),
+    },
     {
       path: '/exchange/Ireland',
       name: 'Irland',

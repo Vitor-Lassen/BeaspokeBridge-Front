@@ -13,7 +13,7 @@
             <li @click="router.push('contact-us')"><a >{{$t('footer.fast-access.contact')}}</a></li>
             <li><a href="">{{$t('footer.fast-access.curses')}}</a></li>
             <li><a href="">{{$t('footer.fast-access.exchange')}}</a></li>
-            <li><a href="">{{$t('footer.fast-access.partnerships')}}</a></li>
+            <li><a @click="router.push('/parcerias')">{{$t('footer.fast-access.partnerships')}}</a></li>
             <li><a href="">{{$t('footer.fast-access.blog')}}</a></li>
           </ul>
         </div>
@@ -22,9 +22,9 @@
           <h4>{{$t('footer.transparency.title')}}</h4>
 
           <ul>
-            <li><a @click="router.push('terms-and-conditions')">{{$t('footer.transparency.terms')}}</a></li>
-            <li><a @click="router.push('privacy-policy')">{{$t('footer.transparency.privacy')}}</a></li>
-            <li><a @click="router.push('privacy-policy')">{{$t('footer.transparency.cookies')}}</a></li>
+            <li><a @click="router.push('/terms-and-conditions')">{{$t('footer.transparency.terms')}}</a></li>
+            <li><a @click="router.push('/privacy-policy')">{{$t('footer.transparency.privacy')}}</a></li>
+            <li><a @click="router.push('/privacy-policy')">{{$t('footer.transparency.cookies')}}</a></li>
 
           </ul>
         </div>

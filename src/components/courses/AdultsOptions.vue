@@ -25,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import type { KeyValueModel } from '@/models/KeyValueModel'
+import type { KeyValueModel } from '@/models/keyValueModel'
 import { defineProps } from 'vue'
 
 const props = defineProps<{

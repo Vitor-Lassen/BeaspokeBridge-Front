@@ -1,7 +1,7 @@
 <template>
-  <div class="d-flex align-center justify-center max-content-width pt-6 pb-6" :class="props.revert ? 'flex-row-reverse' : ''">
-    <v-img :src="props.img" min-width="250" class="ma-8"></v-img>
-    <div class="base-card" style="width: 100%">
+  <div class="d-flex align-center flex-wrap justify-center max-content-width pt-6 pb-6" :class="props.revert ? 'flex-row-reverse' : ''">
+    <v-img :src="props.img" aspect-ratio="16/9" max-width="300" min-width="250" max-height="150" class="ma-8"></v-img>
+    <div class="base-card ma-6" style="max-width: 700px">
       <p v-html="props.description"></p>
       <v-btn  class="ma-2 iwc-btn" color="secondary" @click="router.push(props.link);"> Saiba +</v-btn>
     </div>

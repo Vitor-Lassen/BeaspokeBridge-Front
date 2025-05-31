@@ -29,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import baseIconCard from './BaseIconCard.vue';
+import baseIconCard from './baseIconCard.vue';
 </script>
 
 <style scoped>

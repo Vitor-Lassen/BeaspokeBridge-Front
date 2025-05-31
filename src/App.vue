@@ -24,7 +24,7 @@ import DefaultFooter from './components/footer/DefaultFooter.vue'
 
     <v-lazy :options="{ threshold: 0.5 }" transition="scroll-y-reverse-transition">
         <div class="d-flex flex-column align-center justify-center">
-          <div class="max-content-width">
+          <div class="max-content-width pl-12 pr-12">
             <RouterView/>
 
           </div>

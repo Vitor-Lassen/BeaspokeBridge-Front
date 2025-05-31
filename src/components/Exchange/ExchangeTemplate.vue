@@ -94,6 +94,18 @@ const props = defineProps<{
 
 <style scoped>
 
+.pallalax {
+
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  height: 100%;
+  background-image: url('/map.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 
 .horizontal,
 .vertical {

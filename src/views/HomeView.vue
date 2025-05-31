@@ -64,7 +64,10 @@ import ContactUs from '@/components/ContactUs.vue'
 
 <style scoped>
 .map {
-  width: 100%;
+
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
   height: 100%;
   background-image: url('/map.png');
   background-size: cover;

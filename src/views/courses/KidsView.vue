@@ -63,7 +63,7 @@
 </template>
 
 <script setup lang="ts">
-import kidsCard from '@/components/Kids/kidsCard.vue';
+import kidsCard from '@/components/courses/kidsCard.vue';
 </script>
 
 <style scoped>

@@ -1,5 +1,5 @@
 <template>
-  <AdultsOptions
+  <adultsOptions
     title="Curso de Inglês Geral"
     subtitle="General English"
     firstText="O curso de Inglês Geral é projetado para ensinar a língua inglesa de maneira abrangente, abordando todos os aspectos essenciais para o desenvolvimento das habilidades dos alunos. Este tipo de curso inclui:"
@@ -10,7 +10,7 @@
     pathTo="/contact-us?course=adults-general-english"
   />
 
-  <AdultsOptions
+  <adultsOptions
     title="Curso de Inglês para Negócios"
     subtitle="Business English"
     firstText="O curso de Inglês para Negócios é projetado para desenvolver as habilidades linguísticas necessárias para o ambiente corporativo, capacitando os alunos a se comunicarem de maneira eficaz em contextos empresariais. Este curso inclui:"
@@ -23,7 +23,7 @@
     color
   />
 
-  <AdultsOptions
+  <adultsOptions
     title="Preparatórios para Exames"
     subtitle="IELTS & Cambridge"
     firstText="O curso de Inglês para Exames de Proficiência é projetado para preparar os alunos para os principais testes de proficiência na língua inglesa, como o IELTS e os exames de Cambridge. Este curso inclui:"
@@ -34,7 +34,7 @@
     pathTo="/contact-us?course=adults-general-english"
   />
 
-  <AdultsOptions
+  <adultsOptions
     title="Curso de Inglês para Propósitos Específicos"
     subtitle="English for Specific Purposes"
     firstText="O curso de Inglês para Propósitos Específicos (ESP) é voltado para o desenvolvimento de habilidades linguísticas específicas que atendam às necessidades de determinadas áreas profissionais ou acadêmicas. Este curso inclui:"
@@ -44,7 +44,7 @@
     pathTo="/contact-us?course=adults-business-english"
     color
   />
-  <AdultsOptions
+  <adultsOptions
     title="Curso de inglês para viagens"
     subtitle="English for Travel"
     firstText="O curso de Inglês para Viagens é projetado para fornecer aos alunos as habilidades linguísticas necessárias para se comunicarem de maneira eficaz e confiante durante suas viagens internacionais. Este curso inclui:"
@@ -57,7 +57,7 @@
 </template>
 
 <script setup lang="ts">
-import AdultsOptions from '@/components/courses/adultsOptions.vue'
+import adultsOptions from '@/components/courses/adultsOptions.vue'
 import type { KeyValueModel } from '@/models/keyValueModel'
 
 const generalEnglish: KeyValueModel[] = [

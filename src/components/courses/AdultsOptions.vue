@@ -35,7 +35,7 @@
 </template>
 
 <script setup lang="ts">
-import type { KeyValueModel } from '@/models/keyValueModel'
+import type { KeyValueModel } from '@/Models/keyValueModel'
 import { defineProps } from 'vue'
 
 const props = defineProps<{

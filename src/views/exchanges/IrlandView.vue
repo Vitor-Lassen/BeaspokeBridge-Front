@@ -6,7 +6,7 @@
 import ExchangeTemplate from '@/components/Exchange/ExchangeTemplate.vue'
 import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'
-import type { ExchangeTemplateModel, BaseModel } from '@/models/ExchangeTemplates'
+import type { ExchangeTemplateModel, BaseModel } from '@/Models/ExchangeTemplates'
 
 const { t } = useI18n()
 

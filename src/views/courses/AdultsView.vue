@@ -58,7 +58,7 @@
 
 <script setup lang="ts">
 import AdultsOptions from '@/components/courses/AdultsOptions.vue'
-import type { KeyValueModel } from '@/models/keyValueModel'
+import type { KeyValueModel } from '@/Models/keyValueModel'
 
 const generalEnglish: KeyValueModel[] = [
   {

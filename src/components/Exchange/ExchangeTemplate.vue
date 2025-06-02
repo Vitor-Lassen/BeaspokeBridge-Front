@@ -99,7 +99,7 @@ import ExchangeCard from './ExchangeCard.vue'
 import ItemUtils from './ItemUtils.vue'
 import PageHeader from '../Generic/PageHeader.vue'
 import schoolList from '../school/schoolList.vue'
-import type { ExchangeTemplateModel } from '@/models/ExchangeTemplates'
+import type { ExchangeTemplateModel } from '@/Models/ExchangeTemplates'
 import { defineProps } from 'vue'
 
 const props = defineProps<{

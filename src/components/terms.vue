@@ -19,7 +19,7 @@
 
 <script setup lang="ts">
 import { defineProps } from 'vue'
-import type { PrivacyModel } from '@/models/PrivacyModel'
+import type { PrivacyModel } from '@/Models/PrivacyModel'
 
 const props = defineProps({
   title: {

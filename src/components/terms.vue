@@ -5,22 +5,21 @@
       <h1>{{ props.title }}</h1>
     </div>
 
-      <div class="pa-8 " style=" max-width: 800px">
-        <ol>
-          <li v-for="item in props.items" :key="item.title">
-            <b>{{ item.title }}</b>
-            <p v-html="item.description"></p>
-          </li>
-        </ol>
-        <p>Documento emitido em: {{props.date}}</p>
-      </div>
+    <div class="pa-8" style="max-width: 800px">
+      <ol>
+        <li v-for="item in props.items" :key="item.title">
+          <b>{{ item.title }}</b>
+          <p v-html="item.description"></p>
+        </li>
+      </ol>
+      <p>Documento emitido em: {{ props.date }}</p>
     </div>
-
+  </div>
 </template>
 
 <script setup lang="ts">
 import { defineProps } from 'vue'
-import type { PrivacyModel } from '@/Models/PrivacyModel'
+import type { PrivacyModel } from '@/models/PrivacyModel'
 
 const props = defineProps({
   title: {
@@ -30,17 +29,16 @@ const props = defineProps({
   items: {
     type: Array as () => PrivacyModel[],
   },
-  date: String
+  date: String,
 })
 </script>
 
-<style >
+<style>
 p,
 li {
   text-align: justify;
 }
-li{
+li {
   margin-left: 30px;
 }
-
 </style>

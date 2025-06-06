@@ -24,10 +24,10 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 50px ; /* Example padding */
+  padding: 10px 20px ; /* Example padding */
   display: flex;
   flex-direction: column;
-  
+
 
 }
 

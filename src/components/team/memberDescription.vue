@@ -1,6 +1,6 @@
 <template>
-   <div class="ma-2 mr-6 description">
-      <div class="pa-6 max-text-content-width ">
+   <div class="description ">
+      <div class="mr-4">
         <slot></slot>
       </div>
 

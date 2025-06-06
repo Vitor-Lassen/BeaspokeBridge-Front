@@ -6,7 +6,7 @@
     class="head-img align-center justify-right ph-header"
   >
     <div class="head-title d-flex flex-column justify-center align-start align-items-left">
-      <h1 class="ml-12">{{ props.title }}</h1>
+      <h1 class="ml-12 mb-1 mt-1">{{ props.title }}</h1>
       <p class="ml-12 subtitle">{{props.subtitle}}</p>
       <v-btn v-if="props.btn !== undefined" class="align-self-end mr-12" color="secondary">{{props.btn}} </v-btn>
     </div>
@@ -42,6 +42,7 @@ const props = defineProps<{
 
 .subtitle {
   font-size: 28px;
+  text-align: start;
 }
 @media (min-width: 960px) {
 

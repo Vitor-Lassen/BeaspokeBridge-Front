@@ -1,5 +1,5 @@
 <template>
-  <div class="max-content-width center pa-8">
+  <ds-container >
     <div class="d-flex align-center center">
       <h1>Parcerias que transformam o aprendizado</h1>
 
@@ -11,19 +11,19 @@
       instituições e empresas que compartilham nossos valores de excelência, inovação e compromisso
       com a educação personalizada.
     </p>
-  </div>
-  <div class="bg-blue-v ">
+  </ds-container>
+  <ds-container class="bg-blue-v ">
     <p class="max-content-width center pa-8">
       <b>Os parceiros da Bespoke Bridge são escolhidos com base em critérios rigorosos que asseguram
         que cada colaboração agregue valor à experiência dos nossos alunos.</b
       >
     </p>
-  </div>
-  <div class="max-content-width center">
-    <div class="parcerias center">
+  </ds-container>
+
+  <ds-container>
       <h4 class="pa-4">Buscamos instituições com:</h4>
 
-      <ul>
+      <ul class="base-list">
         <li>Reputação comprovada de excelência educacional.</li>
         <li>
           Valores alinhados com os nossos, como respeito pela diversidade e ensino personalizado.
@@ -32,14 +32,13 @@
           Compromisso com o desenvolvimento contínuo de metodologias e ferramentas de aprendizado.
         </li>
       </ul>
-    </div>
+
     <p>
       Com essas parcerias, reforçamos nossa missão de construir pontes para o sucesso dos nossos
       alunos, oferecendo oportunidades educacionais transformadoras e preparando-os para um futuro
       globalizado.
     </p>
-  </div>
-
+  </ds-container>
   <div class="bg-dark d-flex align-center justify-center">
     <hr class="line flex-1-1" style="max-width: 200px" />
     <h2 class="pl-8 pr-8 mt-6 mb-6">Escolas Parceiras</h2>

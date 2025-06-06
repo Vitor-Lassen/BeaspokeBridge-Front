@@ -5,49 +5,47 @@
     :imagem="props.ex.img"
     :btn="props.ex.btn"
   />
-
-  <div class="pa-6 pt-12 center" style="max-width: 1000px">
-    <h1 v-html="props.ex.resumeTitle" />
-    <div class="exchange-float-img">
-      <v-img
-        :src="props.ex.resumeImg"
-        min-width="200"
-        max-width="300"
-        aspect-ratio="16/9"
-        class="ma-4"
-      />
+  <ds-container>
+    <div>
+      <h1 v-html="props.ex.resumeTitle" />
+      <div class="exchange-float-img">
+        <v-img
+          :src="props.ex.resumeImg"
+          min-width="200"
+          max-width="300"
+          aspect-ratio="16/9"
+          class="ma-4"
+        />
+      </div>
+      <p class="sm">
+        {{ props.ex.resumeDescription }}
+      </p>
     </div>
-    <p class="sm">
-      {{ props.ex.resumeDescription }}
-    </p>
-  </div>
-
-  <div class="bg-ublue pa-6">
-    <div class="center" style="max-width: 1100px">
-      <h2 class="pt-8" v-html="props.ex.pqTitile" />
-      <div class="d-flex align-center justify-center pa-6 pr-8">
-        <div class="d-flex flex-column align-center justify-space-between">
-          <exchange-card
-            v-for="item in props.ex.pqs"
-            v-bind:key="item.title"
-            :title="item.title"
-            :description="item.subtitle"
-            :image="item.img"
-          />
-        </div>
-        <div class="fotos-composicao">
-          <img :src="props.ex.pqs[0].img" class="vertical" />
-          <div class="fotos-horizontais">
-            <img :src="props.ex.pqs[1].img" class="horizontal" />
-            <img :src="props.ex.pqs[2].img" class="horizontal" />
-          </div>
+  </ds-container>
+  <ds-container class="bg-ublue">
+    <h2 class="pt-8" v-html="props.ex.pqTitile" />
+    <div class="d-flex align-center justify-center">
+      <div class="d-flex flex-column align-center justify-space-between">
+        <exchange-card
+          v-for="item in props.ex.pqs"
+          v-bind:key="item.title"
+          :title="item.title"
+          :description="item.subtitle"
+          :image="item.img"
+        />
+      </div>
+      <div class="fotos-composicao">
+        <img :src="props.ex.pqs[0].img" class="vertical" />
+        <div class="fotos-horizontais">
+          <img :src="props.ex.pqs[1].img" class="horizontal" />
+          <img :src="props.ex.pqs[2].img" class="horizontal" />
         </div>
       </div>
-      <h1>
-        <v-btn color="secondary"> {{ props.ex.pqBtn }}</v-btn>
-      </h1>
     </div>
-  </div>
+    <h1>
+      <v-btn color="secondary"> {{ props.ex.pqBtn }}</v-btn>
+    </h1>
+  </ds-container>
   <div class="bg-dark d-flex flex-column align-center">
     <div class="ma-6" style="max-width: 1000px">
       <div class="d-flex align-center justify-space-between">

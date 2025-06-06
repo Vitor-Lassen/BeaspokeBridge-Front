@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-bblue d-flex flex-column align-center justify-center">
+  <ds-container class="bg-bblue">
     <image-with-card
       v-for="school in getSchool"
       :key="school.link"
@@ -7,7 +7,7 @@
       :description="school.description"
       :link="school.link"
     />
-  </div>
+  </ds-container>
 </template>
 
 <script setup lang="ts">

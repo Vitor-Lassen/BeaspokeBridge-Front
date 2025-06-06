@@ -1,20 +1,20 @@
 <template>
-  <div class="pa-8 d-flex flex-column align-center" >
-    <h1 class="mb-16 mt-10">Construímos Conexões</h1>
-    <p class="max-content-width">
+  <ds-container class=" d-flex align-center justify-center">
+    <h1 >Construímos Conexões</h1>
+    <p >
       Na Bespoke Bridge, acreditamos que o aprendizado vai além das palavras. <b class='text-color-blue-logo'>Nossa missão</b> é
       construir <i><b class='text-color-blue-logo'>pontes </b>(<b class='text-color-secondary'>bridges</b>)</i> entre culturas, idiomas e oportunidades, capacitando pessoas
       a alcançarem seus sonhos com <b class='text-color-blue-logo'>confiança</b> e fluência <b class='text-color-blue-logo'>no inglês</b>.
     </p>
   <v-img  src="./bespoke-line.png" min-width="300" max-width="1200" width="100%"></v-img>
 
-    <hr class="line-pont center ma-6" style="width: 200px;" />
+    <hr class="line-pont mt-14 "  style="width: 200px; align-self: center;" />
 
-    <h2 class="mt-16">Acreditamos no poder da personalização</h2>
-    <div class="d-flex flex-row-reverse align-center img-flex max-content-width">
-      <img class="ma-6 flex-0-1 img" :src="'./online lessons.png'" />
+    <h2>Acreditamos no poder da personalização</h2>
+    <div class="d-flex flex-row-reverse align-center img-flex">
+      <img class="ml-6 flex-0-1 img" :src="'./online lessons.png'" />
 
-      <p class="">
+      <p >
         A palavra <b class='text-color-blue-logo'>bespoke</b> significa “<b class='text-color-secondary'> <i>feito sob medida</i></b>”, e é essa a essência dos nossos serviços.
         <br /><br />
         Oferecemos <b>cursos de inglês online</b> criados exclusivamente para atender às suas necessidades
@@ -35,23 +35,16 @@
         qualidade do ensino de línguas.
       </p>
     </div>
-  </div>
+  </ds-container>
 
-  <div class="bg-dark">
-    <div class="center" style="max-width: 500px">
-      <p style="text-align: center">
-        <b
-          ><i
-            >"Insanidade é continuar fazendo sempre a mesma coisa e esperar resultados
-            diferentes"</i
-          ></b
-        >
-      </p>
-      <p style="text-align: end">Albert Einstein.</p>
-    </div>
-  </div>
-  <div class="bg-blue-v">
-    <div class="d-flex flex-column align-center center" style="max-width: 1200px">
+  <ds-quote
+    phase="Insanidade é continuar fazendo sempre a mesma coisa e esperar resultados
+            diferentes"
+    actor="Albert Einstein."
+  />
+
+  <ds-container class="bg-blue-v">
+    <div class="d-flex flex-column align-center " style="max-width: 1200px">
       <div class="d-flex img-flex align-center justify-space-between" style="width: 100%">
         <TopicCard title="Nossa Missão" img="./Missao.png" :max-width="500">
           <p>
@@ -67,7 +60,7 @@
           </p>
         </TopicCard>
       </div>
-      <TopicCard class="ma-8 pa-4" title="Nossos valores" img="./values.png" :max-width="2000">
+      <TopicCard title="Nossos valores" img="./values.png" :max-width="2000">
           <PImg
           img="excelencia.png"
           p="<b class='text-color-blue-logo'>Excelência</b>: Compromisso inabalável em oferecer serviços de altíssima qualidade, garantindo que cada interação com nossos clientes seja uma experiência positiva e transformadora."/>
@@ -86,7 +79,7 @@
 
       </TopicCard>
     </div>
-  </div>
+  </ds-container>
 </template>
  
 <script setup lang="ts">
@@ -99,9 +92,7 @@ a{
   font-style: italic;
 }
 
-p {
-  text-align: justify;
-}
+
 .img {
   height: 600px;
 }

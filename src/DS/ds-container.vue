@@ -27,6 +27,7 @@
   padding: 10px 50px ; /* Example padding */
   display: flex;
   flex-direction: column;
+  
 
 }
 

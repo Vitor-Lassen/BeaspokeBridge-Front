@@ -31,7 +31,5 @@ import baseIconCard from './baseIconCard.vue';
 </script>
 
 <style scoped>
-h2,h3,p {
-  text-align: justify !important;
-}
+
 </style>

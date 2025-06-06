@@ -1,7 +1,7 @@
 <template>
 <ds-container >
 
-    <div class="d-flex align-center justify-center flex-wrap pa-6">
+    <div class="d-flex align-center justify-center flex-wrap ">
       <v-img src="Logos BB/BB Kids.png" :min-width="300" :max-width="450" ></v-img>
       <h1>Muito além do inglês</h1>
     </div>

@@ -27,7 +27,7 @@
   </ds-container>
 
   <ds-container column class="bg-bblue-v">
-    <div class="d-flex align-center justify-space-between mr-12 ml-12 flex-wrap">
+    <div class="d-flex align-center justify-space-between flex-wrap">
       <h2>Study with the best</h2>
       <div style="align-self: flex-end">
         <v-img src="Stars.png" min-width="200" max-width="200"> </v-img>
@@ -40,9 +40,9 @@
     </p>
   </ds-container>
   <ds-container  >
-    <h2 class="ma-6 pb-6">Why choose our courses?</h2>
+    <h2>Why choose our courses?</h2>
 
-    <ul class="base-list ml-16">
+    <ul class="base-list">
       <li>
         <b>Master Essential 21st-Century Topics</b><br />
 

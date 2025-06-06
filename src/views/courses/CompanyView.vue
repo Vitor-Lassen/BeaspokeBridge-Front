@@ -2,7 +2,7 @@
   <ds-container >
     <div class="d-flex align-center center">
       <div>
-        <h1 class="ml-12 mb-16 mt-16" style="text-align: start">Inglês Corporativo</h1>
+        <h1 style="text-align: start">Inglês Corporativo</h1>
         <p>
           O inglês é, hoje, a <b>língua universal dos negócios</b>. Em um mundo corporativo cada vez
           mais globalizado, a proficiência no idioma não é apenas um diferencial, mas
@@ -20,7 +20,7 @@
       para o sucesso em um ambiente corporativo competitivo e inovador.
     </p>
 
-    <h2 class="mt-16 ml-12 mb-16" style="text-align: start">Estude do Escritório ou de Casa</h2>
+    <h2  style="text-align: start">Estude do Escritório ou de Casa</h2>
 
     <p>
       Na <b class="text-color-blue-logo"> Bespoke Bridge</b>, oferecemos aulas
@@ -30,7 +30,7 @@
       sem comprometer a produtividade.
     </p>
     <p style="text-align: start"><b>Oferecemos:</b></p>
-    <ul class="base-list pl-12 pb-12">
+    <ul class="base-list">
       <li>
         <b>Cursos Personalizados:</b> Adaptamos o conteúdo das aulas às necessidades específicas da
         sua empresa, seja para comunicação geral, inglês técnico ou áreas específicas como negócios
@@ -54,14 +54,14 @@
       actor="Conselho Britânico"
     />
  <ds-container >
-    <div class="center pa-8 max-content-width">
-      <div class="d-flex justify-space-around align-center center">
+    <div class=" max-content-width">
+      <div class="d-flex justify-space-between align-center center">
         <h2>Resultados mensuráveis</h2>
 
-        <v-img src="/Tracktest transparente.png" max-width="350"> </v-img>
+        <v-img src="/Tracktest transparente.png" max-width="400"> </v-img>
       </div>
       <p style="text-align: start"><b>Como funciona?</b></p>
-      <ul class="base-list pl-12">
+      <ul class="base-list">
         <li>
           <b>Avaliação Inicial:</b> Identificamos o nível atual de cada colaborador no início do
           programa, fornecendo uma base confiável para acompanhar a evolução.
@@ -82,8 +82,8 @@
 
     <classTypes />
   <ds-container>
-    <h2 class="mt-16 mb-12">Por que escolher a Bespoke Bridge?</h2>
-    <div class="base-card card-pq-escolher pa-8 ">
+    <h2>Por que escolher a Bespoke Bridge?</h2>
+    <div class="base-card card-pq-escolher ">
       <h3>Análise de Necessidades Detalhada e Objetivos Mensuráveis</h3>
       <p>
         Acreditamos que cada aluno é único e, para garantir que nossos programas sejam eficazes,
@@ -105,7 +105,7 @@
 import classTypes from '@/components/classTypes.vue'
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @use '@/styles/variables' as *;
 
 .card-pq-escolher {

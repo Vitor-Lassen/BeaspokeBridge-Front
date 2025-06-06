@@ -1,7 +1,6 @@
 <template>
-  <div class="bg-dark">
-    <div class="max-content-width center">
-      <h2 class="pa-6 pt-16">Tipos de aulas</h2>
+  <ds-container class="bg-dark">
+      <h2 class="pt-16">Tipos de aulas</h2>
       <p>
         Nosso foco é proporcionar aos clientes uma experiência de aprendizado genuína e eficaz. Com
         base nessa filosofia e na nossa expertise, priorizamos um ensino altamente personalizado.
@@ -24,8 +23,7 @@
               btn-name="Entre em comtato conosco"
               description="Se a sua empresa preferir aulas em grupos maiores, podemos discutir essa possibilidade com nosso time pedagógico para personalizar a melhor solução de acordo com as necessidades da sua equipe."/>
       </div>
-    </div>
-  </div>
+  </ds-container>
 </template>
 
 <script setup lang="ts">

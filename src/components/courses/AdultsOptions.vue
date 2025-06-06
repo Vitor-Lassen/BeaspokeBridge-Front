@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex align-center flex-column" :class="props.color ? 'bg-bblue pl-12 pl-12' : ''">
+  <ds-container class="d-flex align-center flex-column" :super-class="props.color ? 'bg-bblue ' : ''">
     <div class="max-content-width">
       <div
         class="d-flex align-center justify-space-between"
@@ -31,7 +31,7 @@
         {{ props.btnName }}
       </v-btn>
     </div>
-  </div>
+  </ds-container>
 </template>
 
 <script setup lang="ts">

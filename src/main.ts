@@ -8,11 +8,17 @@ import router from './router'
 import vuetify from './plugins/vuetifyConfig'
 import {i18n} from './plugins/i18nConfig'
 
+// Import DS
+import dsContainer from './DS/ds-container.vue'
+import dsQuote from './DS/ds-quote.vue'
 
 const app = createApp(App)
 
 app.use(router)
 app.use(vuetify)
 app.use(i18n)
+
+app.component('ds-container', dsContainer)
+app.component('ds-quote', dsQuote)
 
 app.mount('#app')

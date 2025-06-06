@@ -1,11 +1,12 @@
 <template>
-  <div class="d-flex flex-column align-center justify-center pa-6 max-content-width center">
-    <div class="d-flex align-center pa-6">
-      <v-img src="Logos BB/BB Kids.png" min-width="350"></v-img>
+<ds-container >
+
+    <div class="d-flex align-center justify-center flex-wrap pa-6">
+      <v-img src="Logos BB/BB Kids.png" :min-width="300" :max-width="450" ></v-img>
       <h1>Muito além do inglês</h1>
     </div>
     <p>
-      <v-img class="float-img" src="kids.png" min-width="250"></v-img>Na BB Kids, acreditamos que
+      <v-img class="float-img" src="kids.png" min-width="250" ></v-img>Na BB Kids, acreditamos que
       aprender inglês pode ser uma experiência divertida, enriquecedora e transformadora para
       crianças. Oferecemos cursos de inglês para crianças que utilizam a metodologia CLIL (Content
       and Language Integrated Learning), um método inovador que ensina o idioma de forma integrada a
@@ -23,17 +24,12 @@
       Com a BB Kids, seu filho não apenas aprenderá inglês, mas desenvolverá habilidades para pensar
       e se expressar de forma confiante, tudo de maneira lúdica e interativa.
     </p>
-  </div>
-<div class="bg-dark">
-  <div class="d-flex flex-column align-center center pl-16 pr-16 max-content-width" >
+  </ds-container>
+  <ds-quote phase="Uma língua coloca-te no corredor para a vida. Duas línguas abrem todas as portas pelo caminho." actor="Frank Smith"/>
 
-    <p><b><i>"Uma língua coloca-te no corredor para a vida. Duas línguas abrem todas as portas pelo caminho."</i></b></p>
-    <p  style="align-self: flex-end;"><i>Frank Smith</i></p>
-  </div>
 
-</div>
-  <div class="bg-bblue-v">
-    <div class="max-content-width center d-flex  justify-space-around">
+  <ds-container class="bg-bblue-v">
+    <div class="max-content-width d-flex  justify-space-around">
       <kidsCard
         title="Inglês para Crianças (7-8 anos)"
         subtitle="Para quem é o curso?"
@@ -44,7 +40,7 @@
         description="Este curso é voltado para crianças de 9 a 10 anos que já têm uma noção básica de inglês adquirida na escola, mas gostariam de dedicar mais tempo ao aprendizado do idioma e explorar novas abordagens além das que conhecem da sala de aula. O curso foca no desenvolvimento equilibrado de todas as habilidades linguísticas."
         style="margin-top: 180px;" />
     </div>
-    <div class="max-content-width center d-flex justify-space-around">
+    <div class="max-content-width d-flex justify-space-around">
       <kidsCard
         title="Inglês para Crianças (11-12 anos)"
         subtitle="Para quem é o curso?"
@@ -54,11 +50,11 @@
         title="Inglês para Crianças (13-14 anos)"
         subtitle="Para quem é o curso?"
         description="Este curso é voltado para jovens que, ao final do ensino fundamental, não estão satisfeitos com o inglês aprendido na escola e desejam dedicar mais tempo ao idioma. O foco é desenvolver todas as habilidades linguísticas de forma equilibrada, além de proporcionar o aprendizado de novos conhecimentos sobre si mesmos e o mundo ao seu redor."/>
-    </div>
+      </div>
+    </ds-container>
 
 
 
-  </div>
 
 </template>
 
@@ -71,8 +67,4 @@ import kidsCard from '@/components/courses/kidsCard.vue';
   float: right;
 }
 
-p {
-  text-align: justify;
-
-}
 </style>

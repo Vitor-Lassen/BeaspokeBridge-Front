@@ -33,14 +33,19 @@ const router = createRouter({
       component: () => import('../views/courses/CompanyView.vue'),
     },
     {
-      path: '/exchange/Ireland',
+      path: '/exchange-Ireland',
       name: 'Irland',
       component: () => import('../views/exchanges/IrlandView.vue'),
     },
     {
-      path: '/exchange/Eslovaquia',
+      path: '/exchange-Eslovaquia',
       name: 'Esloquia',
       component: () => import('../views/exchanges/EslovaquiaView.vue'),
+    },
+    {
+      path: '/exchange-Malta-E-Gozo',
+      name: 'Malta E Gozo',
+      component: () => import('../views/exchanges/MaltaEGozoView.vue'),
     },
     {
       path: '/contact-us',

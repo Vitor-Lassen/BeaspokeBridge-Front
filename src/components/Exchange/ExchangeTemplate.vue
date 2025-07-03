@@ -17,9 +17,7 @@
           class="ma-4"
         />
       </div>
-      <p class="sm">
-        {{ props.ex.resumeDescription }}
-      </p>
+      <p class="sm" v-html="props.ex.resumeDescription"/>
     </div>
   </ds-container>
   <ds-container class="bg-ublue">
@@ -46,11 +44,11 @@
       <v-btn color="secondary"> {{ props.ex.pqBtn }}</v-btn>
     </h1>
   </ds-container>
-  <div class="bg-dark d-flex flex-column align-center">
-    <div class="ma-6" style="max-width: 1000px">
+  <div class="bg-dark d-flex flex-column align-center pt-8">
+    <div  style="max-width: 1000px">
       <div class="d-flex align-center justify-space-between">
-        <h1 class="pa-4">{{ ex.aboutTitle }}</h1>
-        <v-img :src="ex.aboutImg" max-width="350" class="ma-2" />
+        <h1 >{{ ex.aboutTitle }}</h1>
+        <v-img :src="ex.aboutImg" max-width="400" max-height="150" cover  class="ma-2" />
       </div>
       <div class="base-card restore d-flex flex-wrap justify-space-around flex-cont">
         <item-utils
@@ -61,6 +59,7 @@
           :image="item.img"
         />
       </div>
+      <p v-if="ex.aboutObs" v-html="ex.aboutObs" class="xs"/>
       <h1>
         <v-btn class="mt-10 mb-10" color="secondary"> {{ props.ex.aboutBtn }}</v-btn>
       </h1>

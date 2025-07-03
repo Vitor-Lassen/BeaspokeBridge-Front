@@ -100,6 +100,80 @@
   },
 
   "exchange":{
+      "malta":{
+      "title":"Malta e Gozo",
+      "subtitle":"Para quem quer aprender inglês no mediterrâneo.", 
+      "resume-title":"Aprenda inglês no  <span class='text-color-secondary'>mediterrâneo</span>.",
+      "resume-description":"Malta, um pequeno <b>arquipélago</b> no coração do <b>Mediterrâneo</b>, é um destino encantador que combina uma rica herança histórica com a modernidade de uma nação internacional. <br>Com suas paisagens deslumbrantes, <b>clima ameno e povo acolhedor</b>, Malta oferece aos estudantes uma experiência única de aprendizado de inglês em um ambiente multicultural.<br>Gozo, a ilha mais tranquila e serena do arquipélago, completa a experiência, com suas paisagens naturais e um ritmo de vida mais calmo. Juntas, <b>Malta e Gozo proporcionam o equilíbrio perfeito entre estudo e lazer</b>, oferecendo o cenário ideal para quem deseja aprender inglês e mergulhar em uma cultura rica e diversificada.",
+      "pq-title":"Por que escolher a <span class='text-color-secondary'>Malta</span> e <span class='text-color-secondary'>Gozo</span> para seu intercâmbio?",
+      "pq-btn":"Quero estudar em Malta e Gozo",
+      "pq":{
+        "0":{
+          "title":"Aprendizado em um país de língua inglesa",
+          "subtitle":"Malta oferece imersão total no inglês, com a vantagem de ser um destino de língua inglesa no mediterrâneo e uma sociedade multicultural que facilita a prática constante do idioma."
+        },
+        "1":{
+          "title":"Cultura rica e diversificada",
+          "subtitle":"Malta é famosa por sua herança histórica, com influências da Grécia, Roma e do Império Britânico. Gozo, com paisagens naturais, adiciona tranquilidade e autenticidade à experiência."
+        },
+        "2":{
+          "title":"Paisagens de tirar o fôlego",
+          "subtitle":"Desde as águas cristalinas de Comino até as falésias e baías de Gozo, Malta oferece cenários deslumbrantes que complementam o aprendizado e o turismo."
+        }
+      },
+      "about-title":"Sobre o programa",
+      "about-btn":"Quero estudar em Malta e Gozo",
+      "about-items":{
+        "0":{
+          "title":"Nível mínimo do inglês",
+          "subtitle":"Pré-Intermediário (A2)"
+        },
+        "1":{
+          "title":"Tempo mínimo",
+          "subtitle":"1 semana"
+        },
+        "2":{
+          "title":"Tempo máximo",
+          "subtitle":"25 semanas *"
+        },
+        "3":{
+          "title":"Idade mínima",
+          "subtitle":"18 anos*"
+        },
+        "4":{
+          "title":"Acomodação",
+          "subtitle":"Hotel, hostel, apartamento privado, residência estudantil e host families"
+        }
+      },
+      "about-obs":"*Para cursos acima de 90 dias, o aluno deve solicitar um visto que permite também ao estudante trabalhar até 20 hrs semanais.<br>**As escolas de Malta oferecem cursos para a famílias com crianças a partir de 7 anos de idade.", 
+      "utils-title":"Informações úteis",
+      "utils-items":{
+        "0":{
+          "title":"Moeda",
+          "subtitle":"Euro"
+        },
+        "1":{
+          "title":"Temperatura",
+          "subtitle":"15°C no inverno <br>30°C no verão"
+        },
+        "2":{
+          "title":"Fuso horário",
+          "subtitle":"entre +4 ou +5 hrs."
+        },
+        "3":{
+          "title":"Visto",
+          "subtitle":"ETIAS - autorização eletrônica a partir de maio/2025"
+        },
+        "4":{
+          "title":"População",
+          "subtitle":"550 mil"
+        },
+        "5":{
+          "title":"Idioma oficial",
+          "subtitle":"Inglês e Maltês"
+        }
+      }
+    },
     "ireland":{
       "title":"Irlanda",
       "subtitle":"Descubra a magia da ilha esmeralda.", 

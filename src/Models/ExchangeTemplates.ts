@@ -18,6 +18,7 @@ type ExchangeTemplateModel ={
   aboutImg: string
   aboutItems: BaseModel[]
   aboutBtn: string
+  aboutObs?:string
 
   utilsTitle: string
   utilsItems: BaseModel[]

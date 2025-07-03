@@ -59,7 +59,7 @@
           :description="$t('header.exchange.Slovakia.description')"
           :button-text="$t('header.exchange.button')"
           src="Ireland/Ireland-3.png"
-          pathto="/exchange/Eslovaquia"
+          pathto="/exchange-Eslovaquia"
         />
         <ExchangeMenu
           :title="$t('header.exchange.Ireland.contry')"
@@ -67,14 +67,14 @@
           :button-text="$t('header.exchange.button')"
           reverse
           src="Eslovaquia/Eslovaquia1.png"
-          pathto="/exchange/Ireland"
+          pathto="/exchange-Ireland"
         />
         <ExchangeMenu
           :title="$t('header.exchange.MaltaGozo.contry')"
           :description="$t('header.exchange.MaltaGozo.description')"
           :button-text="$t('header.exchange.button')"
           src="Malta/malta 1.png"
-          pathto="/exchange/Malta"
+          pathto="/exchange-Malta-e-gozo"
         />
       </MenuDropBox>
       <v-btn class="flex-grow-1" flat @click="router.push('/parcerias')">

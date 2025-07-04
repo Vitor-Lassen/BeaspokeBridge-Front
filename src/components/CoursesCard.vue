@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto ma-4" variant="elevated" max-width="300">
+  <v-card class="mx-auto ma-4 hover" variant="elevated" max-width="300">
     <v-img
       max-width="300"
       :src="props.src"

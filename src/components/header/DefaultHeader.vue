@@ -53,7 +53,7 @@
         />
 
       </MenuDropBox>
-      <MenuDropBox :title="$t('header.exchange.title')">
+      <MenuDropBox :title="$t('header.exchange.title')" @click="router.push('/exchange')">
        <ExchangeMenu
           :title="$t('header.exchange.Slovakia.contry')"
           :description="$t('header.exchange.Slovakia.description')"

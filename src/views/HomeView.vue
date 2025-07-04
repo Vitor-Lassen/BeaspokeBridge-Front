@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import CoursesCard from '@/components/CoursesCard.vue'
 import ContactUs from '@/components/ContactUs.vue'
+import ExchangeCarrosel from '@/components/Exchange/ExchangeCarrosel.vue';
 </script>
 
 <template>
@@ -61,6 +62,7 @@ import ContactUs from '@/components/ContactUs.vue'
         />
       </div>
     </div>
+    <ExchangeCarrosel />
   </main>
 </template>
 

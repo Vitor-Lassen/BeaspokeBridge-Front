@@ -166,7 +166,9 @@ a {
 .hover:hover {
   cursor: pointer;
   color: black;
-  filter: grayscale(100%);
+  filter:brightness(1.1);
+  transform: scale(1.05);
+
 }
 
 //lists

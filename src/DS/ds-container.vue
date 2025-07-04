@@ -1,5 +1,5 @@
 <template>
-<div id="bs-container" >
+<div id="bs-container" :class="props.bgImg ? 'ds-paralax':'' " :style=" props.bgImg? { backgroundImage: 'url('+props.bgImg +')'}: ''" >
   <div id="bs-container-content" >
     <slot />
 
@@ -8,11 +8,11 @@
 </template>
 
 <script setup lang="ts">
-// import { defineProps } from 'vue';
+import { defineProps } from 'vue';
 
-// const props = defineProps<{
-
-// }>();
+const props = defineProps<{
+  bgImg?: string;
+}>();
 </script>
 
 <style>
@@ -29,6 +29,14 @@
   flex-direction: column;
 
 
+}
+
+.ds-paralax{
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 p{

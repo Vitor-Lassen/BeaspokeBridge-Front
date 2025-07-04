@@ -183,3 +183,16 @@ a {
   padding-left: 20px;
   text-align: justify;
 }
+
+@media screen and (max-width: 800px) {
+  .mobile, .mobile-reverse{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mobile-reverse{
+
+    flex-direction: column-reverse;
+  }
+
+}

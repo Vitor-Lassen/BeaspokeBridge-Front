@@ -47,6 +47,11 @@ const router = createRouter({
       name: 'Malta E Gozo',
       component: () => import('../views/exchanges/MaltaEGozoView.vue'),
     },
+   {
+      path: '/exchange',
+      name: 'Intercambio',
+      component: () => import('../views/exchanges/ExchangeView.vue'),
+    },
     {
       path: '/contact-us',
       name: 'ContactUs',

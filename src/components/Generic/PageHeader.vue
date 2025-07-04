@@ -1,7 +1,7 @@
 <template>
     <v-parallax
     :src="props.imagem"
-    height="400"
+    height="450"
 
     class="head-img align-center justify-right ph-header"
   >
@@ -11,7 +11,7 @@
       <v-btn v-if="props.btn !== undefined" class="align-self-end mr-12" color="secondary">{{props.btn}} </v-btn>
     </div>
   </v-parallax>
-  <div style="height: 400px;"></div>
+  <div style="height: 450px;"></div>
 </template>
 
 <script setup lang="ts">

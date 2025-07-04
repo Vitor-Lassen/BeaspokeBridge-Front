@@ -5,21 +5,23 @@ import ContactUs from '@/components/ContactUs.vue'
 
 <template>
   <main>
-    <div class="map pa-6 d-flex justify-center flex-wrap">
+    <ds-container bg-img="/map.png">
+    <div class=" d-flex justify-space-between  mobile">
       <div class="" style="background-color: white; border-radius: 16px">
         <ContactUs />
       </div>
 
-      <div class="ma-6">
-        <h1 class="mt-8 pb-6" v-html="$t('home.welcome.title')" />
-        <p class="ma-4" v-html="$t('home.welcome.description')"></p>
-        <p><i class="ma-4" v-html="$t('home.welcome.mission')"> </i></p>
+      <div class=" d-flex flex-column align-center justify-start ">
+        <h2   v-html="$t('home.welcome.title')"  />
+        <p  v-html="$t('home.welcome.description')"></p>
+        <p><i  v-html="$t('home.welcome.mission')"> </i></p>
       </div>
     </div>
+    </ds-container>
 
     <div class="bg-blue-h pa-6 d-flex flex-column align-center align-content-center">
       <h1 class="mt-8 pb-6" v-html="$t('home.custom-learning.title')" />
-      <div class="d-flex flex-wrap-reverse justify-center">
+      <div class="d-flex mobile-reverse justify-center">
         <div class="pa-6" style="width: 400px; text-align: center">
           <h2 class="pb-6" v-html="$t('home.custom-learning.subtitle')"></h2>
           <p v-html="$t('home.custom-learning.description')" />
@@ -63,16 +65,9 @@ import ContactUs from '@/components/ContactUs.vue'
 </template>
 
 <style scoped>
-.map {
-
-  width: 100vw;
-  position: relative;
-  left: calc(-50vw + 50%);
-  height: 100%;
-  background-image: url('/map.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+p{
+  text-align: center;
 }
+
+
 </style>

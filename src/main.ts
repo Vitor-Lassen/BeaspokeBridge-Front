@@ -11,6 +11,7 @@ import {i18n} from './plugins/i18nConfig'
 // Import DS
 import dsContainer from './DS/ds-container.vue'
 import dsQuote from './DS/ds-quote.vue'
+import dsCard from './DS/ds-card.vue'
 
 const app = createApp(App)
 
@@ -20,5 +21,6 @@ app.use(i18n)
 
 app.component('ds-container', dsContainer)
 app.component('ds-quote', dsQuote)
+app.component('ds-card', dsCard)
 
 app.mount('#app')

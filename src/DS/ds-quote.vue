@@ -1,7 +1,7 @@
 <template>
  <DsContainer class="bg-dark">
 
-      <p style="text-align: center;">
+      <p class="md" style="text-align: center;">
         <b
           ><i
             >"{{ props.phase }}"</i

@@ -27,8 +27,6 @@ const props = defineProps<{
   padding: 10px 20px ; /* Example padding */
   display: flex;
   flex-direction: column;
-
-
 }
 
 .ds-paralax{

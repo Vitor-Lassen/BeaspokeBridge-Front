@@ -36,7 +36,7 @@ import ExchangeCarrosel from '@/components/Exchange/ExchangeCarrosel.vue';
     </div>
 
     <div>
-      <h1 class="mt-10 mb-6" v-html="$t('home.courses.title')"></h1>
+      <h1 class="mt-10 mb-6 hover" @click="() => $router.push('/courses')" v-html="$t('home.courses.title')"></h1>
       <p  class="pl-12 pr-12" v-html="$t('home.courses.description')"></p>
       <div class="d-flex flex-wrap justify-center align-center">
         <CoursesCard

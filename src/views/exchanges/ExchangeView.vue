@@ -15,7 +15,13 @@
 
     <div class="d-flex justify-space-between mobile">
       <div class="d-flex flex-column align-center pa-6 ">
-        <ds-card  title="Para alunos de inglês" img="/Intercambio 2.png">
+        <ds-card
+        title="Para alunos de inglês"
+        img="/Intercambio 2.png"
+        btn-position="bottom"
+        border
+        btn-name="Saiba +"
+        card-width="auto">
           <p>Transforme sua experiência de aprendizado com os intercâmbios oferecidos pela <b
               class='text-color-blue-logo'>Bespoke Bridge!</b></p>
           <p>Estude inglês em escolas de qualidade credenciadas pela <b> <a
@@ -23,16 +29,18 @@
             no dia a dia e se imerja em novas culturas.</p>
           <p>Prepare-se para uma jornada educacional única e enriquecedora!</p>
         </ds-card>
-        <v-btn color="secondary" class="mt-4">Saiba +</v-btn>
       </div>
     <div class="d-flex flex-column align-center pa-6">
-      <ds-card  title="For English teachers" img="/Intercambio 2.png">
+      <ds-card  title="For English teachers"
+          img="/Intercambio 2.png"
+          btn-position="bottom"
+          border
+          btn-name="Learn More">
         <p>Enhance your teaching skills with <b
             class='text-color-blue-logo'>Bespoke Bridge’s</b> Teacher Education Exchange Programs (TEEP).</p>
         <p>Join expert-led courses in an EAQUALS-accredited school in Slovakia, and explore Central Europe while learning innovative ELT methods.</p>
         <p>A perfect blend of professional development and cultural exploration!</p>
       </ds-card>
-      <v-btn color="secondary" class="mt-4">Learn More</v-btn>
       </div>
     </div>
   </ds-container>

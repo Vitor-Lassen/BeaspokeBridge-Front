@@ -21,12 +21,13 @@
 <ds-container >
   <h1>Para Adultos</h1>
   <div class="d-flex flex-wrap align-start justify-space-around">
-  <adults-card v-for="course in forAdults" :key="course.title"
+  <ds-card v-for="course in forAdults" :key="course.title"
           :title="course.title"
           :subtitle="course.subtitle"
           :img="course.img"
           :path-to="course.pathTo"
-          :btn-name="course.btnName" />
+          :btn-name="course.btnName"
+          style="width: 350px;"/>
   </div>
 </ds-container>
 
@@ -35,7 +36,6 @@
 
 <script setup lang="ts">
 import ClassTypes from '@/components/classTypes.vue';
-import AdultsCard from '@/components/courses/AdultsCard.vue';
 const forAdults = [{
   title: 'Inglês Geral',
   subtitle: 'General English',

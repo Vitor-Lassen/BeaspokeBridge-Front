@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import CoursesCard from '@/components/CoursesCard.vue'
 import ContactUs from '@/components/ContactUs.vue'
 import ExchangeCarrosel from '@/components/Exchange/ExchangeCarrosel.vue';
-import AdultsCard from '@/components/courses/AdultsCard.vue';
+
 </script>
 
 <template>
@@ -36,36 +35,39 @@ import AdultsCard from '@/components/courses/AdultsCard.vue';
       </div>
     </div>
 
-    <div>
+    <ds-container>
       <h1 class="mt-10 mb-6 hover" @click="() => $router.push('/courses')" v-html="$t('home.courses.title')"></h1>
       <p  class="pl-12 pr-12" v-html="$t('home.courses.description')"></p>
-      <div class="d-flex flex-wrap justify-center align-start">
-        <AdultsCard
+      <div class="d-flex flex-wrap justify-space-between align-start">
+        <ds-card
           img="kid.png"
           :title="$t('home.courses.for-kids.title')"
           :subtitle="$t('home.courses.for-kids.description')"
           :btn-name="$t('home.courses.for-kids.btn-learn-more')"
           path-to="/for-kids"
+          style="width: 350px;"
           btn-position="bottom"
         />
-        <AdultsCard
+        <ds-card
           img="woman.png"
           :title="$t('home.courses.for-adults.title')"
           :subtitle="$t('home.courses.for-adults.description')"
           :btn-name="$t('home.courses.for-adults.btn-learn-more')"
           path-to="/for-adults"
+          style="width: 350px;"
           btn-position="bottom"
         />
-        <AdultsCard
+        <ds-card
           img="teacher.png"
           :title="$t('home.courses.for-teachers.title')"
           :subtitle="$t('home.courses.for-teachers.description')"
           :btn-name="$t('home.courses.for-teachers.btn-learn-more')"
           path-to="/for-teachers"
+          style="width: 350px;"
           btn-position="bottom"
         />
       </div>
-    </div>
+    </ds-container>
     <ExchangeCarrosel />
   </main>
 </template>

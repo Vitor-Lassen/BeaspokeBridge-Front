@@ -1,12 +1,12 @@
 <template>
  <div class="adults-card hover" @click="() => $router.push(props.pathTo)" style="width: 350px;" >
   <img class="ma-2 img" aspect-ratio="16/9" :src="props.img"/>
-  <div class="d-flex  justify-space-between align-center " style="width: 100%;;">
+  <div class="d-flex  justify-space-between align-center" :class="btnPosition == 'bottom'? 'flex-column': ''" style="width: 100%;;">
     <div >
       <p class="sm"><b>{{ props.title }}</b></p>
       <p >{{ props.subtitle }}</p>
     </div>
-    <v-btn  color="secondary" :to="props.pathTo">{{ props.btnName }}</v-btn>
+    <v-btn :style="btnPosition == 'bottom' ? {width: '100%'} :{}" color="secondary" :to="props.pathTo">{{ props.btnName }}</v-btn>
   </div>
  </div>
 </template>
@@ -20,6 +20,7 @@ const props = defineProps<{
   img: string,
   btnName: string,
   pathTo:string
+  btnPosition?: 'right' | 'bottom'
 }>()
 </script>
 

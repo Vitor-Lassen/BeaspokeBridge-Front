@@ -1,5 +1,5 @@
 <template>
-  <div class="pa-4 pt-14" style="max-width: 600px;">
+  <div class="pa-4 pt-14 hover" style="max-width: 600px;">
     <div class="d-flex align-center">
       <v-img src="three colored.png" max-width="80"></v-img>
       <h3>{{props.title}}</h3>

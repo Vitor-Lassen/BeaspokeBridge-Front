@@ -46,21 +46,21 @@
   <ds-container class="bg-blue-v">
     <div class="d-flex flex-column align-center " style="max-width: 1200px">
       <div class="d-flex img-flex align-center justify-space-between" style="width: 100%">
-        <TopicCard title="Nossa Missão" img="./Missao.png" :max-width="500">
+        <TopicCard class="hover" title="Nossa Missão" img="./Missao.png" :max-width="500">
           <p>
             Transformar vidas por meio do ensino do inglês com excelência e personalização. O estilo
             <b class='text-color-blue-logo'>Bespoke</b> — <b class='text-color-secondary'>feito sob medida</b> — é mais do que um método; é o nosso lema.
           </p>
         </TopicCard>
 
-        <TopicCard title="Nossa visão" img="./vision.png" :max-width="500">
+        <TopicCard class="hover" title="Nossa visão" img="./vision.png" :max-width="500">
           <p>
             Ser referência em <b class='text-color-blue-logo'>personalização</b> no ensino de inglês, proporcionando <b class='text-color-secondary'>experiências únicas</b>
             e transformadoras que atendem às necessidades individuais de cada cliente.
           </p>
         </TopicCard>
       </div>
-      <TopicCard title="Nossos valores" img="./values.png" :max-width="2000">
+      <TopicCard class="hover" title="Nossos valores" img="./values.png" :max-width="2000">
           <PImg
           img="excelencia.png"
           p="<b class='text-color-blue-logo'>Excelência</b>: Compromisso inabalável em oferecer serviços de altíssima qualidade, garantindo que cada interação com nossos clientes seja uma experiência positiva e transformadora."/>

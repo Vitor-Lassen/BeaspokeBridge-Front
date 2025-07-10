@@ -9,7 +9,7 @@ import ExchangeCarrosel from '@/components/Exchange/ExchangeCarrosel.vue';
     <ds-container bg-img="/map.png">
     <div class=" d-flex justify-space-between  mobile">
       <div class="" style="background-color: white; border-radius: 16px">
-        <ContactUs />
+        <ContactUs/>
       </div>
 
       <div class=" d-flex flex-column align-center justify-start ">

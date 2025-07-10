@@ -2,7 +2,7 @@
   <div>
     <div class="d-flex align-center flex-md-row flex-column" style="height: fit-content">
       <div class="pl-6 cursor-pointer" v-on:click="router.push('/')">
-        <v-img :width="170" aspect-ratio="16/9" cover src="logo.png"></v-img>
+        <v-img class="hover" :width="170" aspect-ratio="16/9" cover src="logo.png"></v-img>
       </div>
       <MenuDropBox :title="$t('header.about.title')">
         <ExchangeMenu
@@ -93,8 +93,8 @@
     </div>
     <div class="d-flex bg-dark justify-space-between set-background-primary">
       <div class="d-flex flex-row">
-        <p class="ma-2 pa-2 ml-6">BB Blog</p>
-        <p class="ma-2 pa-2">Teste seu nivel</p>
+        <p class="ma-2 pa-2 ml-6 hover">BB Blog</p>
+        <p class="ma-2 pa-2 hover">Teste seu nivel</p>
       </div>
       <div>
         <MidiasSociais :size="40" />

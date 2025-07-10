@@ -1,5 +1,5 @@
 <template>
-  <div class="base-card restore ma-2" style="max-width: 500px; height: 250px">
+  <div class="base-card restore ma-2 hover" style="max-width: 500px; height: 250px">
     <div class="d-flex align-center justify-space-around">
       <img v-if="props.image" :src="props.image" style="max-height: 120px" />
 

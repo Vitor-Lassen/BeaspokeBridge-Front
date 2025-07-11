@@ -87,28 +87,70 @@
       <h3>Análise de Necessidades Detalhada e Objetivos Mensuráveis</h3>
       <p>
         Acreditamos que cada aluno é único e, para garantir que nossos programas sejam eficazes,
-        realizamos uma análise de necessidades detalhada para entender os objetivos de cada
-        colaborador ou grupo. Com base nesse diagnóstico, traçamos um plano de ensino personalizado,
-        alinhado às necessidades da empresa e ao contexto de cada aluno. Além disso, definimos
-        objetivos mensuráveis para garantir que o progresso seja visível e alinhado às expectativas
-        da empresa. Esses objetivos são revistos a cada 3 meses, permitindo ajustes e refinamentos
+        realizamos uma <b>análise de necessidades detalhada</b> para entender os objetivos de cada
+        colaborador ou grupo. Com base nesse diagnóstico, traçamos um <b>plano de ensino personalizado</b>,
+        alinhado às necessidades da empresa e ao contexto de cada aluno.
+      </p>
+      <p>Além disso, definimos
+        <b>objetivos mensuráveis</b> para garantir que o progresso seja visível e alinhado às expectativas
+        da empresa. Esses objetivos são <b>revistos a cada 3 meses</b>, permitindo ajustes e refinamentos
         constantes ao longo do processo de aprendizagem. Para comprovar o progresso, realizamos uma
-        testagem oficial por meio da plataforma TrackTest, que segue o Quadro Comum Europeu de
+        <b>testagem oficial</b> por meio da plataforma <b>TrackTest</b>, que segue o Quadro Comum Europeu de
         Referência para Línguas (CEFR), proporcionando resultados objetivos e verificáveis que
         demonstram o avanço real no domínio do idioma.
       </p>
+    </div>
+
+    <div class="base-card card-pq-escolher ">
+      <h3>Profissionais Altamente Qualificados</h3>
+      <p>
+        Na Bespoke Bridge, nossa equipe é composta por <b>professores certificados</b> por instituições internacionais de renome, como <b>Cambridge</b> e <b>Trinity</b> London. Essas certificações garantem que nossos professores possuam as competências necessárias para oferecer um ensino de <b>altíssima qualidade</b>, baseado nas melhores práticas pedagógicas internacionais.
+      </p>
+      <p>Além disso, todos os nossos professores recebem <b>desenvolvimento profissional contínuo</b>, participando de treinamentos e atualizações regulares sobre novas técnicas e metodologias de ensino. Esse compromisso com a formação contínua assegura que nossos alunos estejam sempre expostos ao que há de mais moderno em termos de práticas educacionais, além de uma abordagem <b>adaptada ao estilo de aprendizagem individual</b> de cada aluno.
+      </p>
+    </div>
+
+     <div class="base-card card-pq-escolher ">
+      <h3>Oportunidade de Intercâmbio com Escolas Credenciadas EAQUALS</h3>
+      <p>
+        Um dos grandes diferenciais da Bespoke Bridge é que <b>oferecemos a possibilidade de intercâmbio diretamente conosco em escolas credenciadas EAQUALS</b>, sem a necessidade de recorrer a agências de intercâmbio. Estamos sempre conectados às melhores opções de ensino de inglês ao redor do mundo, não importa se o destino é um país de língua inglesa ou não.
+      </p>
+      <p>Isso significa que seus colaboradores podem vivenciar a experiência de aprender inglês em um ambiente internacional de alta qualidade, com a <b>garantia de que a escola escolhida segue os padrões globais de ensino</b>, como estabelecido pela <b>EAQUALS</b>. Essa é uma oportunidade única para aprimorar ainda mais as habilidades linguísticas, além de ser uma forma de motivar e engajar seus funcionários no processo de aprendizado.
+      </p>
+    </div>
+  </ds-container>
+  <ds-container class="bg-blue-v">
+    <h2>Interessado em aprimorar as habilidades de inglês da sua equipe?</h2>
+    <p>
+Oferecemos <b>consultorias personalizadas</b> para entender as necessidades específicas da sua empresa e de seus colaboradores. Juntos, podemos traçar o melhor plano de ensino. Nosso time está pronto para oferecer um atendimento consultivo e criar um programa de aprendizado eficaz, adaptado ao seu contexto corporativo.
+    </p>
+    <div class="d-flex justify-center align-center" >
+      <ContactUs style="max-width: 500px;"/>
     </div>
   </ds-container>
 </template>
 
 <script setup lang="ts">
 import classTypes from '@/components/classTypes.vue'
+import ContactUs from '@/components/ContactUs.vue';
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '@/styles/variables' as *;
 
 .card-pq-escolher {
-  background-color: aqua;
+  background-color: $ultrasoft-blue;
+  padding: 16px;
+  margin-bottom: 25px;
+
+}
+
+h3{
+  margin: 12px 0;
+  text-align: start;
+}
+
+h2{
+  margin: 25px 0;
 }
 </style>

@@ -28,9 +28,11 @@
 
           </ul>
         </div>
-        <div class="ma-6">
+        <div class="ma-6 d-flex flex-column align-center">
           <h4>{{$t('footer.follow-socials')}}</h4>
           <MidiasSociais :size="50" />
+          <p>Usamos o</p>
+          <img src="/google-workspace.png" style="width: 200px;">
         </div>
       </div>
       <div>  <p class="copyright">© Bespoke Bridge {{ new Date().getFullYear() }}. {{$t('footer.rights')}}</p> </div>

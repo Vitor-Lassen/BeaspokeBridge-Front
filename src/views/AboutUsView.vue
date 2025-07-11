@@ -81,12 +81,13 @@
     </div>
   </ds-container>
 </template>
- 
+
 <script setup lang="ts">
 import TopicCard from '@/components/Generic/TopicCard.vue'
 import PImg from '@/components/Generic/PImg.vue';
 </script>
-<style >
+
+<style scoped>
 a{
   text-decoration:underline;
   font-style: italic;

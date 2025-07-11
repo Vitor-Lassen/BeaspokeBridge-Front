@@ -54,8 +54,14 @@
   <div class="bg-bblue d-flex flex-column align-center justify-center">
     <image-with-card
       img="/Tracktest transparente.png"
-      description="Na <b>Bespoke Bridge</b>, acreditamos que o primeiro passo para um aprendizado eficaz é compreender o ponto de partida de cada aluno. Por isso, firmamos parceria com o <B>Tracktest</b>, uma plataforma internacionalmente reconhecida pela precisão na avaliação de proficiência em inglês. Fundado em 2012, o Tracktest é um Centro de Avaliação de Inglês Online que mede as habilidades de inglês de falantes não nativos. Utilizando a escala do Quadro Europeu Comum de Referência para Línguas (CEFR), oferece uma alternativa moderna aos testes tradicionais, proporcionando avaliações acessíveis e precisas."
+      description="Na <b class='tc-b'>Bespoke Bridge</b>, acreditamos que o primeiro passo para um aprendizado eficaz é compreender o ponto de partida de cada aluno. Por isso, firmamos parceria com o <B>Tracktest</b>, uma plataforma internacionalmente reconhecida pela precisão na avaliação de proficiência em inglês. Fundado em 2012, o Tracktest é um Centro de Avaliação de Inglês Online que mede as habilidades de inglês de falantes não nativos. Utilizando a escala do Quadro Europeu Comum de Referência para Línguas (CEFR), oferece uma alternativa moderna aos testes tradicionais, proporcionando avaliações acessíveis e precisas."
       link="/tracktest"
+      revert
+    />
+    <image-with-card
+      img="/isic.png"
+      description="A <b class='tc-b'>Bespoke Bridge</b> tem o compromisso de democratizar o acesso ao ensino de inglês de qualidade, com foco na personalização e no desenvolvimento real dos alunos. Em alinhamento com esse propósito, firmamos uma parceria com o <b>DNE (Documento Nacional do Estudante)</b> e o <b>ISIC (International Student Identity Card)</b> — iniciativas reconhecidas nacional e internacionalmente por incentivarem o acesso à educação, cultura e oportunidades de crescimento.<br>Essa colaboração tem como objetivo oferecer condições especiais para estudantes e professores que buscam aprimorar suas habilidades no inglês, seja para viagens, carreira ou desenvolvimento pessoal."
+      link="/dne"
       revert
     />
   </div>

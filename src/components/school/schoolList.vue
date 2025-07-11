@@ -25,19 +25,19 @@ const props = defineProps<{
 const getSchool = computed(() => {
   const schoolList = []
 
+  if (props.bridge) {
+    schoolList.push({
+      img: '/logo-theBridge.png',
+      description:
+        'A <b>The Bridge</b> é um centro de treinamento <b>especializado no ensino de inglês</b>, localizado no coração de Bratislava, Eslováquia. Fundada em 2009, a escola possui mais de 15 anos de experiência no mercado, oferecendo cursos de inglês de alta qualidade para alunos de todas as idades e níveis, e com diversas necessidades e objetivos. <br>A escola é reconhecida internacionalmente por sua excelência em educação linguística, sendo o primeiro centro de idiomas na Eslováquia a obter a acreditação da EAQUALS em 2020. Além disso, a The Bridge é membro ativo de organizações profissionais nacionais e internacionais, o que reforça seu compromisso com a melhoria contínua da qualidade de ensino.',
+      link: '/',
+    })
+  }
   if (props.isi) {
     schoolList.push({
       img: '/ISI/Logo-black-PNG.png',
       description:
         'Fundada em 2001, a ISI Dublin oferece há mais de 20 anos programas educacionais da mais alta qualidade para estudantes internacionais. A escola é acreditada pela <b>Eaquals</b> e reconhecida pela <b>ACELS</b>, um serviço do <b>Quality and Qualifications Ireland (QQI)</b> para ensino de inglês (ELE). Além disso, a ISI Dublin é membro da principal associação de escolas de idiomas de qualidade da Irlanda, a <b>English Education Ireland (EEI)</b>. <br>A escola é reconhecida internacionalmente por sua abordagem inovadora ao ensino, uso integrado de tecnologia em sala de aula, foco no desenvolvimento profissional contínuo de sua equipe e professores, bem como pelo design interno encantador de seus prédios.',
-      link: '/',
-    })
-  }
-  if (props.bridge) {
-    schoolList.push({
-      img: '/ISI/Logo-black-PNG.png',
-      description:
-        'A <b>The Bridge</b> é um centro de treinamento <b>especializado no ensino de inglês</b>, localizado no coração de Bratislava, Eslováquia. Fundada em 2009, a escola possui mais de 15 anos de experiência no mercado, oferecendo cursos de inglês de alta qualidade para alunos de todas as idades e níveis, e com diversas necessidades e objetivos. <br>A escola é reconhecida internacionalmente por sua excelência em educação linguística, sendo o primeiro centro de idiomas na Eslováquia a obter a acreditação da EAQUALS em 2020. Além disso, a The Bridge é membro ativo de organizações profissionais nacionais e internacionais, o que reforça seu compromisso com a melhoria contínua da qualidade de ensino.',
       link: '/',
     })
   }

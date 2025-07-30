@@ -58,12 +58,12 @@
     },
     "custom-learning":{
       "title":"Descubra um novo jeito de aprender inglês",
-      "subtitle":"Aprenda inglês de forma <b class='text-color-secondary'>personalizada</b>.",
+      "subtitle":"Aprenda inglês de forma <span class='text-color-secondary'>personalizada</span>.",
       "description": "Nossas aulas são <b>online</b>, e 100% feitas <b>sob medida</b> (<b class='text-color-secondary'>bespoke</b>). <br><br>  Com flexibilidade e foco total em você, <b>aprender inglês nunca foi tão eficaz!</b>",
       "btn-learn-more":"Saiba +"
     }, 
     "courses":{
-      "title":"Cursos de <b class='text-color-secondary'>inglês</b> para todos", 
+      "title":"Cursos de <span class='text-color-secondary'>inglês</span> para todos", 
       "description":"Na Bespoke Bridge, nossos serviços vão além do convencional, oferecendo experiências personalizadas que atendem às suas necessidades e objetivos únicos. Seja qual for a sua idade ou objetivo, temos um curso perfeito para você! <br><br>Estes são nossos cursos <b>mais</b> <b class='text-color-secondary'>populares</b>:", 
       "for-kids":{
         "title":"Para Crianças",
@@ -92,7 +92,7 @@
     "privacy-notice":"*Respeitamos e protegemos sua privacidade e dados pessoais.<br> Consulte nossa Política de Privacidade.",
     "form":{
       "name":"Seu nome",
-      "email":"seu e-mail",
+      "email":"Seu e-mail",
       "phone":"Whatsapp",
       "service":"Em qual serviço você está interessado?",
       "btn-send":"Envie sua mensagem"

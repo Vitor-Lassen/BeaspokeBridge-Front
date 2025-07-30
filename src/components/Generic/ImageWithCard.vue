@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex align-center flex-wrap justify-center  hover" :class="props.revert ? 'flex-row-reverse' : ''" @click="router.push(props.link);" >
+  <div class="d-flex align-center flex-wrap justify-center mb-8 hover" :class="props.revert ? 'flex-row-reverse' : ''" @click="router.push(props.link);" >
     <v-img :src="props.img" aspect-ratio="16/9" max-width="350" min-width="250" max-height="250" class="ma-8"></v-img>
     <div class="base-card ma-6" style="max-width: 700px">
       <p class="xs" v-html="props.description"></p>

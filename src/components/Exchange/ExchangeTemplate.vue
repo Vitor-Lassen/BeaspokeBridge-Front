@@ -69,13 +69,13 @@
   <v-parallax :src="props.ex.img" class="d-flex align-center pt-6 pb-6">
     <div class="d-flex flex-column align-center">
       <div class="info-uteis-card base-card" style="max-width: 1000px">
-        <div class="d-flex align-center justify-center pt-4 pl-6 pr-6">
+        <div class="d-flex align-center justify-center pl-6 pr-6">
           <hr class="line flex-1-1" />
 
-          <h1 class="pt-4 pl-4 pr-4">{{ props.ex.utilsTitle }}</h1>
+          <h1 class="pl-4 pr-4">{{ props.ex.utilsTitle }}</h1>
           <hr class="line-pont flex-1-1" />
         </div>
-        <div class="d-flex flex-wrap justify-space-around flex-cont">
+        <div class="d-flex flex-wrap justify-space-around flex-cont mb-12">
           <item-utils
             v-for="item in ex.utilsItems"
             :key="item.title"

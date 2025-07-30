@@ -1,5 +1,5 @@
 <template>
-  <div class="item">
+  <div class="item d-flex align-center">
     <v-img :src="props.image" class="ma-2 mr-2" width="100" max-width="100" aspect-ratio="4/3" />
     <div class="item-description">
       <h3>{{ props.title }}</h3>

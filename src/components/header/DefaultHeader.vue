@@ -58,7 +58,7 @@
           :title="$t('header.exchange.Slovakia.contry')"
           :description="$t('header.exchange.Slovakia.description')"
           :button-text="$t('header.exchange.button')"
-          src="Ireland/Ireland-3.png"
+          src="Eslovaquia/Eslovaquia1.png"
           pathto="/exchange-Eslovaquia"
         />
         <ExchangeMenu
@@ -66,7 +66,7 @@
           :description="$t('header.exchange.Ireland.description')"
           :button-text="$t('header.exchange.button')"
           reverse
-          src="Eslovaquia/Eslovaquia1.png"
+          src="Ireland/Ireland-3.png"
           pathto="/exchange-Ireland"
         />
         <ExchangeMenu

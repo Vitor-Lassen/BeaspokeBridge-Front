@@ -77,8 +77,12 @@
           pathto="/exchange-Malta-e-gozo"
         />
       </MenuDropBox>
-      <v-btn class="flex-grow-1" flat @click="router.push('/parcerias')">
-       <p> PARCERIAS</p>
+
+      <v-btn
+      class="flex-grow-1"
+      flat
+      @click="router.push('/parcerias')">
+      <P>PARCERIAS</P>
       </v-btn>
 
       <v-btn

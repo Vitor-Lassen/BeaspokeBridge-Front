@@ -5,7 +5,7 @@
           flat
             v-bind="props"
           >
-            {{ custom.title }}
+            <P>{{ custom.title }}</P>
           </v-btn>
         </template>
         <v-sheet class="pa-2">

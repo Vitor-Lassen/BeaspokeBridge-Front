@@ -14,7 +14,17 @@ const vuetify = createVuetify({
   locale: locale,
   defaults:{
     VBtn:{
-      rounded: 'lg',
+      rounded: 'xl',
+      activeColor: 'secondary',
+    },
+    VTextField:{
+      rounded: 'xl',
+      variant: 'outlined',
+
+    },
+    VTextarea:{
+      rounded: 'xl',
+      variant: 'outlined',
     }
   },
   icons: {

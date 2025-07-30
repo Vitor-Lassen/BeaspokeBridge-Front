@@ -5,7 +5,10 @@
     <v-text-field v-model="name" :label="$t('contact-us.form.phone')" required></v-text-field>
     <v-text-field v-model="name" :label="$t('contact-us.form.email')" required></v-text-field>
     <v-textarea v-model="name" :label="$t('contact-us.form.service')" rows="3" required></v-textarea>
-    <v-btn color="secondary" > {{$t('contact-us.form.btn-send')}} </v-btn>
+   <div class="d-flex flex-column align-center">
+
+     <v-btn color="secondary" > {{$t('contact-us.form.btn-send')}} </v-btn>
+  </div>
     <p class="notice" v-html="$t('contact-us.privacy-notice')"/>
   </v-form>
 </template>

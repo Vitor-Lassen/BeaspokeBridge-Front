@@ -85,8 +85,9 @@
         class="mr-6 contact-us-btn"
         width="200px"
         height="50px"
-        color="primary"
+        active-color="secondary"
         border
+        rounded="lg"
         @click="router.push('/contact-us')"
         >Fale Conosco</v-btn
       >

@@ -34,7 +34,7 @@
     "fast-access":{
         "title": "ACESSO RÁPIDO",
         "contact": "Fale conosco",
-        "curses": "Cursos",
+        "curses": "Nossos Cursos",
         "exchange": "Intercâmbio",
         "partnerships": "Parcerias",
         "blog": "BB Blog"
@@ -42,9 +42,9 @@
     "transparency":{
         "title": "TRANSPARÊNCIA",
         "about": "Sobre a bb",
-        "privacy": "Política de privacidade",
-        "terms": "Termos e consições de uso",
-        "cookies": "Política de cookies"
+        "privacy": "Política de Privacidade",
+        "terms": "Termos e condições de uso",
+        "cookies": "Política de Cookies"
     },
     "socials": "SIGA-NOS NAS REDES", 
     "rights": "Todos os direitos reservados",

@@ -1,9 +1,9 @@
 <template>
   <v-footer class="bg-dark" color="primary">
     <div class="bg-dark d-flex flex-column flex-1-1 mt-6">
-      <div class="d-flex flex-row flex-column  flex-md-row justify-space-between" style="flex: none">
+      <div class="d-flex  mobile justify-space-between" style="flex: none">
         <div class="align-self-center ma-4">
-          <v-img :width="170" aspect-ratio="16/9" cover src="logo.png"></v-img>
+          <v-img class="ma-1"  :width="170" aspect-ratio="16/9" cover src="Logos BB/BB white.png"></v-img>
           <h3>Ingles e intercambio</h3>
         </div>
         <div class="ma-6">
@@ -30,8 +30,8 @@
         </div>
         <div class="ma-6 d-flex flex-column align-center">
           <h4>{{$t('footer.follow-socials')}}</h4>
-          <MidiasSociais :size="50" />
-          <p>Usamos o</p>
+          <MidiasSociais :size="40" />
+          <p class="mt-8">Usamos o</p>
           <img src="/google-workspace.png" style="width: 200px;">
         </div>
       </div>
@@ -42,7 +42,9 @@
 
 <style scoped>
 
-
+a,h4{
+  text-align: left;
+}
 li {
   margin-bottom: 1rem;
   cursor: pointer;
@@ -57,6 +59,14 @@ ul {
 h4 {
   font-size: 18px;
   margin-bottom: 2rem;
+}
+@media (max-width: 980px) {
+  .mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
 }
 </style>
 

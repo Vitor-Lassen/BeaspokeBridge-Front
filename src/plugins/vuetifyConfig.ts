@@ -12,6 +12,11 @@ const vuetify = createVuetify({
   components,
   directives,
   locale: locale,
+  defaults:{
+    VBtn:{
+      rounded: 'lg',
+    }
+  },
   icons: {
     defaultSet: 'mdi',
     aliases,

@@ -109,7 +109,7 @@
 
   <ds-container class="bg-ublue">
     <h1>Teachers Parceiros</h1>
-    <memberDescription img="./Teacher Sara.png" name="Sara Santos" description="Teacher parceira"
+    <memberDescription  class="mb-12" img="./Teacher Sara.png" name="Sara Santos" description="Teacher parceira"
       email="teachersarasantos@bespokebridge.com" :reverse="true">
       <p>
         Sara é professora de inglês com sólida formação acadêmica e ampla experiência no ensino do idioma. Natural de
@@ -139,10 +139,7 @@
 
         </i></p>
     </memberDescription>
-  </ds-container>
-
-  <ds-container class="bg-ublue">
-
+    <hr class="line-pont mb-8 mt-8" style="width: 45%; align-self: center;" />
     <p class="md" style="text-align: center;">
       Para os cursos oferecidos por nossa escola parceira, a The Bridge, o time de professores é
       internacional.

@@ -199,6 +199,19 @@ a {
   padding-left: 20px;
   text-align: justify;
 }
+.base-o-list {
+  margin: 20px 40px;
+  list-style-position: outside !important;
+}
+.base-o-list li,
+.base-o-list li p {
+  list-style-type:decimal !important;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  text-align: justify;
+}
+
+
 
 @media screen and (max-width: 800px) {
   .mobile, .mobile-reverse{

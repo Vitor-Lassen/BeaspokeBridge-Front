@@ -87,6 +87,11 @@ const router = createRouter({
       name: 'Parcerias - Track Test',
       component: () => import('../views/Partnerships/TrackTestView.vue')
     },
+    {
+      path: '/dne',
+      name: 'Parcerias - DNE',
+      component: () => import('../views/Partnerships/DneView.vue')
+    },
 
 
     {

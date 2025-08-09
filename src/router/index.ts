@@ -80,8 +80,14 @@ const router = createRouter({
         {
       path: '/parcerias',
       name: 'Parcerias',
-      component: () => import('../views/ParceriasView.vue')
+      component: () => import('../views/Partnerships/ParceriasView.vue')
     },
+    {
+      path: '/tracktest',
+      name: 'Parcerias - Track Test',
+      component: () => import('../views/Partnerships/TrackTestView.vue')
+    },
+
 
     {
       path: '/about',

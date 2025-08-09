@@ -21,7 +21,7 @@
     <p>
       "We apply a humanistically oriented philosophy of teaching, which we have developed with
       globally recognized experts. They are the ones who lead our teachers in trainings, which take
-      place regularly every two months. At The Bridge, we believe that a teacher's personality is
+      place regularly every two months. At <span class="theBridge">The Bridge</span>, we believe that a teacher's personality is
       key to students' academic success."
     </p>
   </ds-container>
@@ -82,7 +82,7 @@
 
       <v-btn color="secondary" class="center mt-16">I want to know more about these programs</v-btn>
 
-      <h2 class="pa-8 ma-6">The Bridge has been supporting teacher education for a long time</h2>
+      <h2 class="pa-8 ma-6"><span class="theBridge">The Bridge</span> has been supporting teacher education for a long time</h2>
 
       <p>
         They regularly organize international conferences for teachers and school principals on

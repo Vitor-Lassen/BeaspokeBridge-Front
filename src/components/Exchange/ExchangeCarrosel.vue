@@ -1,11 +1,11 @@
 <template>
 <ds-container >
     <div class="d-flex  align-center justify-center">
-  <div>
+  <div v-if="!props.home">
     <h2 class="hover" @click="() => $router.push('/exchange')" >Intercâmbio para <span class="text-color-secondary" >alunos de inglês</span></h2>
     <p>Algumas das opções de países para os quais oferecemos intercâmbio estudantil são:</p>
   </div>
-  <img src="/mundo.png" width="150"/>
+  <img v-if="!props.home" src="/mundo.png" width="150"/>
   </div>
   <v-carousel hide-delimiters>
     <v-carousel-item
@@ -25,12 +25,18 @@
     </div>
   </v-carousel-item>
   </v-carousel>
+  <v-btn v-if="props.home" class="ma-4" color="secondary" width="200px" height="50px" style="align-self: center;" @click="() => $router.push('exchange')"  > Saiba +</v-btn>
   </ds-container>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { defineProps } from 'vue';
+
+const props = defineProps<{
+  home?: boolean
+}>();
 
 const  {t} = useI18n();
 

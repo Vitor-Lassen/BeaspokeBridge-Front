@@ -12,16 +12,16 @@
 
     <div class="d-flex align-center justify-space-around flex-wrap" style="width: 100%">
       <TopicCard class="mt-8" img="Cambridge-Trinity.png" title="" :max-width="500" :img-min-width="400">
-        <p class="mt-8" style="text-align: justify">
+        <p class="mt-8" style="text-align: left">
           Todos os nossos professores possuem qualificações reconhecidas internacionalmente, como o
-          prestigiado CELTA da Universidade de Cambridge e Trinity TESOL da Trinity College London.
+          prestigiado <b class="tc-b">CELTA</b>  da <b class="tc-r">Universidade de Cambridge</b>  e <b class="tc-b">Trinity TESOL</b>  da <b class="tc-r">Trinity College London</b>.
           Essas certificações refletem a dedicação e o alto padrão de nossos profissionais,
           garantindo uma base sólida para o ensino de inglês como língua estrangeira.
         </p>
       </TopicCard>
       <TopicCard img="learners.png" title="" :max-width="500" :img-min-width="200">
-        <p style="text-align: justify">
-          Além disso, nossos professores estão em constante aperfeiçoamento. Participam de
+        <p style="text-align: left">
+          Além disso, <b><i> nossos professores estão em constante aperfeiçoamento</i></b>. Participam de
           treinamentos mensais conduzidos por especialistas renomados no ensino de idiomas,
           mantendo-se atualizados com as mais recentes metodologias e ferramentas educacionais. Isso
           não apenas eleva o nível das nossas aulas, mas também torna nossos profissionais únicos no
@@ -45,7 +45,7 @@
       tiktok="https://www.tiktok.com/@teacherluispatrocinio">
       <p>
         Com ampla experiência em ensino de inglês e gestão educacional tanto no Brasil, quanto na
-        Europa, Luís Patrocínio é o fundador da Bespoke Bridge, uma escola dedicada a oferecer aulas
+        Europa, Luís Patrocínio é o fundador da <b class="tc-b">Bespoke Bridge</b>, uma escola dedicada a oferecer aulas
         de inglês personalizadas para brasileiros e intercâmbios estudantis culturais. Residente na
         Europa, ele combina sua expertise como professor de idiomas e Diretor de Estudos (DoS) com
         sua paixão por conectar culturas e abrir portas para novas oportunidades.
@@ -54,7 +54,7 @@
         Luís acredita que o aprendizado de inglês é uma ponte essencial para o crescimento pessoal e
         profissional, e sua abordagem combina ensino inovador, comunicação eficaz e uma visão
         centrada no aluno. Além disso, ele está continuamente se especializando para aprimorar os
-        serviços oferecidos para garantir que a Bespoke Bridge ofereça serviços de qualidade à seus
+        serviços oferecidos para garantir que a <b class="tc-b">Bespoke Bridge</b> ofereça serviços de qualidade à seus
         clientes.
       </p>
       <p>
@@ -66,7 +66,7 @@
       <p>
         Nos momentos livres, Luís gosta de passar o tempo com a família, assistir filmes e explorar
         novos lugares. Sua dedicação em construir conexões pacíficas e impactar positivamente a vida
-        de seus alunos é o que inspira a missão da Bespoke Bridge.
+        de seus alunos é o que inspira a missão da <b class="tc-b">Bespoke Bridge</b>.
       </p>
     </memberDescription>
 
@@ -91,7 +91,7 @@
         consolidando ainda mais sua paixão e expertise na área.
       </p>
       <p>
-        Atualmente, Fabiana e Luís trabalham juntos na Bespoke Bridge, oferecendo um ensino de
+        Atualmente, Fabiana e Luís trabalham juntos na <b class="tc-b">Bespoke Bridge</b>, oferecendo um ensino de
         idiomas que vai além da sala de aula. A proposta combina vivências no exterior, qualidade de
         ensino e a ideia de que aprender um novo idioma exige mais coragem e autenticidade do que
         perfeição. Para eles, errar é parte do processo, e a exposição a novas experiências — tanto

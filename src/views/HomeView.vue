@@ -68,7 +68,13 @@ import ExchangeCarrosel from '@/components/Exchange/ExchangeCarrosel.vue';
         />
       </div>
     </ds-container>
-    <ExchangeCarrosel />
+    <ds-container>
+      <h1>Intercâmbios e vivências <span class="tc-r">internacionais</span> </h1>
+      <p class="sm"> Explore o mundo com <b>segurança</b> e <b>suporte total</b> com nossos <b>intercâmbios</b> estudantis <b>culturais</b>.</p>
+
+
+    </ds-container>
+    <ExchangeCarrosel home />
   </main>
 </template>
 

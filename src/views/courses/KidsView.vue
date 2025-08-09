@@ -6,11 +6,11 @@
       <h1>Muito além do inglês</h1>
     </div>
     <p>
-      <v-img class="float-img" src="kids.png" min-width="250" ></v-img>Na BB Kids, acreditamos que
+      <v-img class="float-img" src="kids.png" min-width="250" ></v-img>Na <b class="tc-b">BB</b> <b class="tc-r">Kids</b>, acreditamos que
       aprender inglês pode ser uma experiência divertida, enriquecedora e transformadora para
       crianças. Oferecemos cursos de inglês para crianças que utilizam a metodologia CLIL (Content
-      and Language Integrated Learning), um método inovador que ensina o idioma de forma integrada a
-      conteúdos de Ciências Naturais e Sociais. Isso significa que as crianças não apenas aprendem
+      and Language Integrated Learning), um método inovador que <b>ensina o idioma de forma integrada a
+      conteúdos de Ciências Naturais e Sociais.</b> Isso significa que as crianças não apenas aprendem
       inglês, mas também expandem seu conhecimento sobre o mundo ao estudar tópicos fascinantes
       usando o idioma.
 
@@ -18,7 +18,7 @@
 
       As aulas são ministradas por professores experientes, treinados regularmente para garantir a
       melhor aplicação do método CLIL, proporcionando uma experiência educacional dinâmica e de alta
-      qualidade. Utilizamos materiais exclusivos da renomada Oxford University Press, cuidadosamente
+      qualidade. Utilizamos materiais exclusivos da renomada <b><i>Oxford University Press</i></b>, cuidadosamente
       escolhidos para atender às necessidades e ao nível de cada grupo de alunos.
       <br /><br />
       Com a BB Kids, seu filho não apenas aprenderá inglês, mas desenvolverá habilidades para pensar

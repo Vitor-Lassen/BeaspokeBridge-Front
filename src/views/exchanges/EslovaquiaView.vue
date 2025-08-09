@@ -104,6 +104,7 @@ const model: ExchangeTemplateModel = {
   aboutBtn: computed(() => t('exchange.eslovaquia.about-btn')).value,
   aboutItems: aboutItems,
   aboutImg: './eslovaquia/bratislava outline.png',
+  aboutObs:"*Os programas de 2 semanas incluem uma semana de estudos + uma semana de turismo guiado em 4 capitais europeias.",
   utilsTitle: computed(() => t('exchange.eslovaquia.utils-title')).value,
   utilsItems: utilsItems,
 }

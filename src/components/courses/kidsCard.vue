@@ -7,7 +7,7 @@
     </div>
     <div class="d-flex flex-column kd-card pa-6">
       <h4 class="pb-4">{{ props.subtitle }}</h4>
-      <p>{{ props.description }}</p>
+      <p class="mb-2">{{ props.description }}</p>
       <v-btn  class="pa-2 align-self-end" color="secondary"> Saiba + </v-btn>
     </div>
   </div>
@@ -33,6 +33,6 @@ const props = defineProps({
 }
 
 h4, p{
-  text-align: justify ;
+  text-align: left ;
 }
 </style>

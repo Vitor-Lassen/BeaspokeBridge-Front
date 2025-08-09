@@ -59,7 +59,7 @@
           :image="item.img"
         />
       </div>
-      <p v-if="ex.aboutObs" v-html="ex.aboutObs" class="xs"/>
+      <p v-if="ex.aboutObs" v-html="ex.aboutObs" class="xs" style="text-align: center;"/>
       <h1>
         <v-btn class="mt-10 mb-10" color="secondary"> {{ props.ex.aboutBtn }}</v-btn>
       </h1>

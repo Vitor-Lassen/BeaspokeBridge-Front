@@ -11,13 +11,7 @@
     </p>
 
     <div class="d-flex align-center justify-space-around flex-wrap" style="width: 100%">
-      <TopicCard
-        class="mt-8"
-        img="Cambridge-Trinity.png"
-        title=""
-        :max-width="500"
-        :img-min-width="400"
-      >
+      <TopicCard class="mt-8" img="Cambridge-Trinity.png" title="" :max-width="500" :img-min-width="400">
         <p class="mt-8" style="text-align: justify">
           Todos os nossos professores possuem qualificações reconhecidas internacionalmente, como o
           prestigiado CELTA da Universidade de Cambridge e Trinity TESOL da Trinity College London.
@@ -44,13 +38,11 @@
 
   <ds-container>
     <h1>Conheça nosso time</h1>
-    <memberDescription
-      img="./Luis.png"
-      name="Luís Patrocínio"
-      description="Fundador, Professor e Diretor de Ensino"
-      email="luispatrocinio@bespokebridge.com"
-      linkedin="https://linkedin.com/in/fabianadgomes"
-    >
+    <memberDescription img="./Luis.png" name="Luís Patrocínio" description="Fundador, Professor e Diretor de Ensino"
+      email="luispatrocinio@bespokebridge.com" linkedin="https://linkedin.com/in/fabianadgomes"
+      facebook="https://www.facebook.com/teacherluispatrocinio"
+      instagram="https://www.instagram.com/teacherluispatrocinio/"
+      tiktok="https://www.tiktok.com/@teacherluispatrocinio">
       <p>
         Com ampla experiência em ensino de inglês e gestão educacional tanto no Brasil, quanto na
         Europa, Luís Patrocínio é o fundador da Bespoke Bridge, uma escola dedicada a oferecer aulas
@@ -80,13 +72,9 @@
 
     <hr class="line-pont mb-8 mt-8" style="width: 70%; align-self: center;" />
 
-    <memberDescription
-      img="./Fabi.png"
-      name="Fabiana Gomes"
-      description="Digital Marketing"
-      email="fabianagomes@bespokebridge.com"
-      linkedin="https://linkedin.com/in/fabianadgomes"
-    >
+    <memberDescription img="./Fabi.png" name="Fabiana Gomes" description="Digital Marketing"
+      email="fabianagomes@bespokebridge.com" linkedin="https://linkedin.com/in/fabianadgomes">
+
       <p>
         Uma sonhadora apaixonada pelas artes da comunicação, Fabiana tem uma trajetória que combina
         experiências culturais e profissionais diversas. Natural de São Paulo, ela iniciou sua
@@ -115,19 +103,52 @@
         beira-mar, tardes lendo em parques, filmes alternativos e explorar as cidades como uma
         turista, sempre em busca de novas histórias para contar.
       </p>
+
+    </memberDescription>
+  </ds-container>
+
+  <ds-container class="bg-ublue">
+    <h1>Teachers Parceiros</h1>
+    <memberDescription img="./Teacher Sara.png" name="Sara Santos" description="Teacher parceira"
+      email="teachersarasantos@bespokebridge.com" :reverse="true">
+      <p>
+        Sara é professora de inglês com sólida formação acadêmica e ampla experiência no ensino do idioma. Natural de
+        Porto Alegre (RS), atualmente leciona aulas presenciais e online, atendendo principalmente alunos adultos que
+        precisam do inglês para o trabalho, viagens ou estudos.
+      </p>
+      <p>
+        Ela integra com orgulho a equipe da Bespoke Bridge desde o início deste ano, oferecendo aulas personalizadas e
+        adaptadas às necessidades específicas de cada aluno.
+      </p>
+      <p>
+        É graduada em Letras e pós-graduada em Tradução pela <b>University of South Africa (UNISA)</b>. Durante os sete anos em
+        que viveu na África do Sul, também estudou Relações Públicas e atuou profissionalmente tanto no setor privado
+        quanto em um órgão governamental – vivências que enriqueceram sua bagagem cultural e profissional.
+      </p>
+      <p>
+        Antes de se juntar à Bespoke Bridge, Sara lecionou em escolas de idiomas e em empresas internacionais, incluindo
+        uma empresa britânica instalada em um parque tecnológico de uma universidade particular.
+      </p>
+      <p>
+        Sara acredita que o ensino é uma via de mão dupla: enquanto ensina, também aprende. Sua trajetória reforça sua
+        capacidade de adaptação e seu entusiasmo crescente por ajudar pessoas a se comunicarem com mais confiança e
+        fluência em inglês.
+      </p>
+      <p><i>
+          "Será um prazer acompanhar a sua jornada com o idioma!"
+
+        </i></p>
     </memberDescription>
   </ds-container>
 
   <ds-container class="bg-ublue">
 
-      <p class="md" style="text-align: center;">
-        Para os cursos oferecidos por nossa escola parceira, a The Bridge, o time de professores é
-        internacional.
-      </p>
-      <a href="https://thebridge.sk/en/our-teachers/"
-        ><v-img class="ma-6 hover" src="all_team.png"></v-img
-      ></a>
-      <p class="sm" style="text-align: center;">Para conhecer os professores da The Bridge, clique na imagem acima.</p>
+    <p class="md" style="text-align: center;">
+      Para os cursos oferecidos por nossa escola parceira, a The Bridge, o time de professores é
+      internacional.
+    </p>
+    <a href="https://thebridge.sk/en/our-teachers/"><v-img class="ma-6 hover" src="all_team.png"></v-img></a>
+    <p class="sm" style="text-align: center;">Para conhecer os professores da The Bridge, clique na imagem acima.</p>
 
   </ds-container>
 </template>

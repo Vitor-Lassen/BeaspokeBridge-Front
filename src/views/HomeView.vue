@@ -2,7 +2,7 @@
 import ContactUs from '@/components/ContactUs.vue'
 import ExchangeCarrosel from '@/components/Exchange/ExchangeCarrosel.vue';
 import depoimentCard from '@/components/depoimentCard.vue';
-import {trackTestLink} from '../config/externalLinks';
+import { trackTestLink } from '../config/externalLinks';
 
 function openTrackTest() {
   window.open(trackTestLink, '_blank');
@@ -72,6 +72,13 @@ function openTrackTest() {
       </depoimentCard>
     </ds-container>
 
+    <ds-container>
+      <h1>Intercâmbios e vivências <span class="tc-r">internacionais</span> </h1>
+      <p class="sm"> Explore o mundo com <b>segurança</b> e <b>suporte total</b> com nossos <b>intercâmbios</b>
+        estudantis <b>culturais</b>.</p>
+      <ExchangeCarrosel home />
+    </ds-container>
+
     <ds-container class="bg-dark bg-track-teste"> ">
       <div class="d-flex mobile ">
 
@@ -84,16 +91,11 @@ function openTrackTest() {
           </p>
           <v-btn color="secondary" @Click="openTrackTest">Teste seu nível agora</v-btn>
         </div>
-        <v-img class="ma-2" src="Tracktest_vertical.png" width="300" ></v-img>
+        <v-img class="ma-2" src="Tracktest_vertical.png" width="300"></v-img>
       </div>
     </ds-container>
 
-        <ds-container>
-      <h1>Intercâmbios e vivências <span class="tc-r">internacionais</span> </h1>
-      <p class="sm"> Explore o mundo com <b>segurança</b> e <b>suporte total</b> com nossos <b>intercâmbios</b>
-        estudantis <b>culturais</b>.</p>
-      <ExchangeCarrosel home />
-    </ds-container>
+
   </main>
 </template>
 

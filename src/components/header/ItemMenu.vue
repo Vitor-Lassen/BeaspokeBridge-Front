@@ -25,7 +25,7 @@ const props = defineProps<{
   title: string
   description: string
   buttonText: string
-  src: string
+  src?: string
   pathto:string
 }>()
 </script>

@@ -76,6 +76,12 @@
           src="Malta/malta 1.png"
           pathto="/exchange-Malta-e-gozo"
         />
+        <ExchangeMenu
+          title="Saiba Mais"
+          description=""
+          button-text="$t('header.exchange.button')"
+          pathto="/exchange"
+        />
       </MenuDropBox>
 
       <v-btn

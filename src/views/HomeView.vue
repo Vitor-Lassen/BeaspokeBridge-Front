@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import ContactUs from '@/components/ContactUs.vue'
 import ExchangeCarrosel from '@/components/Exchange/ExchangeCarrosel.vue';
+import depoimentCard from '@/components/depoimentCard.vue';
 
 </script>
 
@@ -68,13 +69,29 @@ import ExchangeCarrosel from '@/components/Exchange/ExchangeCarrosel.vue';
         />
       </div>
     </ds-container>
+    <ds-container class="bg-ublue">
+      <h1>O que dizem nossos alunos</h1>
+      <depoimentCard
+        img="Mirka.png"
+        name="Mirka Darasova"
+        course="Inglês Geral"
+        >
+        Tenho tido uma excelente experiência aprendendo inglês na Bespoke Bridge. O professor é sempre atencioso, me ajudando a manter a motivação. As aulas são bem estruturadas e adaptadas para atender às minhas necessidades atuais.
+      </depoimentCard>
+
+      <depoimentCard
+        img="woman copy.png"
+        name="Zora A."
+        course="Inglês p/ Apresent."
+        >
+       Minha empresa me deu 12 aulas para aprender inglês e melhorar minhas apresentações de produtos. Escolhi a BB e cerca de 10 aulas depois, meu chefe ficou impressionado com minha confiança e nível de inglês em uma apresentação e decidiu estender minhas aulas por três vezes mais! Fiquei super feliz e satisfeita com os resultados que alcancei.
+      </depoimentCard>
+    </ds-container>
     <ds-container>
       <h1>Intercâmbios e vivências <span class="tc-r">internacionais</span> </h1>
       <p class="sm"> Explore o mundo com <b>segurança</b> e <b>suporte total</b> com nossos <b>intercâmbios</b> estudantis <b>culturais</b>.</p>
-
-
+      <ExchangeCarrosel home />
     </ds-container>
-    <ExchangeCarrosel home />
   </main>
 </template>
 

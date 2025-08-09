@@ -89,12 +89,21 @@ function openTrackTest() {
             para medir o nível de inglês de nossos clientes.
             <br />Faça gratuitamente uma versão do nosso teste e saiba seu nível agora!
           </p>
-          <v-btn color="secondary" @Click="openTrackTest">Teste seu nível agora</v-btn>
+          <v-btn color="secondary" class="ma-4" @Click="openTrackTest">Teste seu nível agora</v-btn>
         </div>
         <v-img class="ma-2" src="Tracktest_vertical.png" width="300"></v-img>
       </div>
     </ds-container>
 
+    <ds-container>
+      <h3 class="pt-12">Está pronto para dar o <span class="tc-r">próximo passo</span> no seu aprendizado de inglês?</h3>
+      <p class="sm">Agende uma consultoria gratuita conosco! Durante essa conversa, entenderemos suas necessidades e objetivos, e juntos traçaremos o melhor caminho para você alcançar a fluência.
+<br>Não perca a oportunidade de receber orientação personalizada, sem compromisso.</p>
+<div class="d-flex align-center justify-center ">
+  <v-img class="pa-4" src="appointment.png" max-width="200"></v-img>
+  <v-btn color="secondary">Agende sua consultoria gratuita</v-btn>
+</div>
+    </ds-container>
 
   </main>
 </template>

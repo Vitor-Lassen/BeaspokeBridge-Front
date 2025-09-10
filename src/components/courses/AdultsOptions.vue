@@ -1,5 +1,5 @@
 <template>
-  <ds-container :class="props.color ? 'bg-bblue ' : ''">
+  <ds-container :bg-img="props.bgImg" img-fixed :class="props.color ? 'bg-bblue ' : ''">
 
       <div
         class="d-flex align-center justify-space-between"
@@ -26,7 +26,7 @@
         </li>
       </ul>
       <p >{{ props.secondText }}</p>
-      <v-btn width="350px" class=" ma-6" color="secondary" :to="props.pathTo">
+      <v-btn width="350px" class="align-self-end ma-6" color="secondary"  :to="props.pathTo">
         {{ props.btnName }}
       </v-btn>
 
@@ -48,6 +48,7 @@ const props = defineProps<{
   pathTo: string
   reverse?: boolean
   color?: boolean
+  bgImg?: string
 }>()
 </script>
 

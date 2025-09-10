@@ -1,6 +1,7 @@
 <template>
   <AdultsOptions
     title="Curso de Inglês Geral"
+    bgImg="squarts.png"
     subtitle="General English"
     firstText="O curso de Inglês Geral é projetado para ensinar a língua inglesa de maneira abrangente, abordando todos os aspectos essenciais para o desenvolvimento das habilidades dos alunos. Este tipo de curso inclui:"
     secondText="Como nossos cursos são feitos sob medida, o aluno escolhe qual foco quer dar na aula, e o professor planeja a aula de acordo com as necessidades e escolhas do aluno. Gramática pode ser ensinada implicitamente ou explicitamente."
@@ -20,7 +21,6 @@
     btnName="Estou interessado neste curso"
     pathTo="/contact-us?course=adults-business-english"
     reverse
-    color
   />
 
   <AdultsOptions
@@ -32,6 +32,7 @@
     image="./Prep centre logo_RGB.png"
     btnName="Estou interessado neste curso"
     pathTo="/contact-us?course=adults-general-english"
+    color
   />
 
   <AdultsOptions
@@ -42,7 +43,7 @@
     :itemList="specialized"
     btnName="Estou interessado neste curso"
     pathTo="/contact-us?course=adults-business-english"
-    color
+    bgImg="squarts.png"
   />
   <AdultsOptions
     title="Curso de inglês para viagens"
@@ -54,6 +55,35 @@
     btnName="Estou interessado neste curso"
     pathTo="/contact-us?course=adults-general-english"
   />
+
+  <ds-container bg-img="squarts.png" class="teachers" img-fixed>
+    <div class="d-flex justify-space-between mobile">
+
+      <div class="d-flex flex-column align-start pa-6">
+        <h1>Education for Teachers</h1>
+        <hr class="line" width="200px" />
+        <p>We recognize the challenges of teaching, which is why we invite you to join a professional community that views education as a continuous journey. Here, you’ll gain new knowledge, skills, and the motivation to thrive, alongside educators who have already benefited.</p>
+      </div>
+      <v-img src="icones/one white teacher.png" minWidth="250" />
+    </div>
+    <p>We collaborate with international teacher trainers and mentors who are celebrated figures in education. They also lead our courses for teachers.</p>
+
+    <ul class="base-list">
+      <li>You will gain proficiency in essential 21st-century educational topics, addressing real-world issues your students encounter daily. This knowledge will equip you to guide them effectively. You will receive comprehensive educational materials, cutting-edge digital tools, and access to information resources, enabling the seamless integration of contemporary subjects into teaching.</li>
+      <li>Our courses emphasise experiential learning, allowing you to experience the role of a participant in various activities. The curriculum is enriched with a vast array of modern, interactive, and experiential teaching methods. This immersive approach will unleash your creativity, offering strategies to eliminate dullness from your lessons.</li>
+      <li>Beyond educational strategies, the courses are designed to inspire personal and lifestyle transformations, facilitated by the distinguished personalities leading our programmes and an enriching leisure schedule. You will find space for self-reflection within a supportive and empathetic community.</li>
+    </ul>
+
+    <div class="d-flex flex-column mb-10">
+
+      <p>Our Education for Teachers courses are offered through our partner school, <span class="theBridge">The Bridge</span> — a renowned ESL institution dedicated to the belief that learning is a lifelong journey.</p>
+      <p>"At <span class="theBridge">The Bridge</span>, we understand that thriving in the classroom requires continuous growth, and we are committed to supporting teachers in their professional development."</p>
+      <p class="align-self-end"><i>Klaudia Bednavora, Director.</i></p>
+
+
+      <v-btn class="align-self-end ma-4" color="secondary" variant="outlined">I am interested in this course</v-btn>
+    </div>
+  </ds-container>
 </template>
 
 <script setup lang="ts">
@@ -240,4 +270,10 @@ const forTrip: KeyValueModel[] = [
 ]
 </script>
 
-<style scoped></style>
+<style scoped>
+
+.teachers h1, .teachers hr{
+  margin: 6px 32px ;
+}
+
+</style>

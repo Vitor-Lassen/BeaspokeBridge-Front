@@ -1,5 +1,5 @@
 <template>
-<div id="bs-container" :class="props.bgImg ? 'ds-paralax':'' " :style=" props.bgImg? { backgroundImage: 'url('+props.bgImg +')'}: ''" >
+<div id="bs-container" :class="props.bgImg && !props.imgFixed ? 'ds-paralax':'ds-fixed' " :style=" props.bgImg? { backgroundImage: 'url('+props.bgImg +')'}: ''" >
   <div id="bs-container-content" >
     <slot />
 
@@ -12,6 +12,7 @@ import { defineProps } from 'vue';
 
 const props = defineProps<{
   bgImg?: string;
+  imgFixed?: boolean
 }>();
 </script>
 
@@ -28,6 +29,14 @@ const props = defineProps<{
   display: flex;
   flex-direction: column;
 }
+
+.ds-fixed{
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 .ds-paralax{
 

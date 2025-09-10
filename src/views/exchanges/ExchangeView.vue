@@ -1,5 +1,5 @@
 <template>
-  <ds-container bg-img="/world-bg.jpg">
+  <ds-container bg-img="/world-bg.png">
 
     <h1>Intercâmbios </h1>
     <p>Oferecemos programas de intercâmbio estudantil cultural que proporcionam uma rica experiência tanto linguística

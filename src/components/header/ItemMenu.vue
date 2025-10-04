@@ -23,8 +23,8 @@ const router = useRouter();
 const props = defineProps<{
   reverse?: boolean
   title: string
-  description: string
-  buttonText: string
+  description?: string
+  buttonText?: string
   src?: string
   pathto:string
 }>()

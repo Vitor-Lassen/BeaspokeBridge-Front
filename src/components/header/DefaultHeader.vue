@@ -90,6 +90,20 @@
       @click="router.push('/parcerias')">
       <P>PARCERIAS</P>
       </v-btn>
+            <MenuDropBox :title="$t('header.eduhub.title')">
+       <ExchangeMenu
+          :title="$t('header.eduhub.podcasts.title')"
+          pathto="/podcasts"
+        />
+        <ExchangeMenu
+          :title="$t('header.eduhub.webinars.title')"
+          pathto="/webinars"
+        />
+        <ExchangeMenu
+          :title="$t('header.eduhub.hlt-digital.title')"
+          pathto="/hlt-digital"
+        />
+      </MenuDropBox>
 
       <v-btn
         class="mr-6 contact-us-btn"

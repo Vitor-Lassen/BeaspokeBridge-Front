@@ -93,6 +93,11 @@ const router = createRouter({
       component: () => import('../views/Partnerships/DneView.vue')
     },
 
+    {
+      path: '/podcasts',
+      name: 'Podcasts',
+      component: () => import('../views/PodcastsView.vue')
+    },
 
     {
       path: '/about',

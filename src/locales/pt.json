@@ -26,6 +26,18 @@
       },
       "button": "Saiba mais"
     },
+    "eduhub": {
+      "title": "EduHub",
+      "podcasts":{
+        "title":"Podcasts"
+      },
+      "webinars":{
+        "title":"Webinars"
+      },
+      "hlt-digital":{
+        "title":"HLT Digital"
+      }
+    },
     "english": "Inglês",
     "partnerships": "Parcerias",
     "contact": "Fale conosco"

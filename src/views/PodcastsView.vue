@@ -17,19 +17,19 @@ const posts: Array<PostsTemplate> = [
   {
     title: 'A perfumer from Egypt',
     description: 'Welcome to today´s episode! We are hosting Ahmed Hamed, a fascinating guest from Cairo. He studied law, but his family of artists sparked his passion for films. After studying directing and scriptwriting in Prague, he came to Slovakia and his life path took a different direction. Ahmed is a talented perfumer now and has created …',
-    to: '/podcast/episode-1',
+    to: 'https://thebridge.sk/en/a-perfumer-from-egypt/',
     imgSrc: 'podcast1.png'
   },
   {
     title: 'A podcaster from India',
     description: 'Listen to the latest episode of The Bridge on Air with Divya Thakur, a podcaster from India, living in Slovakia for 15 years…',
-    to: '/podcast/episode-2',
+    to: 'https://thebridge.sk/en/a-podcaster-from-india/',
     imgSrc: 'podcast2.png'
   },
   {
     title: 'A capoeirista from Brazil',
     description: 'He left the sandy beaches of Salvador, Brazil, to chase the Slovak dream. A professional teacher of capoeira and a massage therapist – two things he was born to do – his words. Nicholas Santana Dos Santos has been practicing capoeira since he was one and it is him who brought this beautiful game to … ',
-    to: '/podcast/episode-3',
+    to: 'https://thebridge.sk/en/a-capoeirista-from-brazil/',
     imgSrc: 'podcast3.png'
   }
   ,
@@ -37,7 +37,7 @@ const posts: Array<PostsTemplate> = [
     title: 'Luís Patrocínio',
     description: 'He could have been a movie star in Brazil, but he chose a different path. He could have been a famous, but very stressed out, actor in São Paulo, now he´s a happy and relaxed English teacher in Bratislava. Luis Patrocinio. Listen to the latest podcast, in which we talk with him. Worksheets are of …',
     to: '/podcast/episode-3',
-    imgSrc: 'podcast3.png'
+    imgSrc: 'https://thebridge.sk/en/luis-patrocinio/'
   }
 ]
 </script>

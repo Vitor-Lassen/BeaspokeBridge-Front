@@ -7,15 +7,18 @@
   <div class="ma-6">
     <slot></slot>
   </div>
+  <post-base v-for="(post, index) in props.posts" :key="index" :post="post"/>
    </ds-container>
 </template>
 
 <script setup lang="ts">
-
+import PostBase from './PostBase.vue';
+import type { PostsTemplate } from '@/Models/PostsTemplate';
 import { defineProps } from 'vue';
 
 const props = defineProps<{
   title: string,
   imgSrc: string
+  posts: Array<PostsTemplate>
 }>()
 </script>

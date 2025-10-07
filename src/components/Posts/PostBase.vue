@@ -33,6 +33,7 @@ const goTo = (url: string) => {
 h2{
   margin-top: 0px;
   margin-left: 4px;
+  text-align: start;
 }
 .pb-continue{
   font-weight: bold;

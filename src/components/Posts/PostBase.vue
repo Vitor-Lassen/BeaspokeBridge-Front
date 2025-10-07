@@ -1,8 +1,8 @@
 <template>
   <ds-card border class="mb-8 pl-8 pr-8" @click="goTo( props.post.to)">
 
-    <div class="d-flex ">
-      <v-img :src="props.post.imgSrc" width="200"></v-img>
+    <div class="d-flex align-start  justify-space-between">
+      <img :src="props.post.imgSrc" style="height: 150px; width: 150px; object-fit: cover;" class="ma-4"/>
       <div class="d-flex flex-column">
         <div class="d-flex align-center justify-space-between">
           <h2>{{ props.post.title }}</h2>
@@ -30,6 +30,10 @@ const goTo = (url: string) => {
 </script>
 
 <style scoped>
+h2{
+  margin-top: 0px;
+  margin-left: 4px;
+}
 .pb-continue{
   font-weight: bold;
   cursor: pointer;

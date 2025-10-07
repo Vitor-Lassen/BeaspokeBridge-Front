@@ -98,6 +98,11 @@ const router = createRouter({
       name: 'Podcasts',
       component: () => import('../views/PodcastsView.vue')
     },
+    {
+      path: '/webinars',
+      name: 'Webinars',
+      component: () => import('../views/WebnairView.vue')
+    },
 
     {
       path: '/about',

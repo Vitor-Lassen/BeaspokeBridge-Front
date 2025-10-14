@@ -7,7 +7,8 @@
   >
     <div class="head-title d-flex flex-column justify-center align-start align-items-left">
       <h1 class="ml-12 mb-1 mt-1">{{ props.title }}</h1>
-      <p class="ml-12 subtitle">{{props.subtitle}}</p>
+      <p v-if="props.subtitle" class="ml-12 subtitle">{{props.subtitle}}</p>
+      <img v-if="props.subImg" :src="props.subImg" class="ml-12 mb-1 mt-1" style="height: 150px; width: auto; align-self: center;" />
       <v-btn v-if="props.btn !== undefined" class="align-self-end mr-12" color="secondary">{{props.btn}} </v-btn>
     </div>
   </v-parallax>
@@ -20,7 +21,8 @@ import { defineProps } from 'vue';
 
 const props = defineProps<{
   title: string,
-  subtitle: string,
+  subtitle?: string,
+  subImg?: string,
   imagem: string,
   btn?: string,
 }>();

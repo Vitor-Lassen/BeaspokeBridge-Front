@@ -1,7 +1,7 @@
 <template>
  <FeedBase
     title="Webnairs"
-    img-src="temperature.png"
+    img-src="webnairs/Webinar.png"
     :posts="posts">
   <p>Aprofunde-se no aprendizado contínuo em todas as fases da vida com os workshops e webinários online da The Bridge, conduzidos por educadores experientes. Voltados tanto para professores quanto para alunos, esses eventos oferecem oportunidades valiosas de crescimento. Fique atento aos convites e aproveite conteúdos que abrem portas para novos horizontes.</p>
  </FeedBase>

@@ -119,7 +119,7 @@
     <div class="d-flex bg-dark justify-space-between set-background-primary">
       <div class="d-flex flex-row">
         <p class="ma-2 pa-2 ml-6 hover">BB Blog</p>
-        <p class="ma-2 pa-2 hover">Teste seu nivel</p>
+        <p class="ma-2 pa-2 hover" @click="goToTrackTestLink">Teste seu nivel</p>
       </div>
       <div>
         <MidiasSociais :size="40" />
@@ -134,8 +134,12 @@ import ExchangeMenu from './ItemMenu.vue'
 import MidiasSociais from '../MidiasSociais.vue'
 
 import { useRouter } from 'vue-router'
-
+import {trackTestLink} from '@/config/externalLinks'
 const router = useRouter()
+
+function goToTrackTestLink () {
+  window.open(trackTestLink, '_blank');
+}
 </script>
 
 <style scoped lang="scss">

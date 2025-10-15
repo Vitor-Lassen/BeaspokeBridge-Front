@@ -2,7 +2,7 @@
   <PageHeader :imagem="props.img" :title="props.title" :sub-img="props.logo" />
   <ds-container>
     <p class="mt-8" v-html="props.firstParagraph" />
-    <BespokePlusPartner :src="props.logo" max-height="150" />
+    <BespokePlusPartner :src="props.logo" max-height="50"  />
     <p class="mb-8" v-html="props.secondParagraph" />
   </ds-container>
 

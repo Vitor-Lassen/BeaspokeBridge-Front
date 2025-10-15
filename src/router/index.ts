@@ -121,6 +121,11 @@ const router = createRouter({
       path: '/bridge',
       name: 'Parcerias - The Bridge',
       component: () => import('../views/Partnerships/schools/bridgeView.vue')
+    },
+    {
+      path: '/isi',
+      name: 'Parcerias - The ISI',
+      component: () => import('../views/Partnerships/schools/isiView.vue')
     }
   ],
 })

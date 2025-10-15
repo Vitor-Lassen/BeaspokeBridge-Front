@@ -38,7 +38,7 @@ const getSchool = computed(() => {
       img: '/ISI/Logo-black-PNG.png',
       description:
         'Fundada em 2001, a ISI Dublin oferece há mais de 20 anos programas educacionais da mais alta qualidade para estudantes internacionais. A escola é acreditada pela <b>Eaquals</b> e reconhecida pela <b>ACELS</b>, um serviço do <b>Quality and Qualifications Ireland (QQI)</b> para ensino de inglês (ELE). Além disso, a ISI Dublin é membro da principal associação de escolas de idiomas de qualidade da Irlanda, a <b>English Education Ireland (EEI)</b>. <br>A escola é reconhecida internacionalmente por sua abordagem inovadora ao ensino, uso integrado de tecnologia em sala de aula, foco no desenvolvimento profissional contínuo de sua equipe e professores, bem como pelo design interno encantador de seus prédios.',
-      link: '/',
+      link: '/isi',
     })
   }
   if (props.belst) {

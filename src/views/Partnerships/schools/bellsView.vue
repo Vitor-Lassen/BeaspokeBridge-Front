@@ -1,16 +1,10 @@
 <template>
-  <schoolPage
-    name="BELS"
-    title="Bem-vindos à "
-    logo="BELS/BELS Main RGB-01.png"
+  <schoolPage name="BELS" title="Bem-vindos à " logo="BELS/BELS Main RGB-01.png" logoHeight="150"
     img="BELS/BELS landing page.png"
     first-paragraph="A <b>BELS</b> é uma renomada escola de idiomas localizada nas deslumbrantes ilhas de Malta e Gozo, com mais de 25 anos de experiência no ensino da língua inglesa. Credenciada pelo <b>Eaquals</b>, a BELS é reconhecida internacionalmente por seu compromisso com a excelência educacional."
     second-paragraph="A <b>Bespoke Bridge</b> escolheu a ISI Dublin como parceira por seu compromisso com a excelência acadêmica e inovação no ensino de idiomas. Essa parceria proporciona aos nossos alunos acesso a uma experiência educacional enriquecedora, alinhada aos mais altos padrões globais."
     courses-description="A <b>BELS</b> oferece uma variedade de cursos de inglês voltados para <b>adultos e famílias</b>, com foco em ensino personalizado e imersão cultural."
-    :courses="courses"
-    :galery="imgs"
-    :locations="locations"
-  />
+    :courses="courses" :galery="imgs" :locations="locations" />
 
 </template>
 
@@ -29,7 +23,7 @@ const imgs = [
   '/BELS/belsSchool8.jpg',
 ]
 
-const locations= [
+const locations = [
   "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d51678.84029760062!2d14.403755000000002!3d35.948743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e4e6063628b2b%3A0x2757c8eb32be88e2!2sBELS%20Malta!5e0!3m2!1sen!2sus!4v1760413003772!5m2!1sen!2sus",
   "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d51620.69488893225!2d14.219217!3d36.037544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130fb441deafd30b%3A0x14fe3c683048c7ef!2sTriq%20Ta%20Doti%2C%20Ker%C4%8Bem%2C%20Malta!5e0!3m2!1sen!2sus!4v1760413045230!5m2!1sen!2sus"
 ]

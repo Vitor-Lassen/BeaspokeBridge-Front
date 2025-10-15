@@ -1,8 +1,8 @@
 <template>
-  <PageHeader :imagem="props.img" :title="props.title" :sub-img="props.logo" />
+  <PageHeader :imagem="props.img" :title="props.title" :sub-img="props.logo" :sub-img-max-height="props.logoHeight" />
   <ds-container>
     <p class="mt-8" v-html="props.firstParagraph" />
-    <BespokePlusPartner :src="props.logo" max-height="50"  />
+    <BespokePlusPartner :src="props.logo" :max-height="logoHeight" />
     <p class="mb-8" v-html="props.secondParagraph" />
   </ds-container>
 
@@ -46,6 +46,7 @@ const props = defineProps<{
   name: string,
   title: string,
   logo: string,
+  logoHeight?: string,
   img: string,
   firstParagraph?: string,
   secondParagraph?: string,

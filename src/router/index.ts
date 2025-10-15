@@ -124,8 +124,13 @@ const router = createRouter({
     },
     {
       path: '/isi',
-      name: 'Parcerias - The ISI',
+      name: 'Parcerias - ISI Dublin',
       component: () => import('../views/Partnerships/schools/isiView.vue')
+    },
+        {
+      path: '/atc',
+      name: 'Parcerias - ATC',
+      component: () => import('../views/Partnerships/schools/atcView.vue')
     }
   ],
 })

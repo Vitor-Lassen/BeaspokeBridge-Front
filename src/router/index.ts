@@ -132,6 +132,12 @@ const router = createRouter({
       name: 'Parcerias - ATC',
       component: () => import('../views/Partnerships/schools/atcView.vue')
     }
+    ,
+        {
+      path: '/hlt-digital',
+      name: 'HLT Digital',
+      component: () => import('../views/HltDigitalView.vue')
+    }
   ],
 })
 

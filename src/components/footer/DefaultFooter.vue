@@ -11,10 +11,10 @@
 
           <ul>
             <li @click="router.push('contact-us')"><a >{{$t('footer.fast-access.contact')}}</a></li>
-            <li><a href="">{{$t('footer.fast-access.curses')}}</a></li>
-            <li><a href="">{{$t('footer.fast-access.exchange')}}</a></li>
+            <li><a @click="router.push('courses')">{{$t('footer.fast-access.curses')}}</a></li>
+            <li><a @click="router.push('exchange')">{{$t('footer.fast-access.exchange')}}</a></li>
             <li><a @click="router.push('/parcerias')">{{$t('footer.fast-access.partnerships')}}</a></li>
-            <li><a href="">{{$t('footer.fast-access.blog')}}</a></li>
+            <li><a @click="router.push('blog')">{{$t('footer.fast-access.blog')}}</a></li>
           </ul>
         </div>
 

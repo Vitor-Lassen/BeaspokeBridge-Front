@@ -20,7 +20,7 @@
               image="/icones/one white.png"
               description="<b>Benefícios:</b> Maior interação social, desenvolvimento de habilidades de comunicação em grupo, mais dinâmico e variado, e permite o professor a dar um feedback mais individualizado aos alunos, pois o mesmo consegue perceber se os há áreas específicas para desenvolvimento linguístico em cada aluno."/>
             <baseIconCard
-              btn-name="Entre em comtato conosco"
+              btn-name="Entre em contato conosco"
               description="Se a sua empresa preferir aulas em grupos maiores, podemos discutir essa possibilidade com nosso time pedagógico para personalizar a melhor solução de acordo com as necessidades da sua equipe."/>
       </div>
   </ds-container>

@@ -145,7 +145,7 @@
       internacional.
     </p>
     <a href="https://thebridge.sk/en/our-teachers/"><v-img class="ma-6 hover" src="all_team.png"></v-img></a>
-    <p class="sm" style="text-align: center;">Para conhecer os professores da The Bridge, clique na imagem acima.</p>
+    <p class="md" style="text-align: center;">Para conhecer os professores da <span class="theBridge">The Bridge</span>, clique na imagem acima.</p>
 
   </ds-container>
 </template>

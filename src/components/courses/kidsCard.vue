@@ -8,7 +8,9 @@
     <div class="d-flex flex-column kd-card pa-6">
       <h4 class="pb-4">{{ props.subtitle }}</h4>
       <p class="mb-2">{{ props.description }}</p>
-      <v-btn  class="pa-2 align-self-end" color="secondary"> Saiba + </v-btn>
+      <ds-override btnTitle="Saiba +" title="kids">
+       <slot />
+      </ds-override>
     </div>
   </div>
 

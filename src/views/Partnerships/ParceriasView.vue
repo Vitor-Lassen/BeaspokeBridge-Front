@@ -1,6 +1,6 @@
 <template>
   <ds-container >
-    <div class="d-flex align-center center">
+    <div class="d-flex align-center center mobile">
       <h1>Parcerias que transformam o aprendizado</h1>
 
       <v-img src="parceria.png" min-width="200"> </v-img>

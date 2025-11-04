@@ -1,5 +1,5 @@
 <template>
-    <div class="description " :class=" props.reverse ? 'flex-row-reverse' : ''">
+    <div class="description" :class=" props.reverse ? 'flex-row-reverse' : ''">
       <div class="mr-4">
         <slot></slot>
       </div>
@@ -59,7 +59,8 @@ const props = defineProps({
 
 @media(max-width: $max-mobile-width){
   .description{
-    flex-direction: column-reverse;
+    flex-direction: column-reverse!important;
+    justify-items: center;
     align-items: center;
   }
 

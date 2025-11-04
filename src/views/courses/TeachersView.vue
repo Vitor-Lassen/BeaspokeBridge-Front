@@ -1,6 +1,6 @@
 <template>
   <ds-container >
-    <div class="d-flex">
+    <div class="d-flex mobile">
       <div>
         <h1>Education for Teachers</h1>
         <p>
@@ -80,7 +80,7 @@
         perspective in both your professional and personal life.
       </p>
 
-      <v-btn color="secondary" class="center mt-16">I want to know more about these programs</v-btn>
+      <v-btn color="secondary" class="center mt-16" height="50"  >I want to know more <br>about these programs</v-btn>
 
       <h2 class="pa-8 ma-6"><span class="theBridge">The Bridge</span> has been supporting teacher education for a long time</h2>
 

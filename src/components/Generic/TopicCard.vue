@@ -2,7 +2,7 @@
  <div class="pa-6"  :style="{maxWidth:prop.maxWidth+'px'}">
   <div class="d-flex align-center justify-center">
   <h2>{{ prop.title }}</h2>
-  <img class="ml-12" :src="prop.img" :style="{minWidth:prop.imgMinWidth+'px'}" alt="">
+  <img  :src="prop.img" :style="{minWidth:prop.imgMinWidth+'px'}" alt="">
   </div>
   <slot></slot>
  </div>

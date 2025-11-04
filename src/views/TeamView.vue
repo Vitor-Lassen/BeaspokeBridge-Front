@@ -1,6 +1,6 @@
 <template>
   <ds-container>
-    <div class="d-flex justify-space-around align-center">
+    <div class="d-flex justify-space-around align-center mobile">
       <h1>Nosso time</h1>
       <v-img src="TEAM.png" min-width="300" max-width="300"></v-img>
     </div>
@@ -10,8 +10,8 @@
       qualificado e comprometido com o sucesso dos nossos alunos.
     </p>
 
-    <div class="d-flex align-center justify-space-around flex-wrap" style="width: 100%">
-      <TopicCard class="mt-8" img="Cambridge-Trinity.png" title="" :max-width="500" :img-min-width="400">
+    <div class="d-flex align-center justify-space-around flex-wrap">
+      <TopicCard class="mt-8" img="Cambridge-Trinity.png" title="" :max-width="500" :img-min-width="300">
         <p class="mt-8" style="text-align: left">
           Todos os nossos professores possuem qualificações reconhecidas internacionalmente, como o
           prestigiado <b class="tc-b">CELTA</b>  da <b class="tc-r">Universidade de Cambridge</b>  e <b class="tc-b">Trinity TESOL</b>  da <b class="tc-r">Trinity College London</b>.

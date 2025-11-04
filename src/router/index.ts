@@ -3,8 +3,8 @@ import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
-  scrollBehavior( ) {
-    return { top: 0 };
+  scrollBehavior() {
+    return { top: 0 }
   },
   routes: [
     {
@@ -12,7 +12,7 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
     },
-        {
+    {
       path: '/courses',
       name: 'Cursos',
       component: () => import('../views/courses/CoursesView.vue'),
@@ -32,7 +32,7 @@ const router = createRouter({
       name: 'ForTeachers',
       component: () => import('../views/courses/TeachersView.vue'),
     },
-        {
+    {
       path: '/for-company',
       name: 'ForCompany',
       component: () => import('../views/courses/CompanyView.vue'),
@@ -52,7 +52,7 @@ const router = createRouter({
       name: 'Malta E Gozo',
       component: () => import('../views/exchanges/MaltaEGozoView.vue'),
     },
-   {
+    {
       path: '/exchange',
       name: 'Intercambio',
       component: () => import('../views/exchanges/ExchangeView.vue'),
@@ -65,43 +65,43 @@ const router = createRouter({
     {
       path: '/team',
       name: 'team',
-      component: () => import('../views/TeamView.vue')
+      component: () => import('../views/TeamView.vue'),
     },
     {
       path: '/privacy-policy',
       name: 'PrivacyPolicy',
-      component: () => import('../views/PrivacyTermsView.vue')
+      component: () => import('../views/PrivacyTermsView.vue'),
     },
     {
       path: '/terms-and-conditions',
       name: 'TermsAndConditions',
-      component: () => import('../views/TermsAndConditionsView.vue')
+      component: () => import('../views/TermsAndConditionsView.vue'),
     },
-        {
+    {
       path: '/parcerias',
       name: 'Parcerias',
-      component: () => import('../views/Partnerships/ParceriasView.vue')
+      component: () => import('../views/Partnerships/ParceriasView.vue'),
     },
     {
       path: '/tracktest',
       name: 'Parcerias - Track Test',
-      component: () => import('../views/Partnerships/TrackTestView.vue')
+      component: () => import('../views/Partnerships/TrackTestView.vue'),
     },
     {
       path: '/dne',
       name: 'Parcerias - DNE',
-      component: () => import('../views/Partnerships/DneView.vue')
+      component: () => import('../views/Partnerships/DneView.vue'),
     },
 
     {
       path: '/podcasts',
       name: 'Podcasts',
-      component: () => import('../views/PodcastsView.vue')
+      component: () => import('../views/PodcastsView.vue'),
     },
     {
       path: '/webinars',
       name: 'Webinars',
-      component: () => import('../views/WebnairView.vue')
+      component: () => import('../views/WebnairView.vue'),
     },
 
     {
@@ -115,29 +115,33 @@ const router = createRouter({
     {
       path: '/bels',
       name: 'Parcerias - BELS',
-      component: () => import('../views/Partnerships/schools/bellsView.vue')
+      component: () => import('../views/Partnerships/schools/bellsView.vue'),
     },
     {
       path: '/bridge',
       name: 'Parcerias - The Bridge',
-      component: () => import('../views/Partnerships/schools/bridgeView.vue')
+      component: () => import('../views/Partnerships/schools/bridgeView.vue'),
     },
     {
       path: '/isi',
       name: 'Parcerias - ISI Dublin',
-      component: () => import('../views/Partnerships/schools/isiView.vue')
+      component: () => import('../views/Partnerships/schools/isiView.vue'),
     },
-        {
+    {
       path: '/atc',
       name: 'Parcerias - ATC',
-      component: () => import('../views/Partnerships/schools/atcView.vue')
-    }
-    ,
-        {
+      component: () => import('../views/Partnerships/schools/atcView.vue'),
+    },
+    {
       path: '/hlt-digital',
       name: 'HLT Digital',
-      component: () => import('../views/HltDigitalView.vue')
-    }
+      component: () => import('../views/HltDigitalView.vue'),
+    },
+    {
+      path: '/blog',
+      name: 'BB Blog',
+      component: () => import('../views/BlogView.vue'),
+    },
   ],
 })
 

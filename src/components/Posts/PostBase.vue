@@ -1,12 +1,12 @@
 <template>
   <ds-card border class="mb-8 pl-8 pr-8" @click="goTo( props.post.to)">
 
-    <div class="d-flex align-start  justify-space-between">
+    <div class="d-flex align-center  justify-space-between mobile">
       <img :src="props.post.imgSrc" style="height: 150px; width: 150px; object-fit: cover;" class="ma-4"/>
       <div class="d-flex flex-column">
-        <div class="d-flex align-center justify-space-between">
+        <div class="d-flex align-center justify-space-between mobile">
           <h2>{{ props.post.title }}</h2>
-          <v-btn color="secondary" size="large">Read More</v-btn>
+          <v-btn color="secondary" size="large" class="mb-6">Read More</v-btn>
         </div>
         <p > {{ props.post.description }}<span class="pb-continue">  continued </span></p>
       </div>

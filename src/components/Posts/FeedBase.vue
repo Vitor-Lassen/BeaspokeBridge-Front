@@ -1,8 +1,11 @@
 <template>
  <ds-container>
-  <div class="d-flex  align-center justify-space-between ">
-    <h1>{{props.title}} <span style="font-size: large;">by</span> <span class="theBridge"> The Bridge</span></h1>
-      <img :src="imgSrc" style="max-width: 200px;"/>
+  <div class="d-flex  align-center justify-space-between mobile ">
+    <div class="d-flex align-center justify-center mobile">
+      <h1 class="mb-0 mt-0">{{props.title}} <span style="font-size: large;">by &nbsp;</span> </h1><h1 class="theBridge mt-0 mb-0">The Bridge </h1>
+    </div>
+
+    <img :src="imgSrc" style="max-width: 200px;"/>
   </div>
   <div class="ma-4">
     <slot></slot>

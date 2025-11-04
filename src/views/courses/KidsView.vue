@@ -31,7 +31,7 @@
 
 
   <ds-container class="bg-bblue-v">
-    <div class="max-content-width d-flex  justify-space-around">
+    <div class="max-content-width d-flex  justify-space-around mobile">
       <kidsCard title="Inglês para Crianças (7-8 anos)" subtitle="Para quem é o curso?"
         description="Este curso é destinado a crianças de 7 e 8 anos que estão nos estágios iniciais do aprendizado de inglês e procuram uma abordagem mais divertida e prática para complementar o ensino escolar. O foco está no desenvolvimento completo das habilidades de leitura, escrita, fala e compreensão auditiva.">
         <kidsCoursesDescription :item="course7to8">
@@ -57,9 +57,8 @@
           </template>
         </kidsCoursesDescription>
       </kidsCard>
-      <kidsCard title="Inglês para Crianças (9-10 anos)" subtitle="Para quem é o curso?"
-        description="Este curso é voltado para crianças de 9 a 10 anos que já têm uma noção básica de inglês adquirida na escola, mas gostariam de dedicar mais tempo ao aprendizado do idioma e explorar novas abordagens além das que conhecem da sala de aula. O curso foca no desenvolvimento equilibrado de todas as habilidades linguísticas."
-        style="margin-top: 180px;">
+      <kidsCard class="kid2" title="Inglês para Crianças (9-10 anos)" subtitle="Para quem é o curso?"
+        description="Este curso é voltado para crianças de 9 a 10 anos que já têm uma noção básica de inglês adquirida na escola, mas gostariam de dedicar mais tempo ao aprendizado do idioma e explorar novas abordagens além das que conhecem da sala de aula. O curso foca no desenvolvimento equilibrado de todas as habilidades linguísticas.">
         <kidsCoursesDescription :item="course9to10">
           <template v-slot:sobre>
             <p>No curso online Kids Club para crianças de 9-10 anos, elas não aprendem inglês apenas decorando gramática
@@ -86,10 +85,10 @@
         </kidsCoursesDescription>
       </kidsCard>
     </div>
-    <div class="max-content-width d-flex justify-space-around">
-      <kidsCard title="Inglês para Crianças (11-12 anos)" subtitle="Para quem é o curso?"
-        description="Este curso é destinado a alunos de 11 e 12 anos que não estão satisfeitos com o inglês aprendido na escola e gostariam de aprimorar suas habilidades de uma maneira diferente. A proposta é desenvolver todas as competências linguísticas e adquirir habilidades adicionais que os ajudarão ao longo dos anos de escolaridade."
-        style="margin-top: -180px;">
+    <div class="max-content-width d-flex justify-space-around mobile">
+      <kidsCard class="kid3"
+        title="Inglês para Crianças (11-12 anos)" subtitle="Para quem é o curso?"
+        description="Este curso é destinado a alunos de 11 e 12 anos que não estão satisfeitos com o inglês aprendido na escola e gostariam de aprimorar suas habilidades de uma maneira diferente. A proposta é desenvolver todas as competências linguísticas e adquirir habilidades adicionais que os ajudarão ao longo dos anos de escolaridade.">
         <kidsCoursesDescription :item="course11to12">
           <template v-slot:sobre>
             <p>Em nosso curso online, jovens de 11 a 12 anos não aprendem inglês apenas memorizando gramática e vocabulário. Acreditamos que o aprendizado por meio da cognição é muito mais eficaz. Ao aprender sobre e discutir conteúdos inspiradores, os jovens desenvolvem habilidades linguísticas com facilidade e prazer. Por isso, utilizamos o método comprovado <b>CLIL (Content and Language Integrated Learning)</b> no curso, no qual os alunos aprendem uma língua estrangeira através de temas interessantes de diversas áreas – natureza, tecnologia, ciência. Assim, eles adquiriram um vocabulário variado e a capacidade de se comunicar sobre uma ampla gama de tópicos, sem medo de cometer erros. As aulas são dedicadas a melhorar todas as habilidades linguísticas – leitura, escrita, fala e compreensão auditiva.</p>
@@ -210,5 +209,14 @@ const course13to14: KidsCourseDescription = {
 <style scoped>
 .float-img {
   float: right;
+}
+
+@media screen and (min-width: 800px) {
+  .kid2{
+    margin-top: 180px;
+  }
+  .kid3{
+    margin-top: -180px;
+  }
 }
 </style>

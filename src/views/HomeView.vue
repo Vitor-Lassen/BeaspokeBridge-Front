@@ -45,14 +45,14 @@ function openTrackTest() {
       <p class="pl-12 pr-12" v-html="$t('home.courses.description')"></p>
       <div class="d-flex flex-wrap justify-space-between align-start">
         <ds-card img="kid.png" :title="$t('home.courses.for-kids.title')"
-          :subtitle="$t('home.courses.for-kids.description')" :btn-name="$t('home.courses.for-kids.btn-learn-more')"
-          path-to="/for-kids" style="width: 350px;" btn-position="bottom" />
+          :subtitle="$t('home.courses.for-kids.description') + '<br><br>'" :btn-name="$t('home.courses.for-kids.btn-learn-more')"
+          path-to="/for-kids" style="width: 350px; height: 500px;" btn-position="bottom" />
         <ds-card img="woman.png" :title="$t('home.courses.for-adults.title')"
           :subtitle="$t('home.courses.for-adults.description')" :btn-name="$t('home.courses.for-adults.btn-learn-more')"
-          path-to="/for-adults" style="width: 350px;" btn-position="bottom" />
+          path-to="/for-adults" style="width: 350px;height: 500px" btn-position="bottom" />
         <ds-card img="teacher.png" :title="$t('home.courses.for-teachers.title')"
           :subtitle="$t('home.courses.for-teachers.description')"
-          :btn-name="$t('home.courses.for-teachers.btn-learn-more')" path-to="/for-teachers" style="width: 350px;"
+          :btn-name="$t('home.courses.for-teachers.btn-learn-more')" path-to="/for-teachers" style="width: 350px;height: 500px"
           btn-position="bottom" />
       </div>
     </ds-container>

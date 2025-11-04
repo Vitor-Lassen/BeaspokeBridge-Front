@@ -1,10 +1,10 @@
 <template>
- <div class="adults-card hover " :class="border?'base-card-border':'' " @click="() => props.pathTo? $router.push(props.pathTo): null" >
+ <div class="adults-card hover  " :class="border?'base-card-border':'' " @click="() => props.pathTo? $router.push(props.pathTo): null" >
   <img v-if="props.img" class="ma-2 img" aspect-ratio="16/9" :src="props.img"/>
   <div class="d-flex  justify-space-between align-center" :class="btnPosition == 'bottom'? 'flex-column': ''" style="width: 100%;;">
     <div >
       <p class="sm"><b>{{ props.title }}</b></p>
-      <p >{{ props.subtitle }}</p>
+      <p v-html="props.subtitle"></p>
       <slot/>
     </div>
     <v-btn v-if="props.btnName" :style="btnPosition == 'bottom' ? {width: '100%'} :{}" color="secondary" :to="props.pathTo">{{ props.btnName }}</v-btn>
@@ -41,10 +41,9 @@ const props = defineProps<{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   padding: 1rem;
-
   border-radius: 8px;
 }
 

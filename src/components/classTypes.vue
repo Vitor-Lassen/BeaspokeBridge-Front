@@ -6,7 +6,7 @@
         base nessa filosofia e na nossa expertise, priorizamos um ensino altamente personalizado.
         Por isso, optamos por oferecer, prioritariamente, os seguintes tipos de aula:
       </p>
-      <div class="d-flex flex-wrap justify-space-around align-center center pa-6" >
+      <div class="d-flex flex-wrap justify-space-around align-center center " >
             <baseIconCard
               title="Aulas Individuais (One-on-One"
               image="/icones/one white.png"

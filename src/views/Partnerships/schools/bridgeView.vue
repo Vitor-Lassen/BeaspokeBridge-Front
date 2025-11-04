@@ -1,5 +1,5 @@
 <template>
-  <schoolPage name="The Bridge" title="Bem-vindos à " logo="logo-theBridge.png" logoHeight="80"
+  <schoolPage name="The Bridge" title="Bem-vindos à " logo="logo-theBridge.png" logoHeight="55"
     img="BELS/BELS landing page.png"
     first-paragraph="A <b>The Bridge</b>  é um renomado centro de ensino da língua inglesa localizado em Bratislava, no coração da Europa. Com mais de 15 anos de atuação, a escola se destaca na região por seu compromisso não apenas com seus alunos, mas também com toda a comunidade educacional. Esse trabalho consistente e de excelência resultou no credenciamento pela <b> Eaquals</b> , uma das mais respeitadas organizações internacionais de qualidade no ensino de idiomas."
     second-paragraph="A <b>Bespoke Bridge</b> escolheu a The Bridge como parceira por compartilhar os mesmos valores: excelência acadêmica, educação personalizada e desenvolvimento humano genuíno. Por meio dessa parceria, nossos alunos têm acesso a cursos de <b>altíssimo nível</b>, com a possibilidade de estudar <b>online com uma das melhores escolas de inglês da Europa</b>."

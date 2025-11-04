@@ -1,13 +1,13 @@
 <template>
-  <div class="d-flex align-center mb-12">
+  <div class="d-flex align-center mobile-reverse mb-12">
     <div class="d-flex flex-column justify-space-between" >
-      <v-img :src="props.img" width="150" />
+      <v-img :src="props.img" width="150" style="margin-top: -55px;"/>
       <p class="remove"><b>{{ props.name }}</b></p>
       <p class="remove"><i>{{ props.course }}</i></p>
     </div>
     <div class="d-flex flex-column justify-sapce-between">
       <p><i>"<slot/>"</i></p>
-      <v-img src="Stars.png" height="150px" style="margin-top: -50px;"></v-img>
+      <v-img src="Stars.png" height="150px" style="margin-top: -55px;"></v-img>
     </div>
   </div>
 </template>

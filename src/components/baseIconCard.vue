@@ -1,11 +1,11 @@
 <template>
-  <div class="base-card restore ma-2 hover" style="max-width: 500px; height: 250px">
+  <div class="d-flex flex-column justify-center base-card restore ma-2 hover" style="max-width: 500px">
     <div class="d-flex align-center justify-space-around">
       <img v-if="props.image" :src="props.image" style="max-height: 120px" />
 
       <h3>{{props.title}}</h3>
     </div>
-    <p :class="props.image ? '':'mt-16 ' " v-html="props.description"/>
+    <p class="ma-4" :class="props.image ? '':'mt-16 ' " v-html="props.description"/>
 
 
     <v-btn v-if="props.btnName" color="secondary" class="ma-4 mt-8" style="width: 92%;">{{ props.btnName }}</v-btn>

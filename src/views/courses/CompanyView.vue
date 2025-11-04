@@ -1,6 +1,6 @@
 <template>
   <ds-container >
-    <div class="d-flex align-center center">
+    <div class="d-flex align-center center mobile">
       <div>
         <h1 style="text-align: start">Inglês Corporativo</h1>
         <p>

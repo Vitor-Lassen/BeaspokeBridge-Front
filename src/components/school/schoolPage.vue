@@ -25,9 +25,9 @@
 
   <ds-container class="bg-bblue">
     <h1>Localização da <span class="tc-r"> {{ props.name }}</span></h1>
-    <div class="d-flex justify-center">
+    <div class="d-flex justify-center mobile">
       <iframe class="ma-4" v-for="location in locations" :key="location" :src="location" height="450"
-        style="border:0; width: 40vw;" allowfullscreen="true" loading="lazy"
+        style="border:0; width: 75vw;" allowfullscreen="true" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </div>

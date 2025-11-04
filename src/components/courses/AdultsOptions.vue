@@ -2,7 +2,7 @@
   <ds-container :bg-img="props.bgImg" img-fixed :class="props.color ? 'bg-bblue ' : ''">
 
       <div
-        class="d-flex align-center justify-space-between"
+        class="d-flex align-center justify-space-between mobile"
         :class="props.reverse ? 'flex-row-reverse' : ''"
       >
         <v-img
@@ -26,7 +26,7 @@
         </li>
       </ul>
       <p >{{ props.secondText }}</p>
-      <v-btn width="350px" class="align-self-end ma-6" color="secondary"  :to="props.pathTo">
+      <v-btn width="350px" class="align-self-center ma-6" color="secondary"  :to="props.pathTo">
         {{ props.btnName }}
       </v-btn>
 

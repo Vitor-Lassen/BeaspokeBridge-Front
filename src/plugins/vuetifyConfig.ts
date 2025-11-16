@@ -7,9 +7,13 @@ import {aliases, mdi} from 'vuetify/iconsets/mdi'
 import '@mdi/font/css/materialdesignicons.css';
 import collors from 'vuetify/util/colors'
 import {locale} from './i18nConfig'
+import {VMaskInput} from 'vuetify/labs/VMaskInput'
 
 const vuetify = createVuetify({
-  components,
+  components:{
+    ...components,
+    VMaskInput
+  },
   directives,
   locale: locale,
   defaults:{
@@ -21,6 +25,10 @@ const vuetify = createVuetify({
       rounded: 'xl',
       variant: 'outlined',
 
+    },
+    VMaskInput:{
+      rounded: 'xl',
+      variant: 'outlined',
     },
     VTextarea:{
       rounded: 'xl',

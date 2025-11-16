@@ -21,6 +21,7 @@
           :description="$t('home.courses.for-teachers.description')"
           :button-text="$t('home.courses.for-teachers.btn-learn-more')" src="teacher.png" pathto="/for-teachers"
           reverse />
+        <ExchangeMenu title="Saiba Mais" description="" button-text="$t('header.exchange.button')" pathto="/courses" />
 
       </MenuDropBox>
       <MenuDropBox :title="$t('header.exchange.title')">

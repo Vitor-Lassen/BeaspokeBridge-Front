@@ -32,7 +32,7 @@
 
     </div>
     <h1>Quero estudar na <span class="tc-r"> {{ props.name }}</span>!</h1>
-
+    <ContactUs :m="`Quero estudar na ${props.name}`" />
   </ds-container>
 </template>
 
@@ -41,6 +41,7 @@ import PageHeader from '../Generic/PageHeader.vue';
 import BespokePlusPartner from '@/components/Generic/BespokePlusPartner.vue';
 import { defineProps } from 'vue';
 import type { KeyValueModel } from '@/Models/keyValueModel';
+import ContactUs from '../ContactUs.vue';
 
 const props = defineProps<{
   name: string,

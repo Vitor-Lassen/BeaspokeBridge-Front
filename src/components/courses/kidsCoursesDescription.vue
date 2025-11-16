@@ -8,7 +8,7 @@
 </div>
 
   <p  v-html="props.item.description"/>
-  <v-btn class="text-none ma-6" color="secondary" max-width="450"> Estou interessado neste curso</v-btn>
+  <v-btn class="text-none ma-6" color="secondary" max-width="450" :to="contactUsUrl"> Estou interessado neste curso</v-btn>
  </ds-container>
 
  <ds-container >
@@ -46,17 +46,21 @@
   <ul class="base-list mt-4 align-self-center">
     <li v-for="item in props.item.gains" :key="item">{{ item }}</li>
   </ul>
-    <v-btn class="text-none ma-6" color="secondary" width="450" style="align-self: center;"> Estou interessado neste curso</v-btn>
+    <v-btn class="text-none ma-6" color="secondary" width="450" style="align-self: center;" :to="contactUsUrl"> Estou interessado neste curso</v-btn>
  </ds-container>
 
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
+import { defineProps , computed} from 'vue';
 import type { KidsCourseDescription } from '@/Models/KidsCourseDescription';
 const props = defineProps<{
   item: KidsCourseDescription
 }>()
+
+const contactUsUrl = computed(()=> {
+  return `contact-us?sc=true&m=Estou interessado no curso ${props.item.title}&c=BB Kids`
+})
 
 </script>
 <style scoped lang="scss">

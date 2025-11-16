@@ -61,6 +61,7 @@ const router = createRouter({
       path: '/contact-us',
       name: 'ContactUs',
       component: () => import('../views/ContactUsView.vue'),
+      props: route => ({ sc: route.query.sc  == "true", sd: route.query.sd == "true", c: route.query.c, d: route.query.d, m : route.query.m }),
     },
     {
       path: '/team',

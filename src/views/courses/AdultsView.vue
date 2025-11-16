@@ -8,7 +8,7 @@
     :itemList="generalEnglish"
     image="./book.png"
     btnName="Estou interessado neste curso"
-    pathTo="/contact-us?course=adults-general-english"
+    pathTo="/contact-us?sc=true&m=Estou Interessado no curso para Adultos&c=Inglês Geral"
   />
 
   <AdultsOptions
@@ -19,7 +19,7 @@
     :itemList="businessEnglish"
     image="./briefcase.png"
     btnName="Estou interessado neste curso"
-    pathTo="/contact-us?course=adults-business-english"
+    pathTo="/contact-us?sc=true&m=Estou Interessado no curso para Adultos&c=Inglês para Negócios"
     reverse
   />
 
@@ -31,7 +31,7 @@
     :itemList="examPreparation"
     image="./Prep centre logo_RGB.png"
     btnName="Estou interessado neste curso"
-    pathTo="/contact-us?course=adults-general-english"
+    pathTo="/contact-us?sc=true&m=Estou Interessado no curso para Adultos&c=Preparatório para Exames"
     color
   />
 
@@ -42,7 +42,7 @@
     secondText="O curso de ESP utiliza uma abordagem focada e prática, garantindo que os alunos desenvolvam as habilidades necessárias para se destacarem em seus campos de atuação específicos. Este tipo de curso, depende também da formação e conhecimento técnico do professor. Nada impede que o professor aprenda os termos a serem ensinados, mas depende muito da área e expertise de nossos professores. Caso não possamos atender suas necessidades, nos prontificamos a fazer uma pesquisa e indicar empresas que possam te ajudar a conquistar seus objetivos."
     :itemList="specialized"
     btnName="Estou interessado neste curso"
-    pathTo="/contact-us?course=adults-business-english"
+    pathTo="/contact-us?sc=true&m=Estou Interessado no curso para Adultos&c=E.S.P. Inglês para propósitos específicos"
     bgImg="squarts.png"
   />
   <AdultsOptions
@@ -53,7 +53,7 @@
     :itemList="forTrip"
     image="./aviao.png"
     btnName="Estou interessado neste curso"
-    pathTo="/contact-us?course=adults-general-english"
+    pathTo="/contact-us?sc=true&m=Estou Interessado no curso para Adultos&c=Inglês para viagens"
   />
 
   <ds-container bg-img="squarts.png" class="teachers" img-fixed>
@@ -81,7 +81,7 @@
       <p class="align-self-end"><i>Klaudia Bednavora, Director.</i></p>
 
 
-      <v-btn class="align-self-end ma-4" color="secondary" variant="outlined">I am interested in this course</v-btn>
+      <v-btn class="align-self-end ma-4" color="secondary" variant="outlined" to="/contact-us?sc=true&c=Educations for teachers">I am interested in this course</v-btn>
     </div>
   </ds-container>
 </template>

@@ -9,7 +9,7 @@
       <h1 class="ml-12 mb-1 mt-1">{{ props.title }}</h1>
       <p v-if="props.subtitle" class="ml-12 subtitle">{{props.subtitle}}</p>
       <img v-if="props.subImg" :src="props.subImg" class="ml-12 mb-1 mt-1" style=" width: auto;   align-self: center;" :style="{height: props.subImgMaxHeight +'px'}"/>
-      <v-btn v-if="props.btn !== undefined" class="align-self-end mr-12" color="secondary">{{props.btn}} </v-btn>
+      <v-btn v-if="props.btn !== undefined" class="align-self-end mr-12" color="secondary" @click="$emit('click')">{{props.btn}} </v-btn>
     </div>
   </v-parallax>
   <div style="height: 450px;"></div>

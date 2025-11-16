@@ -4,6 +4,7 @@
     :subtitle="props.ex.subtitle"
     :imagem="props.ex.img"
     :btn="props.ex.btn"
+    @click="scrollToElement"
   />
   <ds-container>
     <div>
@@ -41,10 +42,10 @@
       </div>
     </div>
     <h1>
-      <v-btn color="secondary"> {{ props.ex.pqBtn }}</v-btn>
+      <v-btn color="secondary" :to="contactUsUrl"> {{ props.ex.pqBtn }}</v-btn>
     </h1>
   </ds-container>
-  <div class="bg-dark d-flex flex-column align-center pt-8">
+  <div id="about" class="bg-dark d-flex flex-column align-center pt-8">
     <div  style="max-width: 1000px">
       <div class="d-flex align-center justify-space-between">
         <h1 >{{ ex.aboutTitle }}</h1>
@@ -61,7 +62,7 @@
       </div>
       <p v-if="ex.aboutObs" v-html="ex.aboutObs" class="xs" style="text-align: center;"/>
       <h1>
-        <v-btn class="mt-10 mb-10" color="secondary"> {{ props.ex.aboutBtn }}</v-btn>
+        <v-btn class="mt-10 mb-10" color="secondary" :to="contactUsUrl"> {{ props.ex.aboutBtn }}</v-btn>
       </h1>
     </div>
   </div>
@@ -97,7 +98,8 @@ import ItemUtils from './ItemUtils.vue'
 import PageHeader from '../Generic/PageHeader.vue'
 import schoolList from '../school/schoolList.vue'
 import type { ExchangeTemplateModel } from '@/Models/ExchangeTemplates'
-import { defineProps } from 'vue'
+import { defineProps, computed } from 'vue'
+
 
 const props = defineProps<{
   ex: ExchangeTemplateModel
@@ -106,6 +108,16 @@ const props = defineProps<{
   belst?: boolean
   atc?: boolean
 }>()
+
+ function scrollToElement() {
+    const element = document.getElementById('about');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+const contactUsUrl = computed(()=> {
+  return `contact-us?sd=true&m=Estou interessado no intercambio &d=${props.ex.title}`
+})
 </script>
 
 <style scoped>

@@ -10,6 +10,7 @@
       <v-radio label="Inglês para Negócios" value="Inglês para Negócios"/>
       <v-radio label="Preparatório para Exames"  value="Preparatório para Exames"/>
       <v-radio label="E.S.P. Inglês para propósitos específicos" value="E.S.P. Inglês para propósitos específicos"/>
+      <v-radio label="Inglês para viagens" value="Inglês para viagens"/>
       <v-radio label="Educations for teachers" value="Educations for teachers"/>
       <v-radio label="BB Kids" value="BB Kids"/>
       <v-radio label="Inglês em empresas" value="Inglês em empresas" />
@@ -31,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, reactive} from 'vue'
+import { defineProps, reactive, onMounted} from 'vue'
 
 const props = defineProps({
   showCourses: {
@@ -41,8 +42,24 @@ const props = defineProps({
   showDestinations: {
     type: Boolean,
     default: false
-  }
+  },
+  d:String,
+  c:String,
+  m:String
 })
+
+onMounted(() => {
+  if (props.d) {
+    form.destination = props.d
+  }
+  if (props.c) {
+    form.course = props.c
+  }
+  if (props.m) {
+    form.message = props.m
+  }
+
+});
 
 const form = reactive({
   name:'',

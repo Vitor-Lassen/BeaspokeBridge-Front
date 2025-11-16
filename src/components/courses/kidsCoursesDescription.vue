@@ -46,6 +46,7 @@
   <ul class="base-list mt-4 align-self-center">
     <li v-for="item in props.item.gains" :key="item">{{ item }}</li>
   </ul>
+    <v-btn class="text-none ma-6" color="secondary" width="450" style="align-self: center;"> Estou interessado neste curso</v-btn>
  </ds-container>
 
 </template>

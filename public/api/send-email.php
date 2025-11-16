@@ -1,20 +1,60 @@
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 <?php
+// send-email.php - usa PHPMailer via Composer
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json");
 
-$data = json_decode(file_get_contents("php://input"));
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit;
+}
 
-$to = "vitor@lassen.com.br"; // Altere para o e-mail que vai receber
-$subject = $data->subject ?? "Assunto padrão";
-$message = $data->message ?? "Mensagem vazia";
-$headers = "From: " . ($data->email ?? "no-reply@seudominio.com") . "\r\n";
-$headers .= "Reply-To: " . ($data->email ?? "no-reply@seudominio.com") . "\r\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8";
+require __DIR__ . '/../../vendor/autoload.php'; // ajuste o caminho se necessário
 
-if (mail($to, $subject, $message, $headers)) {
-    echo json_encode(["success" => true, "message" => "E-mail enviado com sucesso"]);
-} else {
-    echo json_encode(["success" => false, "message" => "Falha ao enviar e-mail"]);
+$input = json_decode(file_get_contents('php://input'), true);
+$fromEmail = $input['email'] ?? 'no-reply@seudominio.com';
+$subject = $input['subject'] ?? 'Assunto padrão';
+$message = $input['message'] ?? 'Mensagem vazia';
+
+// ======= CONFIGURE AQUI (substitua pelos seus dados Hostinger) =======
+$smtpHost = 'smtp.hostinger.com';
+$smtpUsername = 'seu@dominio.com';
+$smtpPassword = 'SUA_SENHA';
+$smtpPort = 587;
+$smtpSecure = 'tls'; // 'ssl' ou 'tls'
+// =====================================================================
+
+$to = 'vitor@lassen.com.br';
+$mail = new PHPMailer(true);
+
+try {
+    // SMTP config
+    $mail->isSMTP();
+    $mail->Host = $smtpHost;
+    $mail->SMTPAuth = true;
+    $mail->Username = $smtpUsername;
+    $mail->Password = $smtpPassword;
+    $mail->SMTPSecure = $smtpSecure;
+    $mail->Port = $smtpPort;
+
+    // From (use o e-mail do SMTP para evitar bloqueios) e Reply-To para o remetente real
+    $mail->setFrom($smtpUsername, 'Seu Site');
+    $mail->addReplyTo($fromEmail);
+    $mail->addAddress($to);
+
+    // Conteúdo
+    $mail->isHTML(true);
+    $mail->Subject = $subject;
+    $mail->Body    = $message;
+    $mail->AltBody = strip_tags($message);
+
+    $mail->send();
+    echo json_encode(['success' => true, 'message' => 'E-mail enviado com sucesso']);
+} catch (Exception $e) {
+    http_response_code(500);
+    echo json_encode(['success' => false, 'message' => 'Falha ao enviar e-mail: ' . $mail->ErrorInfo]);
 }
 ?>

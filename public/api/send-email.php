@@ -3,7 +3,18 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 // send-email.php - usa PHPMailer via Composer
-header("Access-Control-Allow-Origin: *");
+$allowedOrigins = [
+    'https://bespokebridge.com',
+    'https://www.bespokebridge.com',
+    'https://bespokebridge.com.br',
+    'https://www.bespokebridge.com.br'
+];
+
+$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+if (in_array($origin, $allowedOrigins) || preg_match('/^https:\/\/(.+\.)?bespokebridge\.com(\.br)?$/', $origin)) {
+    header("Access-Control-Allow-Origin: $origin");
+}
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json");
 
@@ -12,7 +23,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
-require __DIR__ . '/../vendor/autoload.php'; // ajuste o caminho se necessário
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+require __DIR__ . '/../../vendor/autoload.php'; // ajuste o caminho se necessário
 
 $input = json_decode(file_get_contents('php://input'), true);
 $fromEmail = $input['email'] ?? 'no-reply@bespokebridge.com';
@@ -52,9 +65,13 @@ try {
     $mail->AltBody = strip_tags($message);
 
     $mail->send();
-    //echo json_encode(['success' => true, 'message' => 'E-mail enviado com sucesso']);
+    echo json_encode(['success' => true, 'message' => 'E-mail enviado com sucesso']);
 } catch (Exception $e) {
     http_response_code(500);
     echo json_encode(['success' => false, 'message' => 'Falha ao enviar e-mail: ' . $mail->ErrorInfo]);
+}
+} else {
+    http_response_code(405);
+    echo json_encode(['success' => false, 'message' => 'Método não permitido']);
 }
 ?>

@@ -1,7 +1,7 @@
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
 
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 // send-email.php - usa PHPMailer via Composer
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Content-Type");
@@ -12,19 +12,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
-require __DIR__ . '/../../vendor/autoload.php'; // ajuste o caminho se necessário
+require __DIR__ . '/../vendor/autoload.php'; // ajuste o caminho se necessário
 
 $input = json_decode(file_get_contents('php://input'), true);
-$fromEmail = $input['email'] ?? 'no-reply@seudominio.com';
+$fromEmail = $input['email'] ?? 'no-reply@bespokebridge.com';
 $subject = $input['subject'] ?? 'Assunto padrão';
 $message = $input['message'] ?? 'Mensagem vazia';
 
 // ======= CONFIGURE AQUI (substitua pelos seus dados Hostinger) =======
 $smtpHost = 'smtp.hostinger.com';
-$smtpUsername = 'seu@dominio.com';
-$smtpPassword = 'SUA_SENHA';
-$smtpPort = 587;
-$smtpSecure = 'tls'; // 'ssl' ou 'tls'
+$smtpUsername = 'system@bespokebridge.com';
+$smtpPassword = 'hYwv!t$7';
+$smtpPort = 465;
+$smtpSecure = 'ssl'; // 'ssl' ou 'tls'
 // =====================================================================
 
 $to = 'vitor@lassen.com.br';
@@ -41,7 +41,7 @@ try {
     $mail->Port = $smtpPort;
 
     // From (use o e-mail do SMTP para evitar bloqueios) e Reply-To para o remetente real
-    $mail->setFrom($smtpUsername, 'Seu Site');
+    $mail->setFrom($smtpUsername, 'Contato Bespoke Bridge');
     $mail->addReplyTo($fromEmail);
     $mail->addAddress($to);
 
@@ -52,7 +52,7 @@ try {
     $mail->AltBody = strip_tags($message);
 
     $mail->send();
-    echo json_encode(['success' => true, 'message' => 'E-mail enviado com sucesso']);
+    //echo json_encode(['success' => true, 'message' => 'E-mail enviado com sucesso']);
 } catch (Exception $e) {
     http_response_code(500);
     echo json_encode(['success' => false, 'message' => 'Falha ao enviar e-mail: ' . $mail->ErrorInfo]);

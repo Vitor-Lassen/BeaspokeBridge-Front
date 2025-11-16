@@ -1,6 +1,6 @@
 <template>
 
-  <ContactUs />
+  <ContactUs :show-courses="true" :show-destinations="true"/>
 </template>
 
 <script setup lang="ts">

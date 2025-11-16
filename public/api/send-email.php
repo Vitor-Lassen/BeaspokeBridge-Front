@@ -28,7 +28,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 require __DIR__ . '/../../vendor/autoload.php'; // ajuste o caminho se necessário
 
 $input = json_decode(file_get_contents('php://input'), true);
-$fromEmail = $input['email'] ?? 'no-reply@bespokebridge.com';
 $subject = $input['subject'] ?? 'Assunto padrão';
 $message = $input['message'] ?? 'Mensagem vazia';
 
@@ -40,6 +39,7 @@ $smtpPort = 465;
 $smtpSecure = 'ssl'; // 'ssl' ou 'tls'
 // =====================================================================
 
+$fromEmail = 'no-reply@bespokebridge.com';
 $to = 'vitor@lassen.com.br';
 $mail = new PHPMailer(true);
 

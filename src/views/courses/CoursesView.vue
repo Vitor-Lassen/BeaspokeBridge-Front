@@ -67,7 +67,7 @@ const forAdults = [{
 {
   title: 'Inglês p/ Viagens',
   subtitle: 'English for Travel',
-  img: 'Travel.png',
+  img: 'Travel2.png',
   btnName: 'Saiba +',
   pathTo: '/for-adults#business-english'
 },

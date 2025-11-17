@@ -8,7 +8,7 @@
     <p class="ma-4" :class="props.image ? '':'mt-16 ' " v-html="props.description"/>
 
 
-    <v-btn v-if="props.btnName" color="secondary" class="ma-4 mt-8" style="width: 92%;">{{ props.btnName }}</v-btn>
+    <v-btn v-if="props.btnName" color="secondary" class="ma-4 mt-8" style="width: 92%;" @click="$emit('click')">{{ props.btnName }}</v-btn>
   </div>
 </template>
 

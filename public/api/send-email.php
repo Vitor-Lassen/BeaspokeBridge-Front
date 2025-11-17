@@ -42,6 +42,8 @@ $smtpSecure = 'ssl'; // 'ssl' ou 'tls'
 $fromEmail = 'no-reply@bespokebridge.com';
 $to = 'vitor@lassen.com.br';
 $mail = new PHPMailer(true);
+$mail -> charSet = "UTF-8"; 
+
 
 try {
     // SMTP config

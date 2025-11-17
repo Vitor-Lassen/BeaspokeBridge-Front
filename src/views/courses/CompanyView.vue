@@ -80,7 +80,7 @@
     </div>
  </ds-container>
 
-    <classTypes />
+    <classTypes  is-company-page @click="scrollToElement('contactUS')"/>
   <ds-container>
     <h2>Por que escolher a Bespoke Bridge?</h2>
     <div class="base-card card-pq-escolher ">
@@ -119,7 +119,7 @@
       </p>
     </div>
   </ds-container>
-  <ds-container class="bg-blue-v">
+  <ds-container id="contactUS" class="bg-blue-v">
     <h2>Interessado em aprimorar as habilidades de inglês da sua equipe?</h2>
     <p>
 Oferecemos <b>consultorias personalizadas</b> para entender as necessidades específicas da sua empresa e de seus colaboradores. Juntos, podemos traçar o melhor plano de ensino. Nosso time está pronto para oferecer um atendimento consultivo e criar um programa de aprendizado eficaz, adaptado ao seu contexto corporativo.
@@ -133,6 +133,13 @@ Oferecemos <b>consultorias personalizadas</b> para entender as necessidades espe
 <script setup lang="ts">
 import classTypes from '@/components/classTypes.vue'
 import ContactUs from '@/components/ContactUs.vue';
+
+ function scrollToElement(elementId: string) {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 </script>
 
 <style lang="scss" scoped>

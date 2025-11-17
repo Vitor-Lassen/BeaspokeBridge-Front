@@ -137,6 +137,38 @@ const form = reactive({
   message:''
 })
 
+// montar corpo do email dinamicamente
+const subject = computed(() => {
+  const isCompanyForm = props.companyForm;
+
+  if (isCompanyForm) {
+    return `<html><body>
+      <h2>Solicitação de contato do site - Empresa</h2>
+      <p><strong>Nome da Empresa:</strong> ${form.name}</p>
+      <p><strong>Pessoa de Contato:</strong> ${form.pessoalContato}</p>
+      <p><strong>Cargo:</strong> ${form.role}</p>
+      <p><strong>Email Corporativo:</strong> ${form.email}</p>
+      <p><strong>Telefone:</strong> ${form.phone}</p>
+      <p><strong>Número de Colaboradores:</strong> ${form.numberOfEmployees}</p>
+      <p><strong>Objetivo Principal:</strong> ${form.objective}</p>
+      <p><strong>Preferência de Horário:</strong> ${form.schedule}</p>
+      <p><strong>Mensagem:</strong></p>
+      <p>${form.message}</p>
+    </body></html>`;
+  } else {
+    return `<html><body>
+      <h2>Solicitação de contato do site</h2>
+      <p><strong>Nome:</strong> ${form.name}</p>
+      <p><strong>Email:</strong> ${form.email}</p>
+      <p><strong>Telefone:</strong> ${form.phone}</p>
+      ${form.course ? `<p><strong>Curso:</strong> ${form.course}</p>` : ''}
+      ${form.destination ? `<p><strong>Destino:</strong> ${form.destination}</p>` : ''}
+      <p><strong>Mensagem:</strong></p>
+      <p>${form.message}</p>
+    </body></html>`;
+  }
+});
+
 // Validação
 const nameRules = [
   (v: string) => !!v || 'Nome é obrigatório'
@@ -165,17 +197,6 @@ const phoneRules = [
   }
 ]
 
-// montar corpo do email dinamicamente
-const subject = computed(() => `<html><body>
-  <h2>Solicitação de contato do site</h2>
-  <p><strong>Nome:</strong> ${form.name}</p>
-  <p><strong>Email:</strong> ${form.email}</p>
-  <p><strong>Telefone:</strong> ${form.phone}</p>
-  ${form.course ? `<p><strong>Curso:</strong> ${form.course}</p>` : ''}
-  ${form.destination ? `<p><strong>Destino:</strong> ${form.destination}</p>` : ''}
-  <p><strong>Mensagem:</strong></p>
-  <p>${form.message}</p>
-</body></html>`);
 
 const sendEmail = () => {
   fetch('api/send-email.php', {
@@ -184,7 +205,7 @@ const sendEmail = () => {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      subject:  form.name + ' - Solicitação de contato do site',
+      subject:  form.name +   props.companyForm ? 'company request contact from site': ' - Solicitação de contato do site',
       message:  subject.value
     })
   })

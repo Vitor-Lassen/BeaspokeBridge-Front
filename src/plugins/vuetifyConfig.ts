@@ -30,6 +30,10 @@ const vuetify = createVuetify({
       rounded: 'xl',
       variant: 'outlined',
     },
+    VNumberInput:{
+      rounded: 'xl',
+      variant: 'outlined',
+    },
     VTextarea:{
       rounded: 'xl',
       variant: 'outlined',

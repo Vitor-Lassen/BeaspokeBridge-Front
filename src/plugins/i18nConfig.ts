@@ -12,6 +12,6 @@ const locale = {
   messages: messages,
 }
 
-const i18n = createI18n(locale);
+const i18n = createI18n({warnHtmlInMessage: 'off', ...locale} );
 
 export { i18n , locale}

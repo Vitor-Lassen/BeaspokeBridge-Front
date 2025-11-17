@@ -1,19 +1,31 @@
 <template>
-  <v-form ref="formRef" class="pa-4">
+  <v-form class="pa-4" v-model="formRef">
     <h4 v-html="$t('contact-us.coach')"></h4>
 
     <v-text-field
       v-model="form.name"
-      :label="$t('contact-us.form.name')"
+      :label="companyForm? 'Nome da empresa': $t('contact-us.form.name')"
       :rules="nameRules"
-      required
     ></v-text-field>
+    <v-text-field
+      v-if="props.companyForm"
+      v-model="form.pessoalContato"
+      label="Pessoa de contato"
+      :rules="nameRulesForCompany"
+    ></v-text-field>
+
+    <v-text-field
+      v-if="props.companyForm"
+      v-model="form.role"
+      label="Cargo na Empresa"
+      :rules="nameRulesForCompany"
+    ></v-text-field>
+
     <v-mask-input
       mask="(##) #####-####"
       v-model="form.phone"
       :label="$t('contact-us.form.phone')"
       :rules="phoneRules"
-      required
       type="tel"
       maxlength="15"
       @input="form.phone = $event ? $event.replace(/\D/g,'').replace(/^(\d{2})(\d)/,'($1) $2').replace(/(\d{5})(\d{4})$/,'$1-$2').replace(/(\d{4})(\d{4})$/,'$1-$2') : ''"
@@ -21,11 +33,32 @@
 
     <v-text-field
       v-model="form.email"
-      :label="$t('contact-us.form.email')"
+      :label="props.companyForm? 'Email coorporativo': $t('contact-us.form.email')"
       :rules="emailRules"
-      required
     ></v-text-field>
 
+     <v-number-input
+      v-if="props.companyForm"
+      v-model="form.numberOfEmployees"
+      label="Número de colaboradores interessados "
+      :min="1"
+      hidden
+
+    />
+
+    <v-text-field
+      v-if="props.companyForm"
+      v-model="form.objective"
+      label="Objetivo principal"
+      :rules="nameRulesForCompany"
+    ></v-text-field>
+
+    <v-text-field
+      v-if="props.companyForm"
+      v-model="form.schedule"
+      label="Prefernecia de horario para as aulas"
+      :rules="nameRulesForCompany"
+    ></v-text-field>
     <v-radio-group v-if="props.showCourses" v-model="form.course">
       <p>Está interessado em qual curso? </p>
       <v-radio label="Inglês Geral" value="Inglês Geral"/>
@@ -45,7 +78,7 @@
       <v-radio label="Malta e Gozo"  value="Malta e Gozo"/>
     </v-radio-group>
 
-    <v-textarea v-model="form.message" :label="$t('contact-us.form.service')" rows="3" required></v-textarea>
+    <v-textarea v-model="form.message" :label="props.companyForm? 'Comentários adicionais': $t('contact-us.form.service')" rows="3" required></v-textarea>
 
     <div class="d-flex flex-column align-center">
       <v-btn color="secondary" @click="onSubmit"> {{$t('contact-us.form.btn-send')}} </v-btn>
@@ -69,10 +102,14 @@ const props = defineProps({
   },
   d:String,
   c:String,
-  m:String
+  m:String,
+  companyForm: {
+    type: Boolean,
+    default: false
+  }
 })
 
-const formRef = ref<HTMLFormElement | null>(null)
+const formRef = ref<boolean| null>(false)
 
 onMounted(() => {
   if (props.d) {
@@ -88,7 +125,12 @@ onMounted(() => {
 
 const form = reactive({
   name:'',
+  pessoalContato:'',
   email:'',
+  role: '',
+  numberOfEmployees: 1,
+  objective:'',
+  schedule:'',
   phone:'',
   course:'',
   destination:'',
@@ -98,6 +140,10 @@ const form = reactive({
 // Validação
 const nameRules = [
   (v: string) => !!v || 'Nome é obrigatório'
+]
+// Validação
+const nameRulesForCompany = [
+  (v: string) => props.companyForm? !!v || 'campo obrigatório' : true
 ]
 
 const emailRules = [
@@ -152,7 +198,7 @@ const sendEmail = () => {
       form.course = ''
       form.destination = ''
       form.message = ''
-      formRef.value?.resetValidation()
+      formRef.value = null
     } else {
       alert('Erro ao enviar e-mail, por favor tente nos contactar diretamente pelo e-mail, ou whatsapp.');
     }
@@ -164,8 +210,10 @@ const sendEmail = () => {
 
 const onSubmit = () => {
   // valida todos os campos do form Vuetify
-  const valid = formRef.value?.validate ? formRef.value.validate() : true
-  if (valid) {
+  console.log('Form valid:')
+  console.log(formRef.value)
+
+  if (formRef.value) {
     sendEmail()
   }
 }

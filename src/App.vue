@@ -21,10 +21,7 @@ import DefaultFooter from './components/footer/DefaultFooter.vue'
 
       <DefaultHeader class="flex-1-1-100"  />
     </header>
-
-    <v-lazy :options="{ threshold: 0.5 }" transition="scroll-y-reverse-transition">
-            <RouterView/>
-    </v-lazy>
+    <RouterView/>
     <a href="https://wa.me/5511973385008?text=Olá!%20Bem-vindo%20(Welcome)!%0A%0AComo%20posso%20ajudá-lo?"><v-btn class="whatsapp-button hover" icon="mdi-whatsapp" size="x-large" color="green"></v-btn></a>
     <DefaultFooter />
   </v-content>

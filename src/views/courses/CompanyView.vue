@@ -125,7 +125,7 @@
 Oferecemos <b>consultorias personalizadas</b> para entender as necessidades específicas da sua empresa e de seus colaboradores. Juntos, podemos traçar o melhor plano de ensino. Nosso time está pronto para oferecer um atendimento consultivo e criar um programa de aprendizado eficaz, adaptado ao seu contexto corporativo.
     </p>
     <div class="d-flex justify-center align-center" >
-      <ContactUs style="max-width: 500px;"/>
+      <ContactUs style="max-width: 500px;" :company-form="true"/>
     </div>
   </ds-container>
 </template>

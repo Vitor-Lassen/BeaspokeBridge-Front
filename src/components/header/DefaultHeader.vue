@@ -16,7 +16,7 @@
           :button-text="$t('home.courses.for-adults.btn-learn-more')" src="woman.png" pathto="/for-adults" reverse />
         <ExchangeMenu :title="$t('home.courses.for-company.title')"
           :description="$t('home.courses.for-company.description')"
-          :button-text="$t('home.courses.for-company.btn-learn-more')" src="teacher.png" pathto="/for-company" />
+          :button-text="$t('home.courses.for-company.btn-learn-more')" src="Business English.png" pathto="/for-company" />
         <ExchangeMenu :title="$t('home.courses.for-teachers.title')"
           :description="$t('home.courses.for-teachers.description')"
           :button-text="$t('home.courses.for-teachers.btn-learn-more')" src="teacher.png" pathto="/for-teachers"
@@ -50,9 +50,9 @@
         @click="router.push('/contact-us')">Fale Conosco</v-btn>
     </div>
     <div class="d-flex bg-dark align-center justify-space-between set-background-primary">
-      <div class="d-flex flex-row align-center justify-space-around">
-        <p class="pa-2 ml-6 hover" @click="router.push('/blog')">BB<br>Blog</p>
-        <p class="pa-2 hover" @click="goToTrackTestLink">Teste seu<br> nivel</p>
+      <div class="d-flex flex-row align-center justify-space-around flex-grow-1" style="max-width: 300px;">
+        <p class="pa-2 ml-6 hover" @click="router.push('/blog')">BB Blog</p>
+        <p class="pa-2 hover" @click="goToTrackTestLink">Teste seu nivel</p>
       </div>
       <div>
         <MidiasSociais :size="40" />

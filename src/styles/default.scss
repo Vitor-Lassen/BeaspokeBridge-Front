@@ -211,6 +211,12 @@ a {
   text-align: justify;
 }
 
+.fit-screen{
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items:center;
+}
 
 
 @media screen and (max-width: 800px) {
@@ -218,6 +224,7 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    align-self: center;
   }
   .mobile-reverse{
 

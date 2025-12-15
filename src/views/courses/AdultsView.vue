@@ -44,6 +44,7 @@
     btnName="Estou interessado neste curso"
     pathTo="/contact-us?sc=true&m=Estou Interessado no curso para Adultos&c=E.S.P. Inglês para propósitos específicos"
     bgImg="squarts.png"
+    reverse
   />
   <AdultsOptions
     title="Curso de inglês para viagens"
@@ -81,7 +82,7 @@
       <p class="align-self-end"><i>Klaudia Bednavora, Director.</i></p>
 
 
-      <v-btn class="align-self-end ma-4" color="secondary" variant="outlined" to="/contact-us?sc=true&c=Educations for teachers">I am interested in this course</v-btn>
+      <v-btn class="align-self-end ma-4" color="secondary" variant="outlined" to="/for-teachers">I am interested in this course</v-btn>
     </div>
   </ds-container>
 </template>

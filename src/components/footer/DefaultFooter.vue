@@ -6,7 +6,7 @@
           <v-img class="ma-1"  :width="170" aspect-ratio="16/9" cover src="Logos BB/BB white.png"></v-img>
           <h3>Ingles e intercambio</h3>
         </div>
-        <div class="ma-6">
+        <div class="ma-6 footer-session" >
           <h4>{{$t('footer.fast-access.title')}}</h4>
 
           <ul>
@@ -18,7 +18,7 @@
           </ul>
         </div>
 
-        <div class="ma-6">
+        <div class="ma-6 footer-session">
           <h4>{{$t('footer.transparency.title')}}</h4>
 
           <ul>
@@ -48,6 +48,7 @@ a,h4{
 li {
   margin-bottom: 1rem;
   cursor: pointer;
+  text-align: left;
 }
 .copyright {
   font-size: 12px;
@@ -60,13 +61,8 @@ h4 {
   font-size: 18px;
   margin-bottom: 2rem;
 }
-@media (max-width: 980px) {
-  .mobile {
-    flex-direction: column;
-    align-items: center;
-  }
-
-
+.footer-session {
+align-self: flex-start;
 }
 </style>
 

@@ -1,6 +1,6 @@
 <template>
-  <ds-container class="bg-dark">
-      <h2 class="pt-16">Tipos de aulas</h2>
+  <ds-container class="bg-dark fit-screen pb-6">
+      <h2 class="mt-1">Tipos de aulas</h2>
       <p>
         Nosso foco é proporcionar aos clientes uma experiência de aprendizado genuína e eficaz. Com
         base nessa filosofia e na nossa expertise, priorizamos um ensino altamente personalizado.
@@ -33,7 +33,6 @@
 
 <script setup lang="ts">
 import baseIconCard from './baseIconCard.vue';
-import { defineProps } from 'vue';
 
 const props = defineProps<{
   isCompanyPage?: boolean

@@ -32,7 +32,7 @@ function openTrackTest() {
         <div class="pa-6" style="width: 400px; text-align: center">
           <h2 class="pb-6" v-html="$t('home.custom-learning.subtitle')"></h2>
           <p v-html="$t('home.custom-learning.description')" />
-          <v-btn class="ma-2 mt-12" color="secondary">{{ $t('home.custom-learning.btn-learn-more') }}
+          <v-btn class="ma-2 mt-12" color="secondary" @click="() => $router.push('/courses')">{{ $t('home.custom-learning.btn-learn-more') }}
           </v-btn>
         </div>
 
@@ -43,7 +43,7 @@ function openTrackTest() {
     <ds-container>
       <h1 class="mt-10 mb-6 hover" @click="() => $router.push('/courses')" v-html="$t('home.courses.title')"></h1>
       <p class="pl-12 pr-12" v-html="$t('home.courses.description')"></p>
-      <div class="d-flex flex-wrap justify-space-between align-start">
+      <div class="d-flex flex-wrap justify-space-between align-start mobile">
         <ds-card img="kid.png" :title="$t('home.courses.for-kids.title')"
           :subtitle="$t('home.courses.for-kids.description') + '<br><br>'" :btn-name="$t('home.courses.for-kids.btn-learn-more')"
           path-to="/for-kids" style="width: 350px; height: 500px;" btn-position="bottom" />
@@ -95,15 +95,6 @@ function openTrackTest() {
       </div>
     </ds-container>
 
-    <ds-container>
-      <h3 class="pt-12">Está pronto para dar o <span class="tc-r">próximo passo</span> no seu aprendizado de inglês?</h3>
-      <p class="sm">Agende uma consultoria gratuita conosco! Durante essa conversa, entenderemos suas necessidades e objetivos, e juntos traçaremos o melhor caminho para você alcançar a fluência.
-<br>Não perca a oportunidade de receber orientação personalizada, sem compromisso.</p>
-<div class="d-flex align-center justify-center ">
-  <v-img class="pa-4" src="appointment.png" max-width="200"></v-img>
-  <v-btn color="secondary">Agende sua consultoria gratuita</v-btn>
-</div>
-    </ds-container>
 
   </main>
 </template>
@@ -112,4 +103,5 @@ function openTrackTest() {
 p {
   text-align: center;
 }
+
 </style>

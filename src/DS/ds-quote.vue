@@ -1,7 +1,7 @@
 <template>
  <DsContainer class="bg-dark">
 
-      <p class="md" style="text-align: center;">
+      <p style="text-align: center; font-size: 21px;">
         <b
           ><i
             >"{{ props.phase }}"</i
@@ -16,7 +16,6 @@
 <script setup lang="ts">
 import DsContainer from './ds-container.vue';
 
-import { defineProps } from 'vue';
 
 const props = defineProps<{
   phase: string;
@@ -27,7 +26,7 @@ const props = defineProps<{
 <style lang="scss" scoped>
 
 p{
-  padding: 0;
+  padding: 8px 0;
   margin: 0;
 }
 

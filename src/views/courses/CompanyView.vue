@@ -1,8 +1,8 @@
 <template>
-  <ds-container >
-    <div class="d-flex align-center center mobile">
+  <ds-container  class="fit-screen">
+    <div class="d-flex align-center center mobile ">
       <div>
-        <h1 style="text-align: start">Inglês Corporativo</h1>
+        <h1  style="text-align: start">Inglês Corporativo</h1>
         <p>
           O inglês é, hoje, a <b>língua universal dos negócios</b>. Em um mundo corporativo cada vez
           mais globalizado, a proficiência no idioma não é apenas um diferencial, mas
@@ -30,7 +30,7 @@
       sem comprometer a produtividade.
     </p>
     <p style="text-align: start"><b>Oferecemos:</b></p>
-    <ul class="base-list">
+    <ul class="base-list mb-4">
       <li>
         <b>Cursos Personalizados:</b> Adaptamos o conteúdo das aulas às necessidades específicas da
         sua empresa, seja para comunicação geral, inglês técnico ou áreas específicas como negócios
@@ -54,7 +54,7 @@
       actor="Conselho Britânico"
     />
  <ds-container >
-    <div class=" max-content-width">
+    <div class=" max-content-width mb-12">
       <div class="d-flex justify-space-between align-center center">
         <h2>Resultados mensuráveis</h2>
 
@@ -81,7 +81,7 @@
  </ds-container>
 
     <classTypes  is-company-page @click="scrollToElement('contactUS')"/>
-  <ds-container>
+  <ds-container class="pb-6">
     <h2>Por que escolher a Bespoke Bridge?</h2>
     <div class="base-card card-pq-escolher ">
       <h3>Análise de Necessidades Detalhada e Objetivos Mensuráveis</h3>
@@ -101,7 +101,7 @@
       </p>
     </div>
 
-    <div class="base-card card-pq-escolher ">
+    <div class="base-card card-pq-escolher">
       <h3>Profissionais Altamente Qualificados</h3>
       <p>
         Na Bespoke Bridge, nossa equipe é composta por <b>professores certificados</b> por instituições internacionais de renome, como <b>Cambridge</b> e <b>Trinity</b> London. Essas certificações garantem que nossos professores possuam as competências necessárias para oferecer um ensino de <b>altíssima qualidade</b>, baseado nas melhores práticas pedagógicas internacionais.

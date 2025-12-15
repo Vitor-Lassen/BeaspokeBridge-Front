@@ -1,5 +1,5 @@
 <template>
-    <div class="description" :class=" props.reverse ? 'flex-row-reverse' : ''">
+    <div class="description mb-12 pb-12" :class=" props.reverse ? 'flex-row-reverse' : ''">
       <div class="mr-4">
         <slot></slot>
       </div>
@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
+
 
 
 const props = defineProps({

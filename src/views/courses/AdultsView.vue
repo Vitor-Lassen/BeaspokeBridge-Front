@@ -1,88 +1,75 @@
 <template>
-  <AdultsOptions
-    title="Curso de Inglês Geral"
-    bgImg="squarts.png"
-    subtitle="General English"
+  <AdultsOptions id="general-english" title="Curso de Inglês Geral" bgImg="squarts.png" subtitle="General English"
     firstText="O curso de Inglês Geral é projetado para ensinar a língua inglesa de maneira abrangente, abordando todos os aspectos essenciais para o desenvolvimento das habilidades dos alunos. Este tipo de curso inclui:"
     secondText="Como nossos cursos são feitos sob medida, o aluno escolhe qual foco quer dar na aula, e o professor planeja a aula de acordo com as necessidades e escolhas do aluno. Gramática pode ser ensinada implicitamente ou explicitamente."
-    :itemList="generalEnglish"
-    image="./book.png"
-    btnName="Estou interessado neste curso"
-    pathTo="/contact-us?sc=true&m=Estou Interessado no curso para Adultos&c=Inglês Geral"
-  />
+    :itemList="generalEnglish" image="./book.png" btnName="Estou interessado neste curso"
+    pathTo="/contact-us?sc=true&m=Estou Interessado no curso para Adultos&c=Inglês Geral" />
 
-  <AdultsOptions
-    title="Curso de Inglês para Negócios"
-    subtitle="Business English"
+  <AdultsOptions id="business-english" title="Curso de Inglês para Negócios" subtitle="Business English"
     firstText="O curso de Inglês para Negócios é projetado para desenvolver as habilidades linguísticas necessárias para o ambiente corporativo, capacitando os alunos a se comunicarem de maneira eficaz em contextos empresariais. Este curso inclui:"
     secondText="Este curso é focado em um contexto geral e abrange várias áreas do mundo corporativo. Na Bespoke Bridge, o aluno escolhe se quer focar em todas as habilidades, ou em alguma em específico."
-    :itemList="businessEnglish"
-    image="./briefcase.png"
-    btnName="Estou interessado neste curso"
-    pathTo="/contact-us?sc=true&m=Estou Interessado no curso para Adultos&c=Inglês para Negócios"
-    reverse
-  />
+    :itemList="businessEnglish" image="./briefcase.png" btnName="Estou interessado neste curso"
+    pathTo="/contact-us?sc=true&m=Estou Interessado no curso para Adultos&c=Inglês para Negócios" reverse />
 
-  <AdultsOptions
-    title="Preparatórios para Exames"
-    subtitle="IELTS & Cambridge"
+  <AdultsOptions id="exam" title="Preparatórios para Exames" subtitle="IELTS & Cambridge"
     firstText="O curso de Inglês para Exames de Proficiência é projetado para preparar os alunos para os principais testes de proficiência na língua inglesa, como o IELTS e os exames de Cambridge. Este curso inclui:"
     secondText="O curso utiliza uma combinação de materiais autênticos, simulados de exames, exercícios práticos e feedback detalhado para garantir que os alunos estejam bem preparados para alcançar altas pontuações nos testes de proficiência."
-    :itemList="examPreparation"
-    image="./Prep centre logo_RGB.png"
-    btnName="Estou interessado neste curso"
-    pathTo="/contact-us?sc=true&m=Estou Interessado no curso para Adultos&c=Preparatório para Exames"
-    color
-  />
+    :itemList="examPreparation" image="./Prep centre logo_RGB.png" btnName="Estou interessado neste curso"
+    pathTo="/contact-us?sc=true&m=Estou Interessado no curso para Adultos&c=Preparatório para Exames" color />
 
-  <AdultsOptions
-    title="Curso de Inglês para Propósitos Específicos"
+  <AdultsOptions id="esp" title="Curso de Inglês para Propósitos Específicos"
     subtitle="English for Specific Purposes"
     firstText="O curso de Inglês para Propósitos Específicos (ESP) é voltado para o desenvolvimento de habilidades linguísticas específicas que atendam às necessidades de determinadas áreas profissionais ou acadêmicas. Este curso inclui:"
     secondText="O curso de ESP utiliza uma abordagem focada e prática, garantindo que os alunos desenvolvam as habilidades necessárias para se destacarem em seus campos de atuação específicos. Este tipo de curso, depende também da formação e conhecimento técnico do professor. Nada impede que o professor aprenda os termos a serem ensinados, mas depende muito da área e expertise de nossos professores. Caso não possamos atender suas necessidades, nos prontificamos a fazer uma pesquisa e indicar empresas que possam te ajudar a conquistar seus objetivos."
-    :itemList="specialized"
-    btnName="Estou interessado neste curso"
+    :itemList="specialized" btnName="Estou interessado neste curso"
     pathTo="/contact-us?sc=true&m=Estou Interessado no curso para Adultos&c=E.S.P. Inglês para propósitos específicos"
-    bgImg="squarts.png"
-    reverse
-  />
-  <AdultsOptions
-    title="Curso de inglês para viagens"
-    subtitle="English for Travel"
+    bgImg="squarts.png" reverse />
+  <AdultsOptions id="travel" title="Curso de inglês para viagens" subtitle="English for Travel"
     firstText="O curso de Inglês para Viagens é projetado para fornecer aos alunos as habilidades linguísticas necessárias para se comunicarem de maneira eficaz e confiante durante suas viagens internacionais. Este curso inclui:"
     secondText="O curso utiliza uma combinação de recursos multimídia, diálogos interativos, role-plays e exercícios práticos para garantir que os alunos estejam bem preparados para qualquer situação que possam encontrar durante suas viagens."
-    :itemList="forTrip"
-    image="./aviao.png"
-    btnName="Estou interessado neste curso"
-    pathTo="/contact-us?sc=true&m=Estou Interessado no curso para Adultos&c=Inglês para viagens"
-  />
+    :itemList="forTrip" image="./aviao.png" btnName="Estou interessado neste curso"
+    pathTo="/contact-us?sc=true&m=Estou Interessado no curso para Adultos&c=Inglês para viagens" />
 
-  <ds-container bg-img="squarts.png" class="teachers" img-fixed>
+  <ds-container bg-img="squarts.png" class="teachers" img-fixed id="english-teachers">
     <div class="d-flex justify-space-between mobile">
 
       <div class="d-flex flex-column align-start pa-6">
         <h1>Education for Teachers</h1>
         <hr class="line" width="200px" />
-        <p>We recognize the challenges of teaching, which is why we invite you to join a professional community that views education as a continuous journey. Here, you’ll gain new knowledge, skills, and the motivation to thrive, alongside educators who have already benefited.</p>
+        <p>We recognize the challenges of teaching, which is why we invite you to join a professional community that
+          views education as a continuous journey. Here, you’ll gain new knowledge, skills, and the motivation to
+          thrive, alongside educators who have already benefited.</p>
       </div>
       <v-img src="icones/one white teacher.png" minWidth="250" />
     </div>
-    <p>We collaborate with international teacher trainers and mentors who are celebrated figures in education. They also lead our courses for teachers.</p>
+    <p>We collaborate with international teacher trainers and mentors who are celebrated figures in education. They also
+      lead our courses for teachers.</p>
 
     <ul class="base-list">
-      <li>You will gain proficiency in essential 21st-century educational topics, addressing real-world issues your students encounter daily. This knowledge will equip you to guide them effectively. You will receive comprehensive educational materials, cutting-edge digital tools, and access to information resources, enabling the seamless integration of contemporary subjects into teaching.</li>
-      <li>Our courses emphasise experiential learning, allowing you to experience the role of a participant in various activities. The curriculum is enriched with a vast array of modern, interactive, and experiential teaching methods. This immersive approach will unleash your creativity, offering strategies to eliminate dullness from your lessons.</li>
-      <li>Beyond educational strategies, the courses are designed to inspire personal and lifestyle transformations, facilitated by the distinguished personalities leading our programmes and an enriching leisure schedule. You will find space for self-reflection within a supportive and empathetic community.</li>
+      <li>You will gain proficiency in essential 21st-century educational topics, addressing real-world issues your
+        students encounter daily. This knowledge will equip you to guide them effectively. You will receive
+        comprehensive educational materials, cutting-edge digital tools, and access to information resources, enabling
+        the seamless integration of contemporary subjects into teaching.</li>
+      <li>Our courses emphasise experiential learning, allowing you to experience the role of a participant in various
+        activities. The curriculum is enriched with a vast array of modern, interactive, and experiential teaching
+        methods. This immersive approach will unleash your creativity, offering strategies to eliminate dullness from
+        your lessons.</li>
+      <li>Beyond educational strategies, the courses are designed to inspire personal and lifestyle transformations,
+        facilitated by the distinguished personalities leading our programmes and an enriching leisure schedule. You
+        will find space for self-reflection within a supportive and empathetic community.</li>
     </ul>
 
     <div class="d-flex flex-column mb-10">
 
-      <p>Our Education for Teachers courses are offered through our partner school, <span class="theBridge">The Bridge</span> — a renowned ESL institution dedicated to the belief that learning is a lifelong journey.</p>
-      <p>"At <span class="theBridge">The Bridge</span>, we understand that thriving in the classroom requires continuous growth, and we are committed to supporting teachers in their professional development."</p>
+      <p>Our Education for Teachers courses are offered through our partner school, <span class="theBridge">The
+          Bridge</span> — a renowned ESL institution dedicated to the belief that learning is a lifelong journey.</p>
+      <p>"At <span class="theBridge">The Bridge</span>, we understand that thriving in the classroom requires continuous
+        growth, and we are committed to supporting teachers in their professional development."</p>
       <p class="align-self-end"><i>Klaudia Bednavora, Director.</i></p>
 
 
-      <v-btn class="align-self-end ma-4" color="secondary" variant="outlined" to="/for-teachers">I am interested in this course</v-btn>
+      <v-btn class="align-self-end ma-4" color="secondary" variant="outlined" to="/for-teachers">I am interested in this
+        course</v-btn>
     </div>
   </ds-container>
 </template>
@@ -272,9 +259,8 @@ const forTrip: KeyValueModel[] = [
 </script>
 
 <style scoped>
-
-.teachers h1, .teachers hr{
-  margin: 6px 32px ;
+.teachers h1,
+.teachers hr {
+  margin: 6px 32px;
 }
-
 </style>

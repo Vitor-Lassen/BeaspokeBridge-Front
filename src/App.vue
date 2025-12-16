@@ -22,7 +22,7 @@ import DefaultFooter from './components/footer/DefaultFooter.vue'
       <DefaultHeader class="flex-1-1-100"  />
     </header>
     <RouterView/>
-    <a href="https://wa.me/5511973385008?text=Olá!%20Bem-vindo%20(Welcome)!%0A%0AComo%20posso%20ajudá-lo?"><v-btn class="whatsapp-button hover" icon="mdi-whatsapp" size="x-large" color="green"></v-btn></a>
+    <a href="https://api.whatsapp.com/send/?phone=551136581821&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre...&type=phone_number&app_absent=0"><v-btn class="whatsapp-button hover" icon="mdi-whatsapp" size="x-large" color="green"></v-btn></a>
     <DefaultFooter />
   </v-content>
 </template>

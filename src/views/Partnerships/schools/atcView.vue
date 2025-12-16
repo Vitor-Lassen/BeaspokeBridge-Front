@@ -26,7 +26,8 @@ const imgs = [
 ]
 
 const locations = [
-  "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38241.317872949105!2d-6.095543!3d53.198439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867a86760a51927%3A0x8defc19d571f7cb7!2sATC%20Language%20Schools!5e0!3m2!1sen!2sus!4v1760491669379!5m2!1sen!2sus"
+  "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38241.317872949105!2d-6.095543!3d53.198439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867a86760a51927%3A0x8defc19d571f7cb7!2sATC%20Language%20Schools!5e0!3m2!1sen!2sus!4v1760491669379!5m2!1sen!2sus",
+  "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38113.78509970586!2d-6.263416!3d53.341259!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9c49fe80a3%3A0x129fc57b5713457b!2sPink!5e0!3m2!1sen!2sus!4v1765846016896!5m2!1sen!2sus"
 ]
 
 const courses: Array<KeyValueModel> = [

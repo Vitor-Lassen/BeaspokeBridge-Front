@@ -7,7 +7,7 @@
       <p v-html="props.subtitle"></p>
       <slot/>
     </div>
-    <v-btn v-if="props.btnName" :style="btnPosition == 'bottom' ? {width: '100%'} :{}" color="secondary" :to="props.pathTo">{{ props.btnName }}</v-btn>
+    <v-btn class="pr-2 pl-2" v-if="props.btnName" :style="btnPosition == 'bottom' ? {width: '100%'} :{}" color="secondary" :to="props.pathTo">{{ props.btnName }}</v-btn>
   </div>
  </div>
 </template>

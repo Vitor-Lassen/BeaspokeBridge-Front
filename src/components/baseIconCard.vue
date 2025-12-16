@@ -5,7 +5,7 @@
 
       <h3>{{props.title}}</h3>
     </div>
-    <p class="ma-4" :class="props.image ? '':'mt-16 ' " v-html="props.description"/>
+    <p class="ma-4" :class="props.image ? '':'mt-16 '" :style="{ fontSize: props.customFontSize }" v-html="props.description"/>
 
 
     <v-btn v-if="props.btnName" color="secondary" class="ma-4 mt-8" style="width: 92%;" @click="$emit('click')">{{ props.btnName }}</v-btn>
@@ -13,13 +13,14 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
+
 const props = defineProps<{
   title?: string,
   description: string,
   image?: string,
   btnName?: string,
   pathTo?: string
+  customFontSize?:string
 }>();
 
 </script>
@@ -27,7 +28,7 @@ const props = defineProps<{
 <style scoped>
 
 p{
-  text-align: justify;
+  text-align: left;
   padding: 0 30px;
   font-size: 16px;
   line-height: 1.2;

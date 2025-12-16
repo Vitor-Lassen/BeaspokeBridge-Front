@@ -21,7 +21,8 @@
         btn-position="bottom"
         border
         btn-name="Saiba +"
-        card-width="auto">
+        card-width="auto"
+        @click="scrollToElement('exchanges-carrosel')">
           <p>Transforme sua experiência de aprendizado com os intercâmbios oferecidos pela <b
               class='text-color-blue-logo'>Bespoke Bridge!</b></p>
           <p>Estude inglês em escolas de qualidade credenciadas pela <b> <a
@@ -32,10 +33,11 @@
       </div>
     <div class="d-flex flex-column align-center pa-6">
       <ds-card  title="For English teachers"
-          img="/Intercambio 2.png"
+          img="/TEEP.png"
           btn-position="bottom"
           border
-          btn-name="Learn More">
+          btn-name="Learn More"
+          @click="$router.push('/exchange-programs-for-english-teachers')">
         <p>Enhance your teaching skills with <b
             class='text-color-blue-logo'>Bespoke Bridge’s</b> Teacher Education Exchange Programs (TEEP).</p>
         <p>Join expert-led courses in an EAQUALS-accredited school in Slovakia, and explore Central Europe while learning innovative ELT methods.</p>
@@ -44,11 +46,18 @@
       </div>
     </div>
   </ds-container>
-  <exchange-carrosel/>
+  <exchange-carrosel id="exchanges-carrosel"/>
 
 </template>
 
 <script setup lang="ts">
 import exchangeCarrosel from '@/components/Exchange/ExchangeCarrosel.vue';
+
+function scrollToElement(elementId: string) {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 </script>
 

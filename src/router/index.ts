@@ -143,6 +143,12 @@ const router = createRouter({
       name: 'BB Blog',
       component: () => import('../views/BlogView.vue'),
     },
+    //todo: enable when content is ready
+    //    {
+    //   path: '/exchange-programs-for-english-teachers',
+    //   name: 'BB Blog',
+    //   component: () => import('../views/BlogView.vue'),
+    // },
   ],
 })
 
